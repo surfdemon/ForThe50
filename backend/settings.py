@@ -37,6 +37,8 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
     "8000-surfdemon-forthe50-kxfi8ykrews.ws-eu117.gitpod.io",
     "8000-surfdemon-forthe50-vn95ucw290v.ws-eu117.gitpod.io",
 ]
