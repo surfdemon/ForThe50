@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-lg navbar-light p-3">
             <div class="container-fluid">
                 <!-- Site Title -->
-                <a class="navbar-brand logo-text" href="#">
+                <a class="navbar-brand logo-text" href="/">
                     <img src="{% static 'assets/forthe50-logo.png' %}" alt="Logo" class="me-3 pb-1" style="height: 30px;">ForThe50</a>
         
                 <!-- Navbar Toggler for Mobile View -->
@@ -29,20 +29,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link active me-3" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link active me-3" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link me-3" href="#">About</a>
+                            <a class="nav-link me-3" href="about/">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link me-3" href="#">Statistics</a>
+                            <a class="nav-link me-3" href="{% url 'statistics' %}">Statistics</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link me-3" href="#">Contact</a>
+                            <a class="nav-link me-3" href="{% url 'contact' %}">Contact</a>
                         </li>
                         <li class="nav-item">
                             <!-- Report Crime Button -->
-                            <a class="btn btn-danger shadow" href="#">Report Crime</a>
+                            <a class="btn btn-danger shadow" href="report/">Report Crime</a>
                         </li>
                     </ul>
                 </div>
@@ -59,8 +59,11 @@
 
     {% block footer %}
     <footer class="footer">
-        <p>&copy; <span id="current-year"></span> SITE TITLE. All rights reserved.</p>
+        <p>&copy; <span id="current-year"></span> For the 50. All rights reserved. - <a href="team/">Meet the Team</a></p>
     </footer>
+    {% endblock %}
+
+    {% block extra_js %}
     {% endblock %}
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

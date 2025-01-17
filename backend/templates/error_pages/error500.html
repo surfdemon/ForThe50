@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Error 500{% endblock %}
+
+{% block content %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-10 col-xl-8 text-center mx-auto mb-2">
+      <h1 class="text-center pt-2">Oops! Something Went Wrong</h1>
+      <img src="#" class="w-75 my-3 rounded-3 shadow" alt="" aria-label="#">
+      <p class="text-center px-3">Looks like our server got into trouble and couldn't complete
+        your request. Let's get you back to safety!</p>
+      <a href="{% url 'index' %}" class="button btn" aria-label="Brings back to home page">Back Home</a>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

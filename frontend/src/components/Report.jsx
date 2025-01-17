@@ -1,5 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
+import Datetime from "react-datetime";
+import "react-datetime/css/react-datetime.css";
+import styles from "../styles/Report.module.css";
+import ChainImg from "../assets/images/chain.svg";
 
 function Report() {
   const [formData, setFormData] = useState({
@@ -20,6 +25,13 @@ function Report() {
     }));
   };
 
+  const handleDateChange = (date) => {
+    setFormData((prev) => ({
+      ...prev,
+      date_and_time: date.format("YYYY-MM-DD HH:mm"),
+    }));
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log("Submitting data:", formData);
@@ -33,146 +45,173 @@ function Report() {
   };
 
   return (
-    <div className="container mt-4">
-      <h2>Report to Authorities</h2>
-      <form onSubmit={handleSubmit}>
-        <div className="mb-3">
-          <label htmlFor="name" className="form-label">
-            Name (optional)
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-          />
-        </div>
+    <div className="main-content d-flex justify-content-center align-items-center">
+      <img
+        src={ChainImg}
+        alt="Map Background"
+        className={`${styles.chainImage}`}
+      />
+      <Container>
+        <h1 className={`${styles.pageHeader} text-center mt-5`}>
+          Be the Voice for the Voiceless.
+        </h1>
+        <Row className="justify-content-center">
+          <Col xs={12} md={8} lg={8}>
+            <div
+              className={`${styles.reportContainer} mt-5 mb-5 p-4 rounded shadow`}
+            >
+              <h2 className="text-center mb-4">Report a Crime</h2>
+              <Form onSubmit={handleSubmit}>
+                <Form.Group className="mb-3" controlId="name">
+                  <Form.Label className={`${styles.formLabel}`}>
+                    Name (optional)
+                  </Form.Label>
+                  <Form.Control
+                    className={`${styles.formInput}`}
+                    type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
+                </Form.Group>
 
-        <div className="mb-3">
-          <label htmlFor="email" className="form-label">
-            Email (optional)
-          </label>
-          <input
-            type="email"
-            className="form-control"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-        </div>
+                <Form.Group className="mb-3" controlId="email">
+                  <Form.Label className={`${styles.formLabel}`}>
+                    Email (optional)
+                  </Form.Label>
+                  <Form.Control
+                    className={`${styles.formInput}`}
+                    type="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
+                </Form.Group>
 
-        <div className="mb-3">
-          <label htmlFor="location" className="form-label">
-            Location*
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            id="location"
-            name="location"
-            required
-            value={formData.location}
-            onChange={handleChange}
-          />
-        </div>
+                <Form.Group className="mb-3" controlId="location">
+                  <Form.Label className={`${styles.formLabel}`}>
+                    Location*
+                  </Form.Label>
+                  <Form.Control
+                    className={`${styles.formInput}`}
+                    type="text"
+                    name="location"
+                    required
+                    value={formData.location}
+                    onChange={handleChange}
+                  />
+                </Form.Group>
 
-        <div className="mb-3">
-          <label htmlFor="description" className="form-label">
-            Description*
-          </label>
-          <textarea
-            className="form-control"
-            id="description"
-            name="description"
-            required
-            value={formData.description}
-            onChange={handleChange}
-          />
-        </div>
+                <Form.Group className="mb-3" controlId="description">
+                  <Form.Label className={`${styles.formLabel}`}>
+                    Description*
+                  </Form.Label>
+                  <Form.Control
+                    className={`${styles.formInput}`}
+                    as="textarea"
+                    name="description"
+                    rows={3}
+                    required
+                    value={formData.description}
+                    onChange={handleChange}
+                  />
+                </Form.Group>
 
-        <div className="mb-3">
-          <label htmlFor="date_and_time" className="form-label">
-            Date and Time*
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            id="date_and_time"
-            name="date_and_time"
-            required
-            value={formData.date_and_time}
-            onChange={handleChange}
-          />
-        </div>
+                <Form.Group className="mb-3" controlId="date_and_time">
+                  <Form.Label className={`${styles.formLabel}`}>
+                    Date and Time*
+                  </Form.Label>
+                  <Datetime
+                    onChange={handleDateChange}
+                    inputProps={{ placeholder: "Select date and time" }}
+                  />
+                </Form.Group>
 
-        <div className="mb-3">
-          <label htmlFor="category" className="form-label">
-            Category*
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            id="category"
-            name="category"
-            required
-            value={formData.category}
-            onChange={handleChange}
-          />
-        </div>
+                <Form.Group className="mb-3" controlId="category">
+                  <Form.Label className={`${styles.formLabel}`}>
+                    Category*
+                  </Form.Label>
+                  <Form.Control
+                    className={`${styles.formInput}`}
+                    as="select"
+                    name="category"
+                    required
+                    value={formData.category}
+                    onChange={handleChange}
+                  >
+                    <option value="">- Select Category -</option>
+                    <option value="Sexual Exploitation">
+                      Sexual Exploitation
+                    </option>
+                    <option value="Labor Exploitation">
+                      Labor Exploitation
+                    </option>
+                    <option value="Child Exploitation">
+                      Child Exploitation
+                    </option>
+                    <option value="Organ Harvesting">Organ Harvesting</option>
+                    <option value="Forced Begging">Forced Begging</option>
+                    <option value="Forced Crime">Forced Crime</option>
+                  </Form.Control>
+                </Form.Group>
 
-        {/* Country & Authorithy */}
-        <div className="mb-3">
-          <label htmlFor="country" className="form-label">
-            Country*
-          </label>
-          <select
-            className="form-control"
-            id="country"
-            name="country"
-            required
-            value={formData.country}
-            onChange={handleChange}
-          >
-            <option value="">- Select Country -</option>
-            <option value="United Kingdom">United Kingdom</option>
-            <option value="Ireland">Ireland</option>
-          </select>
-        </div>
+                <Form.Group className="mb-3" controlId="country">
+                  <Form.Label className={`${styles.formLabel}`}>
+                    Country*
+                  </Form.Label>
+                  <Form.Control
+                    className={`${styles.formInput}`}
+                    as="select"
+                    name="country"
+                    required
+                    value={formData.country}
+                    onChange={handleChange}
+                  >
+                    <option value="">- Select Country -</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Ireland">Ireland</option>
+                  </Form.Control>
+                </Form.Group>
 
-        <div className="mb-3">
-          <label htmlFor="authority" className="form-label">
-            Authority*
-          </label>
-          <select
-            className="form-control"
-            id="authority"
-            name="authority"
-            required
-            value={formData.authority}
-            onChange={handleChange}
-          >
-            <option value="">- Select Authority -</option>
-            <option value="Modern Slavery & Exploitation Helpline">
-              Modern Slavery & Exploitation Helpline
-            </option>
-            <option value="Crimestoppers">Crimestoppers</option>
-            <option value="An Garda Síochána (HTICU)">
-              An Garda Síochána (HTICU)
-            </option>
-            <option value="Department of Justice and Equality (AHTU)">
-              Department of Justice and Equality (AHTU)
-            </option>
-            <option value="Testing Authority">Testing Authority</option>
-          </select>
-        </div>
+                <Form.Group className="mb-3" controlId="authority">
+                  <Form.Label className={`${styles.formLabel}`}>
+                    Authority*
+                  </Form.Label>
+                  <Form.Control
+                    className={`${styles.formInput}`}
+                    as="select"
+                    name="authority"
+                    required
+                    value={formData.authority}
+                    onChange={handleChange}
+                  >
+                    <option value="">- Select Authority -</option>
+                    <option value="Modern Slavery & Exploitation Helpline">
+                      Modern Slavery & Exploitation Helpline
+                    </option>
+                    <option value="Crimestoppers">Crimestoppers</option>
+                    <option value="An Garda Síochána (HTICU)">
+                      An Garda Síochána (HTICU)
+                    </option>
+                    <option value="Department of Justice and Equality (AHTU)">
+                      Department of Justice and Equality (AHTU)
+                    </option>
+                    <option value="Testing Authority">Testing Authority</option>
+                  </Form.Control>
+                </Form.Group>
 
-        <button type="submit" className="btn btn-primary">
-          Submit Report
-        </button>
-      </form>
+                <Button
+                  type="submit"
+                  className={`${styles.submitBtn} w-100 mt-4`}
+                  variant="primary"
+                >
+                  Submit Report
+                </Button>
+              </Form>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

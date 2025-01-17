@@ -18,6 +18,13 @@ Including another URLconf
 from django.urls import path, include
 from django.contrib import admin
 
+from .views import error_403, error_404, error_500
+
+
+handler403 = error_403
+handler404 = error_404
+handler500 = error_500
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/report/", include("report.urls")),

@@ -1,5 +1,6 @@
+{% extends 'base.html' %}
 
-{% extends "base.html" %}
+
 {% load static %}
 {% block title %}For the 50{% endblock %}
 {% block content %}        
@@ -51,7 +52,7 @@
                     </div>
                   
                     <div class="col-lg-4 text-center">
-                      <img src="src/assets/images/Trafficking-happening.jpg" alt="Icon" class="featurette-image img-fluid rounded">
+                      <img src="{% static 'assets/Trafficking-happening.jpg' %}" alt="Icon" class="featurette-image img-fluid rounded">
                     </div>
                   </div>
 
@@ -143,6 +144,7 @@ The urgency to address these crimes is evident, as they rob individuals of their
             </div>
         </section>
 
-    <div id="root"></div>
+   
 
     {% endblock content %}
+

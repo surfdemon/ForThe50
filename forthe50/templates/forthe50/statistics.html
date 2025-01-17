@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Statistics{% endblock %}
+
+{% block content %}
+    <h1>Statistics on Human Trafficking and Slavery</h1>
+
+    <!-- Chart.js Container -->
+    <div class="chart-container">
+        <canvas id="traffickingChart" width="400" height="400"></canvas>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+    <!-- Include Chart.js only on the statistics page -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        // Set up the data for the doughnut chart
+          const data = {
+            labels: [
+              'Trafficking for Sexual Exploitation',
+              'Trafficking for Labour Exploitation',
+              'Trafficking for Criminal Activities',
+              'Other types of Trafficking'
+            ],
+            datasets: [{
+              data: [55, 38, 6, 1],
+              backgroundColor: ['#ff6384', '#36a2eb', '#ffcd56', '#4bc0c0'],
+              hoverOffset: 4
+            }]
+          };
+
+          // Set up the chart options
+          const options = {
+            responsive: true,
+            plugins: {
+              legend: {
+                position: 'top',
+              },
+              tooltip: {
+                callbacks: {
+                  label: function (tooltipItem) {
+                    return tooltipItem.label + ': ' + tooltipItem.raw + '%';
+                  }
+                }
+              }
+            }
+          };
+
+          // Get the canvas element and create the doughnut chart
+          const ctx = document.getElementById('traffickingChart').getContext('2d');
+          const traffickingChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: data,
+            options: options
+          });
+    </script>
+{% endblock %}
