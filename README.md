@@ -114,7 +114,10 @@ The color palette was created through comparisons of similar websites of this na
 ## Credits
 
 - [Coolers](https://coolors.co/) for color generator used for pallette for the site.
+- [IHREC](https://www.ihrec.ie/app/uploads/2023/09/Trafficking-in-Human-Beings-in-Ireland-Digest_FA_web-Final.pdf) for slavery and human trafficking in Ireland
+- [](https://www.blueblindfold.ie/wp-content/uploads/2023/08/Human-Trafficking-Annual-Report-2022.pdf)
 
 Team:
 - Heath Croasdale - https://github.com/heath1979
+- Viola Bergere - https://github.com/violaberg
 
