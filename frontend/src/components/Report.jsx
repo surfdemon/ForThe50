@@ -4,6 +4,7 @@ import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import Datetime from "react-datetime";
 import "react-datetime/css/react-datetime.css";
 import styles from "../styles/Report.module.css";
+import ChainImg from "../assets/images/chain.svg";
 
 function Report() {
   const [formData, setFormData] = useState({
@@ -45,7 +46,15 @@ function Report() {
 
   return (
     <div className="main-content d-flex justify-content-center align-items-center">
+      <img
+        src={ChainImg}
+        alt="Map Background"
+        className={`${styles.chainImage}`}
+      />
       <Container>
+        <h1 className={`${styles.pageHeader} text-center mt-5`}>
+          Be the Voice for the Voiceless.
+        </h1>
         <Row className="justify-content-center">
           <Col xs={12} md={8} lg={8}>
             <div
@@ -191,7 +200,11 @@ function Report() {
                   </Form.Control>
                 </Form.Group>
 
-                <Button type="submit" className="w-100 mt-4" variant="primary">
+                <Button
+                  type="submit"
+                  className={`${styles.submitBtn} w-100 mt-4`}
+                  variant="primary"
+                >
                   Submit Report
                 </Button>
               </Form>
