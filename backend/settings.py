@@ -12,17 +12,17 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
-
 from dotenv import load_dotenv
 
+load_dotenv()  # Load environment variables from .env file
 
-load_dotenv() # Load environment variables from .env file
-
-EMAIL_HOST= "smtp.gmail.com"
-EMAIL_PORT=587
-EMAIL_USE_TLS=True
-EMAIL_HOST_USER=os.getenv("EMAIL_HOST_USER")
-EMAIL_HOST_PASSWORD=os.getenv("EMAIL_HOST_PASSWORD")
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+TEST_EMAIL = os.getenv("TEST_EMAIL") # <--- test email
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -37,7 +37,12 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-surfdemon-forthe50-kxfi8ykrews.ws-eu117.gitpod.io','8000-surfdemon-forthe50-vn95ucw290v.ws-eu117.gitpod.io',]
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+    "8000-surfdemon-forthe50-kxfi8ykrews.ws-eu117.gitpod.io",
+    "8000-surfdemon-forthe50-vn95ucw290v.ws-eu117.gitpod.io",
+]
 
 
 # Application definition
@@ -130,11 +135,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = "/static/"
 STATICFILES_DIRS = [
-    BASE_DIR / "backend" / "static",   
+    BASE_DIR / "backend" / "static",
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 
 # Default primary key field type
