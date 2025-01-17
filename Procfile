@@ -1,1 +1,1 @@
-web: gunicorn forthe50.wsgi
+web: gunicorn backend.wsgi
