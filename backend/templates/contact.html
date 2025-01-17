@@ -1,0 +1,129 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div id="root">
+        <div class="container py-5">
+            <!-- Emergency Contact Section -->
+            <div class="alert alert-danger mb-4">
+                <div class="d-flex align-items-center mb-3">
+                    <i class="fas fa-exclamation-circle fs-4 me-2"></i>
+                    <h2 class="fs-3 mb-0">Need Immediate Help?</h2>
+                </div>
+                <div>
+                    <p class="fs-5 mb-3">National Human Trafficking Hotline:</p>
+                    <div class="d-flex gap-3 justify-content-around">
+                        <button class="btn btn-danger">
+                            <i class="fas fa-phone me-2"></i>
+                            1-888-373-7888
+                        </button>
+                        <button class="btn btn-outline-danger">
+                            Text "HELP" to 233733
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Report and Support Services -->
+            <div class="row gy-4 mb-5">
+                <!-- Report Section -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h3 class="card-title mb-0">Report a Tip</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>To report suspected human trafficking to federal law enforcement:</p>
+                            <div class="d-flex justify-content-around">
+                                <button class="btn btn-primary">
+                                    <i class="fas fa-phone me-2"></i>
+                                    1-866-347-2423
+                                </button>
+                                <button class="btn btn-outline-primary">
+                                    Submit Tip Online
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Support Services -->
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h3 class="card-title mb-0">Support Services</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Connect with victim service providers in your area:</p>
+                            <div class="d-flex justify-content-around">
+                                <button class="btn btn-primary">
+                                    Find Local Resources
+                                </button>
+                                <button class="btn btn-outline-primary">
+                                    Request Victim Assistance
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Additional Contact Information -->
+            <div class="row gy-4">
+                <!-- General Inquiries -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h3 class="card-title mb-0">General Inquiries</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope me-2"></i>
+                                <a href="mailto:info@forthe50.org" class="text-decoration-none">
+                                    info@forthe50.org
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Media Contact -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h3 class="card-title mb-0">Media Contact</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope me-2"></i>
+                                <a href="mailto:media@forthe50.org" class="text-decoration-none">
+                                    media@forthe50.org
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Office Hours -->
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            <h3 class="card-title mb-0">Office Hours</h3>
+                        </div>
+                        <div class="card-body">
+                            <p class="mb-1">24/7 Hotline Support</p>
+                            <p class="mb-0">Administrative: Mon-Fri 9am-5pm EST</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Confidentiality Notice -->
+            <div class="text-center text-muted mt-5">
+                <p class="mb-1">All contact information is kept strictly confidential.</p>
+                <p class="mb-0">If you are in immediate danger, please call 999.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
