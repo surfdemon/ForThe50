@@ -27,6 +27,5 @@ handler500 = error_500
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/report/", include("report.urls")),
     path('', include('forthe50.urls')),
 ]
