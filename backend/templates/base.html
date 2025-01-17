@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-lg navbar-light p-3">
             <div class="container-fluid">
                 <!-- Site Title -->
-                <a class="navbar-brand logo-text" href="#">
+                <a class="navbar-brand logo-text" href="{% url 'index' %}">
                     <img src="{% static 'assets/forthe50-logo.png' %}" alt="Logo" class="me-3 pb-1" style="height: 30px;">ForThe50</a>
         
                 <!-- Navbar Toggler for Mobile View -->
@@ -59,7 +59,7 @@
 
     {% block footer %}
     <footer class="footer">
-        <p>&copy; <span id="current-year"></span> SITE TITLE. All rights reserved.</p>
+        <p>&copy; <span id="current-year"></span> ForThe50. All rights reserved.</p>
     </footer>
     {% endblock %}
 
