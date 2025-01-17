@@ -37,7 +37,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*.gitpod.io', 'localhost', "127.0.0.1", '.herokuapp.com', '8000-surfdemon-forthe50-s2elg5cy7za.ws-eu117.gitpod.io']
+ALLOWED_HOSTS = ['*.gitpod.io', 'localhost', "127.0.0.1", '.herokuapp.com', '8000-surfdemon-forthe50-r4qsrykt3fy.ws-eu117.gitpod.io']
 
 
 
