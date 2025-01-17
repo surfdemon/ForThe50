@@ -1,13 +1,6 @@
 from django.shortcuts import render
 
 
-
-def contact(request):
-    return render(request, 'contact.html')
-
-
-
-
 def contact(request):
     return render(request, 'contact.html')
 
@@ -18,7 +11,6 @@ def index(request):
 
 def team(request):
     return render(request, 'team.html')
-
 
 
 def statistics(request):
