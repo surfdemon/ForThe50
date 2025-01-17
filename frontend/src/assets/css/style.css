@@ -54,4 +54,18 @@ header {
     max-height: 200px; 
     object-fit: contain; 
   }
+  table {
+    margin-top: 20px; /* Adds space between the table and the content above it */
+    margin-bottom: 20px; /* Optional: Adds spacing below the table */
+    border-collapse: collapse; /* Ensures clean borders */
+    width: 100%; /* Makes the table take up the full width of its container */
+  }
+  
+  .featurette-image {
+    margin-bottom: 20px; /* Adds space below the image */
+  }
+  
+  .cards p {
+    margin-bottom: 10px; /* Adds spacing between the paragraph and elements below */
+  }
   
