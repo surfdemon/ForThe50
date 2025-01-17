@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     "rest_framework",
     # Custom apps
     "report",
+    "forthe50",
 ]
 
 MIDDLEWARE = [
@@ -71,7 +72,9 @@ ROOT_URLCONF = "backend.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "backend" / "templates"],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
