@@ -22,7 +22,7 @@ AUTHORITY_CHOICES = [
 ]
 
 
-class ReportSerializer(serializers.ModelSerializer):
+class ReportSerializer(serializers.Serializer):
     # optional fields
     name = serializers.CharField(required=False, allow_blank=True)
     email = serializers.EmailField(required=False, allow_blank=True)

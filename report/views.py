@@ -11,12 +11,12 @@ AUTHORITIES = {
     "United Kingdom": {
         "Modern Slavery & Exploitation Helpline": "info@modernslaveryhelpline.org",
         "Crimestoppers": "contactus@crimestoppers-uk.org",
-        "Testing Authority": "",  # <--- add a test email
+        "Testing Authority": settings.TEST_EMAIL,  # <--- test email
     },
     "Ireland": {
         "An Garda Síochána (HTICU)": "blueblindfold@garda.ie",
         "Department of Justice and Equality (AHTU)": "ahtu_inbox@justice.ie",
-        "Testing Authority": "",  # <--- add a test email
+        "Testing Authority": settings.TEST_EMAIL,  # <--- test email
     },
 }
 
