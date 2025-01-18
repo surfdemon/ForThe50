@@ -5,131 +5,139 @@
 
 {% block content %}
 <div class="container my-3">
-  <h1 class="text-center pt-3">Statistics on Human Trafficking and Slavery</h1>
+  <h1 class="text-center">Statistics on Human Trafficking and Slavery</h1>
+  <div class="text-center my-3">
+    <button class="btn primary-btn text-uppercase shadow mx-2" id="irelandButton">Show Ireland Data</button>
+    <button class="btn primary-btn text-uppercase shadow mx-2" id="ukButton">Show UK Data</button>
+  </div>
+  <div id="irelandData" class="country-data">
   <h2 class="text-center pt-2">Data of Ireland</h2>
-  <div class="row">
-    <div class="col">
-      <p>The data presented in this report is drawn from the IHREC National Rapporteur on Human Trafficking's 2022
-        Evaluation
-        Report. This independent evaluation highlights progress made by the Irish State in combating human trafficking,
-        identifies
-        gaps, and analyzes emerging trends such as technology-facilitated trafficking, increasing labor exploitation,
-        and the
-        impact of the war in Ukraine. The report reflects a holistic, human rights-oriented approach and incorporates
-        survivor
-        input. It also examines significant developments in Ireland, including the new anti-trafficking National Action
-        Plan and
-        the establishment of a victim-centered National Referral Mechanism. This work is made possible through
-        collaboration
-        with State agencies, survivor activists, and support organizations, with the aim of driving meaningful change to
-        prevent
-        trafficking, prosecute perpetrators, and protect survivors.</p>
+    <div class="row">
+      <div class="col">
+        <p>The data presented in this report is drawn from the IHREC National Rapporteur on Human Trafficking's 2022
+          Evaluation
+          Report. This independent evaluation highlights progress made by the Irish State in combating human trafficking,
+          identifies
+          gaps, and analyzes emerging trends such as technology-facilitated trafficking, increasing labor exploitation,
+          and the
+          impact of the war in Ukraine. The report reflects a holistic, human rights-oriented approach and incorporates
+          survivor
+          input. It also examines significant developments in Ireland, including the new anti-trafficking National Action
+          Plan and
+          the establishment of a victim-centered National Referral Mechanism. This work is made possible through
+          collaboration
+          with State agencies, survivor activists, and support organizations, with the aim of driving meaningful change to
+          prevent
+          trafficking, prosecute perpetrators, and protect survivors.</p>
+      </div>
+    </div>
+
+    <!-- Row for the cards -->
+    <div class="row">
+      <!-- Card for Human Trafficking Types -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Human Trafficking Types</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="traffickingChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Victims by Gender and Age -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Victims by Gender and Age</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="genderAgeChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Total Victims Identified -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Total Victims Identified in 2022</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="totalVictimsChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Victim Age Group -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Victim Age Group</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="ageGroupChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Sexual Exploitation by Gender -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Total Victims of Sexual Exploitation by Gender 2018-2022</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="sexualExploitationGenderChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Labour Exploitation by Gender -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Total Victims of Labour Exploitation by Gender 2018-2022</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="labourExploitationGenderChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Forced Criminality Exploitation by Gender -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Total Victims of Forced Criminality Exploitation by Gender 2018-2022</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="criminalityExploitationGenderChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Other Exploitation by Gender -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Total Victims of Other Exploitation by Gender 2018-2022</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="otherExploitationGenderChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Row for the cards -->
-  <div class="row">
-    <!-- Card for Human Trafficking Types -->
-    <div class="col-12 col-md-6 col-lg-4 my-4">
-      <div class="card shadow rounded">
-        <div class="card-body text-center">
-          <h3 class="h4 card-title text-center">Human Trafficking Types</h3>
-          <div class="chart-container">
-            <canvas class="mx-auto" id="traffickingChart"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card for Victims by Gender and Age -->
-    <div class="col-12 col-md-6 col-lg-4 my-4">
-      <div class="card shadow rounded">
-        <div class="card-body text-center">
-          <h3 class="h4 card-title text-center">Victims by Gender and Age</h3>
-          <div class="chart-container">
-            <canvas class="mx-auto" id="genderAgeChart"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card for Total Victims Identified -->
-    <div class="col-12 col-md-6 col-lg-4 my-4">
-      <div class="card shadow rounded">
-        <div class="card-body text-center">
-          <h3 class="h4 card-title text-center">Total Victims Identified in 2022</h3>
-          <div class="chart-container">
-            <canvas class="mx-auto" id="totalVictimsChart"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card for Victim Age Group -->
-    <div class="col-12 col-md-6 col-lg-4 my-4">
-      <div class="card shadow rounded">
-        <div class="card-body text-center">
-          <h3 class="h4 card-title text-center">Victim Age Group</h3>
-          <div class="chart-container">
-            <canvas class="mx-auto" id="ageGroupChart"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card for Sexual Exploitation by Gender -->
-    <div class="col-12 col-md-6 col-lg-4 my-4">
-      <div class="card shadow rounded">
-        <div class="card-body text-center">
-          <h3 class="h4 card-title text-center">Total Victims of Sexual Exploitation by Gender 2018-2022</h3>
-          <div class="chart-container">
-            <canvas class="mx-auto" id="sexualExploitationGenderChart"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card for Labour Exploitation by Gender -->
-    <div class="col-12 col-md-6 col-lg-4 my-4">
-      <div class="card shadow rounded">
-        <div class="card-body text-center">
-          <h3 class="h4 card-title text-center">Total Victims of Labour Exploitation by Gender 2018-2022</h3>
-          <div class="chart-container">
-            <canvas class="mx-auto" id="labourExploitationGenderChart"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card for Forced Criminality Exploitation by Gender -->
-    <div class="col-12 col-md-6 col-lg-4 my-4">
-      <div class="card shadow rounded">
-        <div class="card-body text-center">
-          <h3 class="h4 card-title text-center">Total Victims of Forced Criminality Exploitation by Gender 2018-2022</h3>
-          <div class="chart-container">
-            <canvas class="mx-auto" id="criminalityExploitationGenderChart"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card for Other Exploitation by Gender -->
-    <div class="col-12 col-md-6 col-lg-4 my-4">
-      <div class="card shadow rounded">
-        <div class="card-body text-center">
-          <h3 class="h4 card-title text-center">Total Victims of Other Exploitation by Gender 2018-2022</h3>
-          <div class="chart-container">
-            <canvas class="mx-auto" id="otherExploitationGenderChart"></canvas>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
+  <div id="ukData" class="country-data d-none">
   <h2 class="text-center pt-2">Data of United Kingdom</h2>
-  <div class="row">
-    <div class="col">
-      <p></p>
+    <div class="row">
+      <div class="col">
+        <p></p>
+      </div>
     </div>
   </div>
 </div>
@@ -149,7 +157,7 @@
     ],
     datasets: [{
       data: [24, 15, 2, 1],
-      backgroundColor: ['#c4c8cb', '#f1aeb5', '#f8d7da', '#58151c'],
+      backgroundColor: ['#b1181d', '#5e6572', '#cacaca', '#ffeb3b'],
       hoverOffset: 4
     }]
   };
@@ -159,7 +167,7 @@
     labels: ['Male', 'Boys', 'Female', 'Girls'],
     datasets: [{
       data: [161, 9, 312, 30],
-      backgroundColor: ['#8fb4c6', '#c3e2f0', '#f6c5c9', '#f4a1ab'],
+      backgroundColor: ['#cacaca', '#ffeb3b', '#7c808d', '#b1181d'],
       hoverOffset: 4
     }]
   };
@@ -174,7 +182,7 @@
     ],
     datasets: [{
       data: [24, 15, 2, 1],
-      backgroundColor: ['#c4c8cb', '#f1aeb5', '#f8d7da', '#58151c'],
+      backgroundColor: ['#b1181d', '#5e6572', '#cacaca', '#000000'],
       hoverOffset: 4
     }]
   };
@@ -184,7 +192,7 @@
     labels: ['Adult', 'Minor'],
     datasets: [{
       data: [37, 5],
-      backgroundColor: ['#f8d7da', '#58151c'],
+      backgroundColor: ['#5e6572', '#ffeb3b'],
       hoverOffset: 4
     }]
   };
@@ -194,7 +202,7 @@
     labels: ['Female', 'Male'],
     datasets: [{
       data: [130, 6],
-      backgroundColor: ['#f1aeb5', '#c4c8cb'],
+      backgroundColor: ['#7c808d', '#cacaca'],
       hoverOffset: 4
     }]
   };
@@ -204,7 +212,7 @@
     labels: ['Female', 'Male'],
     datasets: [{
       data: [24, 58],
-      backgroundColor: ['#f1aeb5', '#c4c8cb'],
+      backgroundColor: ['#7c808d', '#cacaca'],
       hoverOffset: 4
     }]
   };
@@ -214,7 +222,7 @@
     labels: ['Female', 'Male'],
     datasets: [{
       data: [1, 5],
-      backgroundColor: ['#f1aeb5', '#c4c8cb'],
+      backgroundColor: ['#7c808d', '#cacaca'],
       hoverOffset: 4
     }]
   };
@@ -224,7 +232,7 @@
     labels: ['Female', 'Male'],
     datasets: [{
       data: [4, 2],
-      backgroundColor: ['#f1aeb5', '#c4c8cb'],
+      backgroundColor: ['#7c808d', '#cacaca'],
       hoverOffset: 4
     }]
   };
@@ -271,4 +279,5 @@
   const ctx8 = document.getElementById('otherExploitationGenderChart').getContext('2d');
   new Chart(ctx8, { type: 'doughnut', data: otherExploitationGenderData, options: chartOptions });
 </script>
+<script src="{% static 'js/script.js' %}"></script>
 {% endblock %}

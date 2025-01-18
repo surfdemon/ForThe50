@@ -35,6 +35,9 @@ def team(request):
 def statistics(request):
     return render(request, "forthe50/statistics.html")
 
+def knowledge(request):
+    return render(request, 'forthe50/knowledge.html')
+
 
 # Report view
 class ReportView(View):
