@@ -252,27 +252,11 @@ body.report-page .footer {
 }
 
 /* ------------------ Home Page Styles ------------------ */
-.background-image1 {
-  background-image: url('/static/assets/Industrial-fence.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+ 
 
-.background-image2 {
-  background-image: url('/static/assets/Every-human-has-rights.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+ 
 
-.semi-opaque-grey {
-  background-color: rgba(128, 128, 128, 0.8);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
+ 
 /* ---- MEDIA QUERIES ---- */
 
 @media (max-width: 923px) {
@@ -288,4 +272,47 @@ body.report-page .footer {
   .form-container {
     padding: 30px;
   }
+}
+
+/* ------------------ Home Page Styles ------------------ */
+.background-image1 {
+  background-image: url('/static/assets/Industrial-fence.jpg');
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.background-image2 {
+  background-image: url('/static/assets/Every-human-has-rights.jpg');
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.semi-opaque-grey {
+  background-color: rgba(128, 128, 128, 0.8); /* Less transparent grey */
+  border-radius: 10px; /* Rounded edges */
+  padding: 20px; /* Add spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+  
+}
+
+
+.sub-titel{
+background-color: var(--black);
+color: var(--red);
+}
+
+.card1 {
+  background-color:#6C757D80;
+  border: 2px solid;
+  border-color: #da2128;
+
+}
+
+.back1 {
+  background-color: #f8f9fa;
 }
