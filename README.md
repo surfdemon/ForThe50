@@ -15,6 +15,7 @@ View the project board: [Github projects](https://github.com/users/surfdemon/pro
 In this section, we will briefly discuss how our team addressed the applicable criteria:  
 - **The project fits the theme of raising awareness of Modern Slavery and Human Trafficking.**
 
+The "For the 50" is a perfect fit for the Code to Protect theme. It includes features such as information on the impact of Modern Slvaery and Human Trafficking, charts giving a visual on the statistics, and contact and resource information. The added functioanlity to change the language of the site grants further accisbility to those who may need it the most.
 
 - **The project is well planned and executed (Using GitHub Projects).**
 
@@ -32,11 +33,20 @@ The README adheres to the template provided and is clear, concise, and informati
 
 The project feels complete, with every feature contributing to the user experience:
 
+- The home page sets out the impact Modern Slavery and Human Trafficking has on society and those affected.
+- The statistics page shows the extent of the problem and how increase awareness is having a positive impact.
+- The contact page provides and outlet for the user and links to further resources.
+- The website is available in multiple languages making it accessible to those who are potentially most affected.
+
 ---
 
 ## **About the Submission**  
 
 ### **Intro**   
+
+Welcome to "For the 50". It is estimated that there are 50 million men, women, and children trapped in modern slavery around the world today. That equates to 1 in 150 people. Awareness is increasing on the subject but more still needs to be done to help the afflicted, and our goal is to showcase the issues surrounding modern slavery, and provide a voice for the 50 million people. 
+
+How can we help? Raising awareness is a positive start but there is so much more. Giving people the necessary tools to identify instances of modern slavery, providing resources and relevant contact details are a minimum that is required. Our mission is to provide a platform for people to stand up against this vile and abhorrent act.
 
 ---
 
@@ -122,7 +132,7 @@ The wireframes for For the 50 were made using Balsamiq.
 ## **Tech Stack**  
 - Frontend: HTML, CSS, JavaScript
 - Backend: Python
-- Frameworks: Django, React
+- Frameworks: Django
 - Version Control: Git & GitHub  
 - Deployment: Heroku
 - Bootstrap CDN - linked as per [Bootstrap docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
