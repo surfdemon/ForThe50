@@ -1,5 +1,5 @@
 from django.urls import path
-from . views import contact, index, team, statistics
+from . views import contact, index, team, statistics, report
 
 
 urlpatterns = [
@@ -7,4 +7,5 @@ urlpatterns = [
     path('contact/', contact, name='contact'),
     path('meet-team/', team, name='meet_team'),
     path('statistics/', statistics, name='statistics'),
+    path('report/', report, name='report'),
 ]

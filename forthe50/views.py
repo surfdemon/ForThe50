@@ -2,16 +2,20 @@ from django.shortcuts import render
 
 
 def contact(request):
-    return render(request, 'forthe50/contact.html')
+    return render(request, "forthe50/contact.html")
 
 
 def index(request):
-    return render(request, 'forthe50/index.html')
+    return render(request, "forthe50/index.html")
 
 
 def team(request):
-    return render(request, 'forthe50/team.html')
+    return render(request, "forthe50/team.html")
 
 
 def statistics(request):
-    return render(request, 'forthe50/statistics.html')
+    return render(request, "forthe50/statistics.html")
+
+
+def report(request):
+    return render(request, "forthe50/report.html")
