@@ -70,20 +70,25 @@ html, body {
 /* Buttons */
 .danger-btn {
     background-color: var(--red);
+    border: none;
     color: var(--white);
     letter-spacing: 0.05rem;
 }
 
 .danger-btn:hover {
     background-color: var(--dark-red);
+    border: none;
 }
 
 .primary-btn {
     background-color: var(--black);
+    border: none;
     color: var(--red);
     letter-spacing: 0.05rem;
 }
 
 .primary-btn:hover {
     background-color: var(--dark-red);
+    border: none;
+    color: var(--white);
 }
