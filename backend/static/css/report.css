@@ -6,15 +6,6 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Header */
-h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #333333;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
 /* Form input */
 #reportForm .form-control {
   font-size: 1.2rem;
