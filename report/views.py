@@ -21,7 +21,7 @@ AUTHORITIES = {
 
 class ReportView(View):
     def get(self, request):
-        return render(request, "report.html")
+        return render(request, "report/report.html")
 
     def post(self, request):
         data = request.POST.dict()
