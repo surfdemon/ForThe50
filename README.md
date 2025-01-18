@@ -2,6 +2,29 @@
 
 ![for the 50 responsive landing page image]()
 
+## Table of Contents
+
+- [For the 50](#for-the-50)
+  - [Submission details](#code-to-protect-submission-details)
+    - [Deployment](#deployment)
+    - [Criteria](#criteria)
+  - [About the submission](#about-the-submission) 
+    - [Introduction](#introduction)
+    - [Goal](#goal)
+  - [Pages](#pages) 
+    - [Home page](#home-page)
+    - [About page](#about-page)
+    - [Contact page](#contact-page)
+    - [Staistics page](#statistics-page)
+  - [UX - User Experience](#ux---user-experience)    
+    - [Colour](#colour)
+    - [Wireframes](#wireframes)
+  - [Tech Stack](#tech-stack)
+  - [Future Developments](#future-development)
+  - [Credits](#credits)
+  - [Meet the team](#meet-the-team)
+  - [Acknowledgements](#acknowledgements)
+ 
 ## **Code to Protect: Submission Details**  
 
 ### **Deployment**   
@@ -15,10 +38,11 @@ View the project board: [Github projects](https://github.com/users/surfdemon/pro
 In this section, we will briefly discuss how our team addressed the applicable criteria:  
 - **The project fits the theme of raising awareness of Modern Slavery and Human Trafficking.**
 
+The "For the 50" is a perfect fit for the Code to Protect theme. It includes features such as information on the impact of Modern Slvaery and Human Trafficking, charts giving a visual on the statistics, and contact and resource information. The added functioanlity to change the language of the site grants further accisbility to those who may need it the most.
 
 - **The project is well planned and executed (Using GitHub Projects).**
 
-The team demonstrated strong organizational skills by utilizing GitHub Projects for task management, as well as Slack for instant replies, decision making and help when needed. A Kanban-style board was used to track progress, assign responsibilities, and ensure deadlines were met. This structured approach facilitated collaboration, ensured transparency, and allowed the team to deliver the project efficiently.
+The team demonstrated strong organizational skills by utilizing [Github Projects](https://github.com/users/surfdemon/projects/13) for task management, as well as Slack for instant replies, decision making and help when needed. A Kanban-style board was used to track progress, assign responsibilities, and ensure deadlines were met. This structured approach facilitated collaboration, ensured transparency, and allowed the team to deliver the project efficiently.
 
 - **The project has a basic README that follows the provided template.**
 
@@ -32,11 +56,20 @@ The README adheres to the template provided and is clear, concise, and informati
 
 The project feels complete, with every feature contributing to the user experience:
 
+- The home page sets out the impact Modern Slavery and Human Trafficking has on society and those affected.
+- The statistics page shows the extent of the problem and how increase awareness is having a positive impact.
+- The contact page provides and outlet for the user and links to further resources.
+- The website is available in multiple languages making it accessible to those who are potentially most affected.
+
 ---
 
 ## **About the Submission**  
 
-### **Intro**   
+### **Introduction**   
+
+Welcome to "For the 50". It is estimated that there are 50 million men, women, and children trapped in modern slavery around the world today. That equates to 1 in 150 people. Awareness is increasing on the subject but more still needs to be done to help the afflicted, and our goal is to showcase the issues surrounding modern slavery, and provide a voice for the 50 million people. 
+
+How can we help? Raising awareness is a positive start but there is so much more. Giving people the necessary tools to identify instances of modern slavery, providing resources and relevant contact details are a minimum that is required. Our mission is to provide a platform for people to stand up against this vile and abhorrent act.
 
 ---
 
@@ -45,7 +78,7 @@ The **Goal** section provides a concise summary of the main objective or purpose
 
 -**Problem Statement:**
 
-January is Modern Slavery and Human Trafficking awareness month. It is estimated that in the region of 50 miliion men, women, and children are affected by this globally. Further Awareess needs to be raised not just of the problem itself, but what can be done to help, how to spot instances, and who to report suspected instances too. Sufferers and survivors also need to be aware of points of contact and aid available.
+January is Modern Slavery and Human Trafficking awareness month. It is estimated that in the region of 50 million men, women, and children are affected by this globally. Further Awareness needs to be raised not just of the problem itself, but what can be done to help, how to spot instances, and who to report suspected instances too. Sufferers and survivors also need to be aware of points of contact and aid available.
 
 -**Objective(s):**
 
@@ -87,6 +120,8 @@ Users who want to report suspected cases.
 
 ---
 
+## UX - User Experience
+
 #### Colour
 
 ![recipes page screen capture](docs/documentation/colour_pallette.png)
@@ -122,7 +157,7 @@ The wireframes for For the 50 were made using Balsamiq.
 ## **Tech Stack**  
 - Frontend: HTML, CSS, JavaScript
 - Backend: Python
-- Frameworks: Django, React
+- Frameworks: Django
 - Version Control: Git & GitHub  
 - Deployment: Heroku
 - Bootstrap CDN - linked as per [Bootstrap docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
@@ -133,6 +168,11 @@ The wireframes for For the 50 were made using Balsamiq.
 
 ## Future Development
 
+- Given that much of the work around raising awareness and supporting those affected is done by Charitable organisations a 'Donate' function could be added. This could also bring about some user satisfaction as they feel that they are contributing in the battle against Modern Slavery
+- A sign up facility for users ro register in order to recieve email updates and newsletters regarding the fight against Modern Slavery.
+- Real time statistic reporting showing the most relavent changes based on area and type.
+- Events page showing when fund raising events may be taking place and how users can get involved.
+- Survivor stories showcase. The work that these organisations do should not go unrecognised and we need to offer hope that reporting these incidenets does work and the survivors are given the aid neeeded to have a life after coming out of Modern Slavery.
 
 ---
 
@@ -146,7 +186,7 @@ The wireframes for For the 50 were made using Balsamiq.
 - [Hope for Justice](https://hopeforjustice.org/) for the basis of the 'For the 50' concept.
 - [gov.uk](https://www.gov.uk/government/statistics/modern-slavery-national-referral-mechanism-and-duty-to-notify-statistics-uk-end-of-year-summary-2022/modern-slavery-national-referral-mechanism-and-duty-to-notify-statistics-uk-end-of-year-summary-2022) for statistics based on reporting of Modern Slavery and Human Trafficking within the UK.
 
-Team:
+## Meet the Team
 
 | Member | Github profile | 
 | ---- | ---- |
