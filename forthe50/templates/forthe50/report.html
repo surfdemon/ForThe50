@@ -1,22 +1,17 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %} {% load static %} {% block styles %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+{% endblock %} {% block title %}Report a Crime{% endblock %} 
 
-{% load static %} 
+{% block body_class %}report-page{% endblock %}
 
-{% block styles %}
-<link rel="stylesheet" href="{% static 'css/report.css' %}" />
-{% endblock %} 
-
-{% block title %}Report a Crime{% endblock %}
 {% block content %}
-<div class="container my-5">
-  <h1 class="text-center mt-5">Be the Voice for the Voiceless</h1>
+
+<div class="container my-5" id="reportContent">
+  <h1 class="text-center mt-5 page-header">Be the Voice for the Voiceless</h1>
   <div class="row justify-content-center">
     <div class="col-12 col-md-10 col-lg-8">
       <div class="form-container p-4 mt-4 mb-4">
-        <form
-          method="POST"
-          id="reportForm"
-        >
+        <form method="POST" id="reportForm">
           {% csrf_token %}
           <div class="mb-3">
             <label for="name" class="form-label">Name (optional)</label>
@@ -106,4 +101,48 @@
     </div>
   </div>
 </div>
+
+<!-- Success Message -->
+<div class="container my-5 text-center d-none" id="successMessage">
+  <h2 class="text-success">Report sent successfully</h2>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("reportForm");
+    const reportContent = document.getElementById("reportContent");
+    const successMessage = document.getElementById("successMessage");
+
+    if (form) {
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const csrfToken = document.querySelector(
+          "[name=csrfmiddlewaretoken]"
+        ).value;
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+              "X-CSRFToken": csrfToken,
+            },
+          });
+
+          if (response.ok) {
+            // Hide form and show success message
+            reportContent.classList.add("d-none");
+            successMessage.classList.remove("d-none");
+          } else {
+            console.error("Error submitting the report:", response.statusText);
+          }
+        } catch (error) {
+          console.error("Unexpected error:", error);
+        }
+      });
+    }
+  });
+</script>
 {% endblock %}
