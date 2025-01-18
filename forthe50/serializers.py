@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from rest_framework.fields import DateTimeField
 
 
 COUNTRY_CHOICES = [
@@ -30,7 +31,7 @@ class ReportSerializer(serializers.Serializer):
     # Required fields
     location = serializers.CharField(required=True)
     description = serializers.CharField(required=True)
-    date_and_time = serializers.CharField(required=True)
+    date_and_time = serializers.DateTimeField(required=True, format="%Y-%m-%dT%H:%M")
     category = serializers.CharField(required=True)
 
     country = serializers.ChoiceField(choices=COUNTRY_CHOICES, required=True)

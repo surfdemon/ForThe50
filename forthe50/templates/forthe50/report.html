@@ -1,22 +1,20 @@
-{% extends 'base.html' %} 
+{% extends 'base.html' %} {% load static %} {% block styles %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+{% endblock %} {% block title %}Report a Crime{% endblock %} 
 
-{% load static %} 
+{% block body_class %}report-page{% endblock %}
 
-{% block styles %}
-<link rel="stylesheet" href="{% static 'css/report.css' %}" />
-{% endblock %} 
-
-{% block title %}Report a Crime{% endblock %}
 {% block content %}
-<div class="container my-5">
-  <h1 class="text-center mt-5">Be the Voice for the Voiceless</h1>
+
+<div class="container-fluid position-relative" id="reportContent">
+  <!-- Background Image -->
+  <img src="{% static 'assets/chain.svg' %}" alt="Background" class="chain-img" />
+  <h1 class="text-center mt-3 page-header">Be the Voice for the Voiceless</h1>
   <div class="row justify-content-center">
     <div class="col-12 col-md-10 col-lg-8">
       <div class="form-container p-4 mt-4 mb-4">
-        <form
-          method="POST"
-          id="reportForm"
-        >
+        <form method="POST" id="reportForm">
+          <h3 class="text-center mt-2 formHeader">Report a Crime</h3>
           {% csrf_token %}
           <div class="mb-3">
             <label for="name" class="form-label">Name (optional)</label>
@@ -77,7 +75,7 @@
             </select>
           </div>
           <div class="mb-3">
-            <label for="authority" class="form-label">Authority*</label>
+            <label for="authority" class="form-label">Authority* <span id="disabled">Only Testing Authority Enabled During the Hackathon</span></label>
             <select
               class="form-select"
               id="authority"
@@ -85,20 +83,20 @@
               required
             >
               <option value="" disabled selected>- Select Authority -</option>
-              <option value="Modern Slavery & Exploitation Helpline">
+              <option value="Modern Slavery & Exploitation Helpline" disabled>
                 Modern Slavery & Exploitation Helpline
               </option>
-              <option value="Crimestoppers">Crimestoppers</option>
-              <option value="An Garda Síochána (HTICU)">
+              <option value="Crimestoppers" disabled>Crimestoppers</option>
+              <option value="An Garda Síochána (HTICU)" disabled>
                 An Garda Síochána (HTICU)
               </option>
-              <option value="Department of Justice and Equality (AHTU)">
+              <option value="Department of Justice and Equality (AHTU)" disabled>
                 Department of Justice and Equality (AHTU)
               </option>
               <option value="Testing Authority">Testing Authority</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-danger w-100">
+          <button type="submit" class="btn btn-danger w-100 mt-3">
             Submit Report
           </button>
         </form>
@@ -106,4 +104,51 @@
     </div>
   </div>
 </div>
+
+<!-- Success Message -->
+<div class="container d-flex flex-column justify-content-center align-items-center vh-100 text-center d-none" id="successMessage">
+  <i class="fas fa-check-circle text-success mb-3" style="font-size: 4rem;"></i>
+  <h2 class="text-success">Report sent successfully</h2>
+  <h4>Thank you for taking action!</h4>
+</div>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("reportForm");
+    const reportContent = document.getElementById("reportContent");
+    const successMessage = document.getElementById("successMessage");
+
+    if (form) {
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const csrfToken = document.querySelector(
+          "[name=csrfmiddlewaretoken]"
+        ).value;
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+              "X-CSRFToken": csrfToken,
+            },
+          });
+
+          if (response.ok) {
+            // Hide form and show success message
+            reportContent.classList.add("d-none");
+            successMessage.classList.remove("d-none");
+          } else {
+            console.error("Error submitting the report:", response.statusText);
+          }
+        } catch (error) {
+          console.error("Unexpected error:", error);
+        }
+      });
+    }
+  });
+</script>
 {% endblock %}

@@ -83,20 +83,156 @@ img.footer-logo.pb-1 {
 }
 
 .content {
-    padding-top: 70px; 
-    padding-bottom: 50px;  
+  padding-top: 70px;
+  padding-bottom: 50px;
 }
 
 /* Statistics */
 .card {
-    height: 500px;
-    max-width: 400px;
+  height: 500px;
+  max-width: 400px;
 }
 
-#ytWidget {
-    /*background-color: #ffeb3bbe;
-    border-top: 1px solid var(--white);*/
-    padding:5px;
+/* ------------------ Report Page Styles ------------------ */
+.form-container {
+  position: relative;
+  z-index: 2;
+  border-radius: 15px;
+  padding: 50px;
+  margin: 30px auto;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.chain-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%; 
+  height: auto; 
+  z-index: 1;
+  opacity: 0.2; 
+}
+
+#reportContent {
+  position: relative; 
+  padding-top: 70px;
+}
+
+h1.page-header {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #700000;
+  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.537);
+  margin-bottom: 50px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.formHeader {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #700000;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#reportForm .form-control {
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #cccccc;
+  margin-bottom: 20px;
+}
+
+#reportForm .form-label {
+  font-size: 0.8rem;
+  font-weight: 5  00;
+  color: #1d0202;
+  margin-bottom: 5px;
+}
+
+#reportForm button {
+  background-color: #7d0000;
+  border: none;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#reportForm button:hover {
+  background-color: #9a1a1a;
+}
+
+  h1.page-header {
+    font-size: 2.8rem;
+  }
+
+  .formHeader {
+    font-size: 2.3rem;
+  }
+
+  #reportForm .form-control {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  #reportForm button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 659px) {
+  h1.page-header {
+    font-size: 2.5rem;
+  }
+
+  .formHeader {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 591px) {
+  h1.page-header {
+    font-size: 2.2rem;
+  }
+
+  .formHeader {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 526px) {
+  h1.page-header {
+    font-size: 1.6rem;
+  }
+}
+
+
+body.report-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+body.report-page .container {
+  flex: 1;
+}
+
+body.report-page .footer {
+  margin-top: auto;
+}
+
+/* -- Authorities disabled span -- */
+#disabled {
+  font-size: 11px;
+  font-weight: bold ;
+
+    background-color: rgb(173, 119, 119);
+    padding:5px;border-top: 1px solid #c0d7f1; 
     text-align: right;
 }
 
@@ -127,3 +263,19 @@ img.footer-logo.pb-1 {
     border: none;
     color: var(--white);
 }
+
+/* ---- MEDIA QUERIES ---- */
+
+@media (max-width: 923px) {
+  h1.page-header {
+    font-size: 3rem;
+  }
+
+  .formHeader {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .form-container {
+    padding: 30px;
+  }
