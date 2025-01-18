@@ -93,13 +93,38 @@ Users who want to report suspected cases.
 
 The color palette was created through comparisons of similar websites of this nature. The focus of the website is to highlight the atrocities of Modern Slavery and Human Trafficking and the colour pallete was used to create a clean and crisp structure that allows the user to easily digest available information without providing distraction.
 
+### Wireframes
+
+The wireframes for For the 50 were made using Balsamiq. 
+
+**Mobile and Desktop views for:**
+ 
+- Home 
+- Contact
+- Statistics
+
+<details open>
+  <summary>Home Wireframe</summary>
+  <img src="docs/documentation/wireframe_home.png">
+</details>  
+
+<details open>
+  <summary>Contact Wireframe</summary>
+  <img src="docs/documentation/wireframe_contact.png">
+</details>  
+
+<details open>
+  <summary>Statistics Wireframe</summary>
+  <img src="docs/documentation/wireframe statistics.png">
+</details>
+
 ---
 ## **Tech Stack**  
 - Frontend: HTML, CSS, JavaScript
 - Backend: Python
 - Frameworks: Django, React
 - Version Control: Git & GitHub  
-- Deployment: Heoku
+- Deployment: Heroku
 - Bootstrap CDN - linked as per [Bootstrap docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [Font Awesome CDN](https://cdnjs.com/libraries/font-awesome)
 - [Google Fonts](https://fonts.google.com)
@@ -115,7 +140,7 @@ The color palette was created through comparisons of similar websites of this na
 
 - [Coolers](https://coolors.co/) for color generator used for pallette for the site.
 - [IHREC](https://www.ihrec.ie/app/uploads/2023/09/Trafficking-in-Human-Beings-in-Ireland-Digest_FA_web-Final.pdf) for slavery and human trafficking in Ireland
-- [](https://www.blueblindfold.ie/wp-content/uploads/2023/08/Human-Trafficking-Annual-Report-2022.pdf)
+- [blueblindfold](https://www.blueblindfold.ie/wp-content/uploads/2023/08/Human-Trafficking-Annual-Report-2022.pdf)
 
 Team:
 
