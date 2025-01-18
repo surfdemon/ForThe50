@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import ReportCreateView
+from .views import ReportView
 
 urlpatterns = [
-    path("create/", ReportCreateView.as_view(), name="report-create"),
+    path("", ReportView.as_view(), name="report"),
 ]
