@@ -36,7 +36,7 @@
                             <a class="nav-link me-3" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link me-3" href="#">Knowledge</a>
+                            <a class="nav-link me-3" href="{% url 'knowledge' %}">Knowledge</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link me-3" href="{% url 'statistics' %}">Statistics</a>
@@ -46,7 +46,7 @@
                         </li>
                         <li class="nav-item">
                             <!-- Report Crime Button -->
-                            <a class="btn btn-danger shadow" href="{% url 'report' %}">Report Crime</a>
+                            <a class="btn danger-btn text-uppercase shadow" href="{% url 'report' %}">Report Crime</a>
                         </li>
                     </ul>
                 </div>
