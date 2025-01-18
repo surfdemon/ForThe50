@@ -1,0 +1,148 @@
+{% extends 'base.html' %} {% load static %} {% block styles %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+{% endblock %} {% block title %}Report a Crime{% endblock %} 
+
+{% block body_class %}report-page{% endblock %}
+
+{% block content %}
+
+<div class="container my-5" id="reportContent">
+  <h1 class="text-center mt-5 page-header">Be the Voice for the Voiceless</h1>
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10 col-lg-8">
+      <div class="form-container p-4 mt-4 mb-4">
+        <form method="POST" id="reportForm">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="name" class="form-label">Name (optional)</label>
+            <input type="text" class="form-control" id="name" name="name" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email (optional)</label>
+            <input type="email" class="form-control" id="email" name="email" />
+          </div>
+          <div class="mb-3">
+            <label for="location" class="form-label">Location*</label>
+            <input
+              type="text"
+              class="form-control"
+              id="location"
+              name="location"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Description*</label>
+            <textarea
+              class="form-control"
+              id="description"
+              name="description"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="date_and_time" class="form-label">Date and Time*</label>
+            <input
+              type="datetime-local"
+              class="form-control"
+              id="date_and_time"
+              name="date_and_time"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="category" class="form-label">Category*</label>
+            <select class="form-select" id="category" name="category" required>
+              <option value="" disabled selected>- Select Category -</option>
+              <option value="Sexual Exploitation">Sexual Exploitation</option>
+              <option value="Labor Exploitation">Labor Exploitation</option>
+              <option value="Child Exploitation">Child Exploitation</option>
+              <option value="Organ Harvesting">Organ Harvesting</option>
+              <option value="Forced Begging">Forced Begging</option>
+              <option value="Forced Crime">Forced Crime</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="country" class="form-label">Country*</label>
+            <select class="form-select" id="country" name="country" required>
+              <option value="" disabled selected>- Select Country -</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Ireland">Ireland</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="authority" class="form-label">Authority*</label>
+            <select
+              class="form-select"
+              id="authority"
+              name="authority"
+              required
+            >
+              <option value="" disabled selected>- Select Authority -</option>
+              <option value="Modern Slavery & Exploitation Helpline">
+                Modern Slavery & Exploitation Helpline
+              </option>
+              <option value="Crimestoppers">Crimestoppers</option>
+              <option value="An Garda Síochána (HTICU)">
+                An Garda Síochána (HTICU)
+              </option>
+              <option value="Department of Justice and Equality (AHTU)">
+                Department of Justice and Equality (AHTU)
+              </option>
+              <option value="Testing Authority">Testing Authority</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-danger w-100">
+            Submit Report
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Success Message -->
+<div class="container my-5 text-center d-none" id="successMessage">
+  <h2 class="text-success">Report sent successfully</h2>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("reportForm");
+    const reportContent = document.getElementById("reportContent");
+    const successMessage = document.getElementById("successMessage");
+
+    if (form) {
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const csrfToken = document.querySelector(
+          "[name=csrfmiddlewaretoken]"
+        ).value;
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+              "X-CSRFToken": csrfToken,
+            },
+          });
+
+          if (response.ok) {
+            // Hide form and show success message
+            reportContent.classList.add("d-none");
+            successMessage.classList.remove("d-none");
+          } else {
+            console.error("Error submitting the report:", response.statusText);
+          }
+        } catch (error) {
+          console.error("Unexpected error:", error);
+        }
+      });
+    }
+  });
+</script>
+{% endblock %}
