@@ -1,54 +1,87 @@
 :root {
     --white: #ffffff;
+    --yellow: #ffeb3b;
     --red: #da2128;
     --dark-red: #b1181d;
     --burgundy: #1d0202;
-    --light-gray: #d6d1d1;
-    --medium-gray: #747c92;
+    --light-gray: #cacaca;
+    --medium-gray: #7c808d;
     --dark-gray: #5e6572;
     --black: #000000;
 }
 
 html, body {
+    color: var(--black);
+    font-family: "Merriweather", serif;
     height: 100%;
     margin: 0;
     padding: 0;
 }
 
-.navbar {
-    background-color: #d36464;
-    color: var(--white);
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
 }
 
-.navbar .nav-link {
-    color: var(--white);
+.navbar {
+    background-color: var(--black);
+}
+
+.navbar .nav-link,
+.footer {
+    color: var(--red);
     font-weight: bold;
+    letter-spacing: 0.05rem;
     transition: color 0.3s ease;
 }
 
 .navbar .nav-link:hover {
-  color: #d1eaff;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    color: var(--yellow);
+    transform: scale(1.1);
 }
 
 .navbar .nav-link.active {
-  color: #ffeb3b;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    color: var(--yellow);
 }
 
 .footer {
-    background-color: var(--burgundy);
-    color: var(--white);
+    background-color: var(--black);
     text-align: center;
     padding: 1rem;
     width: 100%;
     z-index: 1000;
 }
+
+.footer a {
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #c9b60d;
+    text-decoration: none;
+}
+
+img.footer-logo.pb-1 {
+    height: 20px;
+}
+
 .logo-text {
     font-size: 1.5rem;
-    color: var(--white);
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    font-weight: 600;
+    color: var(--red);
 }
+
+.logo-text:hover {
+    color: var(--red);
+    transform: scale(1.1);
+}
+
+.logo-text img {
+    height: 40px;
+}
+
 .content {
   padding-top: 70px;
   padding-bottom: 50px;
@@ -132,40 +165,22 @@ h1.page-header {
   background-color: #9a1a1a;
 }
 
-
-/* ---- MEDIA QUERIES ---- */
-
-@media (max-width: 923px) {
-  h1.page-header {
-    font-size: 3rem;
-  }
-
-  .formHeader {
-    font-size: 2.4rem;
-  }
+h1.page-header {
+  font-size: 2.8rem;
 }
-@media (max-width: 768px) {
-  .form-container {
-    padding: 30px;
-  }
 
-  h1.page-header {
-    font-size: 2.8rem;
-  }
+.formHeader {
+  font-size: 2.3rem;
+}
 
-  .formHeader {
-    font-size: 2.3rem;
-  }
+#reportForm .form-control {
+  font-size: 1rem;
+  padding: 12px;
+}
 
-  #reportForm .form-control {
-    font-size: 1rem;
-    padding: 12px;
-  }
-
-  #reportForm button {
-    font-size: 1rem;
-    padding: 12px;
-  }
+#reportForm button {
+  font-size: 1rem;
+  padding: 12px;
 }
 
 @media (max-width: 659px) {
@@ -194,7 +209,6 @@ h1.page-header {
   }
 }
 
-
 body.report-page {
   display: flex;
   flex-direction: column;
@@ -209,9 +223,15 @@ body.report-page .container {
 body.report-page .footer {
   margin-top: auto;
 }
-    background-color: rgb(173, 119, 119);
-    padding:5px;border-top: 1px solid #c0d7f1; 
-    text-align: right;
+
+/* -- Authorities disabled span -- */
+#disabled {
+  font-size: 11px;
+  font-weight: bold ;
+  background-color: rgb(173, 119, 119);
+  padding:5px;
+  border-top: 1px solid #c0d7f1; 
+  text-align: right;
 }
 
 /* Buttons */
@@ -219,12 +239,14 @@ body.report-page .footer {
     background-color: var(--red);
     border: none;
     color: var(--white);
+    font-weight: 500;
     letter-spacing: 0.05rem;
 }
 
 .danger-btn:hover {
     background-color: var(--dark-red);
     border: none;
+    color: var(--white);
 }
 
 .primary-btn {
@@ -240,9 +262,24 @@ body.report-page .footer {
     color: var(--white);
 }
 
+/* ---- MEDIA QUERIES ---- */
+
+@media (max-width: 923px) {
+  h1.page-header {
+    font-size: 3rem;
+  }
+
+  .formHeader {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .form-container {
+    padding: 30px;
+  }
+}
+
 /* ------------------ Home Page Styles ------------------ */
-
-
 .background-image1 {
   background-image: url('/static/assets/Industrial-fence.jpg');
   background-size: cover;
@@ -262,4 +299,3 @@ body.report-page .footer {
   border-radius: 10px; /* Rounded edges */
   padding: 20px; /* Add spacing */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
-}

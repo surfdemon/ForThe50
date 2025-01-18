@@ -1,4 +1,5 @@
 from django.urls import path
+from .chatbot_views import chatbot
 from .views import contact, index, team, statistics, ReportView, knowledge
 
 
@@ -9,4 +10,7 @@ urlpatterns = [
     path("statistics/", statistics, name="statistics"),
     path("report/", ReportView.as_view(), name="report"),
     path("knowledge/", knowledge, name="knowledge"),
+    path("chatbot/", chatbot, name="chatbot"),
 ]
+    
+
