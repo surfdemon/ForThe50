@@ -1,19 +1,29 @@
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+:root {
+    --white: #ffffff;
+    --red: #da2128;
+    --dark-red: #b1181d;
+    --burgundy: #1d0202;
+    --light-gray: #d6d1d1;
+    --medium-gray: #747c92;
+    --dark-gray: #5e6572;
+    --black: #000000;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar {
-  background-color: #d36464;
-  color: white;
+    background-color: #d36464;
+    color: var(--white);
 }
 
 .navbar .nav-link {
-  color: white;
-  font-weight: bold;
-  transition: color 0.3s ease;
+    color: var(--white);
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .navbar .nav-link:hover {
@@ -27,17 +37,17 @@ body {
 }
 
 .footer {
-  background-color: #1d0202;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  width: 100%;
-  z-index: 1000;
+    background-color: var(--burgundy);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    z-index: 1000;
 }
 .logo-text {
-  font-size: 1.5rem;
-  color: white;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    color: var(--white);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 .content {
   padding-top: 70px;
@@ -48,13 +58,6 @@ body {
 .card {
   height: 500px;
   max-width: 400px;
-}
-
-#ytWidget {
-  background-color: rgb(173, 119, 119);
-  padding: 5px;
-  border-top: 1px solid #c0d7f1;
-  text-align: right;
 }
 
 /* ------------------ Report Page Styles ------------------ */
@@ -134,4 +137,34 @@ body.report-page .container {
 
 body.report-page .footer {
   margin-top: auto;
+}
+    background-color: rgb(173, 119, 119);
+    padding:5px;border-top: 1px solid #c0d7f1; 
+    text-align: right;
+}
+
+/* Buttons */
+.danger-btn {
+    background-color: var(--red);
+    border: none;
+    color: var(--white);
+    letter-spacing: 0.05rem;
+}
+
+.danger-btn:hover {
+    background-color: var(--dark-red);
+    border: none;
+}
+
+.primary-btn {
+    background-color: var(--black);
+    border: none;
+    color: var(--red);
+    letter-spacing: 0.05rem;
+}
+
+.primary-btn:hover {
+    background-color: var(--dark-red);
+    border: none;
+    color: var(--white);
 }
