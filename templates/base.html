@@ -13,15 +13,11 @@
 </head>
 
 
-<!-- Chatbot Widget -->
-<div id="chatbot-widget" style="position: fixed; bottom: 20px; right: 20px; width: 300px; z-index: 1000;">
-    <button id="chatbot-toggle" style="background-color: #007BFF; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">Chat</button>
-    <div id="chatbot-container" style="display: none; background-color: white; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-top: 10px;">
-        <div id="chatbot-messages" style="height: 200px; overflow-y: auto; margin-bottom: 10px; border: 1px solid #ccc; padding: 5px;"></div>
-        <input id="chatbot-input" type="text" placeholder="Write a message..." style="width: calc(100% - 20px); padding: 5px; border: 1px solid #ccc; margin-bottom: 10px;">
-        <button id="chatbot-send" style="background-color: #007BFF; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;">Send</button>
-    </div>
-</div>
+<!-- AI Chatbot -->
+<chat-bot platform_id="ffed3142-929f-4626-b6cf-d0cf0de4e21c" user_id="59257c7e-7227-4b4c-bb18-ba659d9d7418" chatbot_id="dfaa60de-4aba-4287-96a7-9496677cdc56">
+    <a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral">chatsimple</a>
+</chat-bot>
+<script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script>
 
 <body class="{% block body_class %}{% endblock %}">
     {% block header %}
