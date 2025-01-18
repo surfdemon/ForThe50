@@ -6,12 +6,15 @@
 
 {% block content %}
 
-<div class="container my-5" id="reportContent">
-  <h1 class="text-center mt-5 page-header">Be the Voice for the Voiceless</h1>
+<div class="container-fluid position-relative" id="reportContent">
+  <!-- Background Image -->
+  <img src="{% static 'assets/chain.svg' %}" alt="Background" class="chain-img" />
+  <h1 class="text-center mt-3 page-header">Be the Voice for the Voiceless</h1>
   <div class="row justify-content-center">
     <div class="col-12 col-md-10 col-lg-8">
       <div class="form-container p-4 mt-4 mb-4">
         <form method="POST" id="reportForm">
+          <h3 class="text-center mt-2 formHeader">Report a Crime</h3>
           {% csrf_token %}
           <div class="mb-3">
             <label for="name" class="form-label">Name (optional)</label>
@@ -93,7 +96,7 @@
               <option value="Testing Authority">Testing Authority</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-danger w-100">
+          <button type="submit" class="btn btn-danger w-100 mt-3">
             Submit Report
           </button>
         </form>
@@ -103,9 +106,12 @@
 </div>
 
 <!-- Success Message -->
-<div class="container my-5 text-center d-none" id="successMessage">
+<div class="container d-flex flex-column justify-content-center align-items-center vh-100 text-center d-none" id="successMessage">
+  <i class="fas fa-check-circle text-success mb-3" style="font-size: 4rem;"></i>
   <h2 class="text-success">Report sent successfully</h2>
+  <h4>Thank you for taking action!</h4>
 </div>
+
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
