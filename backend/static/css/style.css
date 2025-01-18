@@ -220,32 +220,6 @@ body.report-page .footer {
     color: var(--white);
 }
 
-/* Chatbot */
-#chatbot-container {
-  background: var(--white);
-  border: 1px solid var(--light-gray);
-  display: none;
-}
-
-#chatbot-messages {
-  border: 1px solid var(--light-gray);
-  height: 200px;
-  overflow-y: auto;
-}
-
-#chatbot-input {
-  border: 1px solid var(--light-gray);
-  width: calc(100% - 20px);
-}
-
-#chatbot-widget {
-  bottom: 20px;
-  position: fixed;
-  right: -180px;
-  width: 300px;
-  z-index: 1000;
-}
-
 .translator-widget {
   padding: 2.2rem 0;
 }
