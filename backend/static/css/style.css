@@ -30,8 +30,12 @@ h2 {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
+h3 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
 .navbar {
-    background-color: var(--black);
+  background-color: var(--black);
 }
 
 .navbar .nav-link,
@@ -218,6 +222,21 @@ body.report-page .footer {
     background-color: var(--dark-red);
     border: none;
     color: var(--white);
+}
+
+.inactive-btn {
+  background-color: var(--black);
+  border: none;
+  color: var(--dark-red);
+  letter-spacing: 0.05rem;
+  padding: 0.6rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.inactive-btn:hover {
+  background-color: var(--dark-red);
+  border: none;
+  color: var(--white);
 }
 
 .translator-widget {
