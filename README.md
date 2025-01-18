@@ -13,7 +13,7 @@ View the project board: [Github projects](https://github.com/users/surfdemon/pro
 
 ### **Criteria**  
 In this section, we will briefly discuss how our team addressed the applicable criteria:  
-- **The project fits the theme of rasing awareness of Modern Slavery and Human Trafficking.**
+- **The project fits the theme of raising awareness of Modern Slavery and Human Trafficking.**
 
 
 - **The project is well planned and executed (Using GitHub Projects).**
@@ -93,13 +93,38 @@ Users who want to report suspected cases.
 
 The color palette was created through comparisons of similar websites of this nature. The focus of the website is to highlight the atrocities of Modern Slavery and Human Trafficking and the colour pallete was used to create a clean and crisp structure that allows the user to easily digest available information without providing distraction.
 
+### Wireframes
+
+The wireframes for For the 50 were made using Balsamiq. 
+
+**Mobile and Desktop views for:**
+ 
+- Home 
+- Contact
+- Statistics
+
+<details open>
+  <summary>Home Wireframe</summary>
+  <img src="docs/documentation/wireframe_home.png">
+</details>  
+
+<details open>
+  <summary>Contact Wireframe</summary>
+  <img src="docs/documentation/wireframe_contact.png">
+</details>  
+
+<details open>
+  <summary>Statistics Wireframe</summary>
+  <img src="docs/documentation/wireframe statistics.png">
+</details>
+
 ---
 ## **Tech Stack**  
 - Frontend: HTML, CSS, JavaScript
 - Backend: Python
 - Frameworks: Django, React
 - Version Control: Git & GitHub  
-- Deployment: Heoku
+- Deployment: Heroku
 - Bootstrap CDN - linked as per [Bootstrap docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [Font Awesome CDN](https://cdnjs.com/libraries/font-awesome)
 - [Google Fonts](https://fonts.google.com)
@@ -115,9 +140,24 @@ The color palette was created through comparisons of similar websites of this na
 
 - [Coolers](https://coolors.co/) for color generator used for pallette for the site.
 - [IHREC](https://www.ihrec.ie/app/uploads/2023/09/Trafficking-in-Human-Beings-in-Ireland-Digest_FA_web-Final.pdf) for slavery and human trafficking in Ireland
-- [](https://www.blueblindfold.ie/wp-content/uploads/2023/08/Human-Trafficking-Annual-Report-2022.pdf)
+- [blueblindfold](https://www.blueblindfold.ie/wp-content/uploads/2023/08/Human-Trafficking-Annual-Report-2022.pdf)
+- [viniciworks](https://vinciworks.com/coursedemo/?courseid=639&utm_medium=ppc&utm_source=adwords&utm_term=modern%20slavery%20compliance&utm_campaign=kd-prospecting-compliance-broadmatch_sql_bid-uk-20250114&hsa_src=g&hsa_kw=modern%20slavery%20compliance&hsa_mt=b&hsa_acc=5332379634&hsa_grp=181919108108&hsa_ad=729022104952&hsa_cam=22117054305&hsa_tgt=kwd-543899733257&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiA-aK8BhCDARIsAL_-H9mXfSCon5kcfu3ya90zCDs3BBJopcylN11ZMXzHw6Xvvs9EVj37ZNoaAlC9EALw_wcB) to research information used on this site.
+- [Anti-Slavery International](https://www.antislavery.org/) to research information used on this site.
+- [Hope for Justice](https://hopeforjustice.org/) for the basis of the 'For the 50' concept.
+- [gov.uk](https://www.gov.uk/government/statistics/modern-slavery-national-referral-mechanism-and-duty-to-notify-statistics-uk-end-of-year-summary-2022/modern-slavery-national-referral-mechanism-and-duty-to-notify-statistics-uk-end-of-year-summary-2022) for statistics based on reporting of Modern Slavery and Human Trafficking within the UK.
 
 Team:
-- Heath Croasdale - https://github.com/heath1979
-- Viola Bergere - https://github.com/violaberg
+
+| Member | Github profile | 
+| ---- | ---- |
+| Viola Bergere | [violaberg](https://github.com/violaberg) |
+| Soroush Gholamreza | [SoroushGReza](https://github.com/SoroushGReza) |
+| Chrysanthus Chiagwah | [chrysanthusobinna](https://github.com/chrysanthusobinna) |
+| Rob Beach | [surfdemon](https://github.com/surfdemon) |
+| Finnbarr Ambrose | [FinnbarrAmbrose](https://github.com/FinnbarrAmbrose) |
+| Heath Croasdale | [heath1979](https://github.com/heath1979) |
+
+## Acknowledgements
+
+- As a team we would like the take the time to acknowledge the suffering of the estimated 50 million men, women, and children caught in the trap of Modern Slavery and Human Trafficking. This abhorrent act should have no place in the world and together we stand For the 50.
 
