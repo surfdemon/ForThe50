@@ -42,7 +42,7 @@ The "For the 50" is a perfect fit for the Code to Protect theme. It includes fea
 
 - **The project is well planned and executed (Using GitHub Projects).**
 
-The team demonstrated strong organizational skills by utilizing GitHub Projects for task management, as well as Slack for instant replies, decision making and help when needed. A Kanban-style board was used to track progress, assign responsibilities, and ensure deadlines were met. This structured approach facilitated collaboration, ensured transparency, and allowed the team to deliver the project efficiently.
+The team demonstrated strong organizational skills by utilizing [Github Projects](https://github.com/users/surfdemon/projects/13) for task management, as well as Slack for instant replies, decision making and help when needed. A Kanban-style board was used to track progress, assign responsibilities, and ensure deadlines were met. This structured approach facilitated collaboration, ensured transparency, and allowed the team to deliver the project efficiently.
 
 - **The project has a basic README that follows the provided template.**
 
