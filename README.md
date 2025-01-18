@@ -78,7 +78,7 @@ The **Goal** section provides a concise summary of the main objective or purpose
 
 -**Problem Statement:**
 
-January is Modern Slavery and Human Trafficking awareness month. It is estimated that in the region of 50 miliion men, women, and children are affected by this globally. Further Awareess needs to be raised not just of the problem itself, but what can be done to help, how to spot instances, and who to report suspected instances too. Sufferers and survivors also need to be aware of points of contact and aid available.
+January is Modern Slavery and Human Trafficking awareness month. It is estimated that in the region of 50 million men, women, and children are affected by this globally. Further Awareness needs to be raised not just of the problem itself, but what can be done to help, how to spot instances, and who to report suspected instances too. Sufferers and survivors also need to be aware of points of contact and aid available.
 
 -**Objective(s):**
 
