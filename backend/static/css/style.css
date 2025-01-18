@@ -1,3 +1,9 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 .navbar {
     background-color: #d36464;
     color: white;
@@ -25,8 +31,6 @@
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     z-index: 1000;
 }
@@ -40,3 +44,14 @@
     padding-bottom: 50px;  
 }
 
+/* Statistics */
+.card {
+    height: 500px;
+    max-width: 400px;
+}
+
+#ytWidget {
+    background-color: rgb(173, 119, 119);
+    padding:5px;border-top: 1px solid #c0d7f1; 
+    text-align: right;
+} 

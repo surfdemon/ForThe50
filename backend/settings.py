@@ -37,7 +37,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*.gitpod.io', 'localhost', "127.0.0.1", '.herokuapp.com',]
+ALLOWED_HOSTS = ['*.gitpod.io', 'localhost', "127.0.0.1", '.herokuapp.com', '8000-surfdemon-forthe50-r4qsrykt3fy.ws-eu117.gitpod.io']
 
 
 
@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     "rest_framework",
     # Custom apps
     "report",
+    "forthe50",
 ]
 
 MIDDLEWARE = [
@@ -71,7 +72,9 @@ ROOT_URLCONF = "backend.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR / "backend" / "templates"],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'templates'),
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
