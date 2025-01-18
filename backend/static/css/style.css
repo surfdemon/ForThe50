@@ -239,3 +239,20 @@ body.report-page .footer {
     border: none;
     color: var(--white);
 }
+
+/* ------------------ Home Page Styles ------------------ */
+
+/* not working yet */
+.background-image {
+  background-image: url('/static/assets/Industrial-fence.jpg');
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* not working yet */
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
