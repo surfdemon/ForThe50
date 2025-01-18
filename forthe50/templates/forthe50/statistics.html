@@ -7,30 +7,30 @@
 <div class="container my-3">
   <h1 class="text-center">Statistics on Human Trafficking and Slavery</h1>
   <div class="text-center my-3">
-    <button class="btn primary-btn text-uppercase shadow mx-2" id="irelandButton">Show Ireland Data</button>
-    <button class="btn primary-btn text-uppercase shadow mx-2" id="ukButton">Show UK Data</button>
+    <button class="btn primary-btn inactive-btn text-uppercase shadow mx-2" id="irelandButton">Show Ireland Data</button>
+    <button class="btn primary-btn inactive-btn text-uppercase shadow mx-2" id="ukButton">Show UK Data</button>
   </div>
   <div id="irelandData" class="country-data">
-  <h2 class="text-center pt-2">Data of Ireland</h2>
-    <div class="row">
-      <div class="col">
-        <p>The data presented in this report is drawn from the IHREC National Rapporteur on Human Trafficking's 2022
-          Evaluation
-          Report. This independent evaluation highlights progress made by the Irish State in combating human trafficking,
-          identifies
-          gaps, and analyzes emerging trends such as technology-facilitated trafficking, increasing labor exploitation,
-          and the
-          impact of the war in Ukraine. The report reflects a holistic, human rights-oriented approach and incorporates
-          survivor
-          input. It also examines significant developments in Ireland, including the new anti-trafficking National Action
-          Plan and
-          the establishment of a victim-centered National Referral Mechanism. This work is made possible through
-          collaboration
-          with State agencies, survivor activists, and support organizations, with the aim of driving meaningful change to
-          prevent
-          trafficking, prosecute perpetrators, and protect survivors.</p>
+    <h2 class="text-center pt-2">Data of Ireland</h2>
+      <div class="row">
+        <div class="col">
+          <p>The data presented in this report is drawn from the IHREC National Rapporteur on Human Trafficking's 2022
+            Evaluation
+            Report. This independent evaluation highlights progress made by the Irish State in combating human trafficking,
+            identifies
+            gaps, and analyzes emerging trends such as technology-facilitated trafficking, increasing labor exploitation,
+            and the
+            impact of the war in Ukraine. The report reflects a holistic, human rights-oriented approach and incorporates
+            survivor
+            input. It also examines significant developments in Ireland, including the new anti-trafficking National Action
+            Plan and
+            the establishment of a victim-centered National Referral Mechanism. This work is made possible through
+            collaboration
+            with State agencies, survivor activists, and support organizations, with the aim of driving meaningful change to
+            prevent
+            trafficking, prosecute perpetrators, and protect survivors.</p>
+        </div>
       </div>
-    </div>
 
     <!-- Row for the cards -->
     <div class="row">
@@ -132,13 +132,114 @@
     </div>
   </div>
 
-  <div id="ukData" class="country-data d-none">
-  <h2 class="text-center pt-2">Data of United Kingdom</h2>
+  <div id="ukData" class="country-data">
+    <h2 class="text-center pt-2">Data of United Kingdom</h2>
     <div class="row">
       <div class="col">
         <p></p>
       </div>
     </div>
+
+    <!-- Row for the cards -->
+    <div class="row">
+      <!-- Card for Human Trafficking Types Females -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Human Trafficking Types in Females 2017</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="ukTraffickingChartFemale"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Human Trafficking Types Males -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Human Trafficking Types in Males 2017</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="ukTraffickingChartMale"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Human Trafficking Types Girls -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Human Trafficking Types in Girls 2017</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="ukTraffickingChartGirls"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Human Trafficking Types Boys -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Human Trafficking Types in Boys 2017</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="ukTraffickingChartBoys"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Human Trafficking by Country - England -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Human Trafficking by Country (England) 2018</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="ukTraffickingChartEngland"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Human Trafficking by Country - Scotland -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Human Trafficking by Country (Scotland) 2018</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="ukTraffickingChartScotland"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Human Trafficking by Country - Wales -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Human Trafficking by Country (Wales) 2018</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="ukTraffickingChartWales"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card for Human Trafficking by Country - Northern Ireland -->
+      <div class="col-12 col-md-6 col-lg-4 my-4">
+        <div class="card shadow rounded">
+          <div class="card-body text-center">
+            <h3 class="h4 card-title text-center">Human Trafficking by Country (Northern Ireland) 2018</h3>
+            <div class="chart-container">
+              <canvas class="mx-auto" id="ukTraffickingChartNorthernIreland"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </div>
 {% endblock %}
@@ -237,6 +338,111 @@
     }]
   };
 
+  // UK Data
+  // Data for Human Trafficking Types
+  const ukTraffickingDataFemale = {
+    labels: [
+      'Trafficking for Domestic Servitude',
+      'Trafficking for Labour Exploitation',
+      'Trafficking for Sexual Activities',
+      'Trafficking for Organ Harvesting',
+      'Other types of Trafficking'
+    ],
+    datasets: [{
+      data: [322, 269, 1192, 1, 60],
+      backgroundColor: ['#b1181d', '#5e6572', '#cacaca', '#ffeb3b', '#7c808d'],
+      hoverOffset: 4
+    }]
+  };
+
+  // Data for Human Trafficking Types
+  const ukTraffickingDataMale = {
+    labels: [
+      'Trafficking for Domestic Servitude',
+      'Trafficking for Labour Exploitation',
+      'Trafficking for Sexual Activities',
+      'Trafficking for Organ Harvesting',
+      'Other types of Trafficking'
+    ],
+    datasets: [{
+      data: [97, 1723, 94, 1, 93],
+      backgroundColor: ['#b1181d', '#5e6572', '#cacaca', '#ffeb3b', '#7c808d'],
+      hoverOffset: 4
+    }]
+  };
+
+  // Data for Human Trafficking Types
+    const ukTraffickingDataGirls = {
+      labels: [
+        'Trafficking for Domestic Servitude',
+        'Trafficking for Labour Exploitation',
+        'Trafficking for Sexual Activities',
+        'Trafficking for Organ Harvesting',
+        'Other types of Trafficking'
+      ],
+      datasets: [{
+        data: [43, 185, 533, 0, 123],
+        backgroundColor: ['#b1181d', '#5e6572', '#cacaca', '#ffeb3b', '#7c808d'],
+        hoverOffset: 4
+      }]
+    };
+
+    // Data for Human Trafficking Types
+      const ukTraffickingDataBoys = {
+        labels: [
+          'Trafficking for Domestic Servitude',
+          'Trafficking for Labour Exploitation',
+          'Trafficking for Sexual Activities',
+          'Trafficking for Organ Harvesting',
+          'Other types of Trafficking'
+        ],
+        datasets: [{
+          data: [53, 1802, 105, 4, 289],
+          backgroundColor: ['#b1181d', '#5e6572', '#cacaca', '#ffeb3b', '#7c808d'],
+          hoverOffset: 4
+        }]
+      };
+
+  // Data for Other Exploitation by Country
+    const ukTraffickingDataEngland = {
+      labels: ['Adult', 'Child'],
+      datasets: [{
+        data: [1837, 1736],
+        backgroundColor: ['#7c808d', '#cacaca'],
+        hoverOffset: 4
+      }]
+    };
+
+  // Data for Other Exploitation by Country
+    const ukTraffickingDataScotland = {
+      labels: ['Adult', 'Child'],
+      datasets: [{
+        data: [90, 25],
+        backgroundColor: ['#7c808d', '#cacaca'],
+        hoverOffset: 4
+      }]
+    };
+
+  // Data for Other Exploitation by Country
+    const ukTraffickingDataWales = {
+      labels: ['Adult', 'Child'],
+      datasets: [{
+        data: [70, 92],
+        backgroundColor: ['#7c808d', '#cacaca'],
+        hoverOffset: 4
+      }]
+    };
+
+  // Data for Other Exploitation by Country
+    const ukTraffickingDataNorthernIreland = {
+      labels: ['Adult', 'Child'],
+      datasets: [{
+        data: [17, 10],
+        backgroundColor: ['#7c808d', '#cacaca'],
+        hoverOffset: 4
+      }]
+    };
+
   // Options for doughnut charts
   const chartOptions = {
     responsive: true,
@@ -278,6 +484,31 @@
 
   const ctx8 = document.getElementById('otherExploitationGenderChart').getContext('2d');
   new Chart(ctx8, { type: 'doughnut', data: otherExploitationGenderData, options: chartOptions });
+
+  // UK Data
+  const ctx9 = document.getElementById('ukTraffickingChartFemale').getContext('2d');
+  new Chart(ctx9, { type: 'doughnut', data: ukTraffickingDataFemale, options: chartOptions });
+
+  const ctx10 = document.getElementById('ukTraffickingChartMale').getContext('2d');
+  new Chart(ctx10, { type: 'doughnut', data: ukTraffickingDataMale, options: chartOptions });
+
+  const ctx11 = document.getElementById('ukTraffickingChartGirls').getContext('2d');
+  new Chart(ctx11, { type: 'doughnut', data: ukTraffickingDataGirls, options: chartOptions });
+
+  const ctx12 = document.getElementById('ukTraffickingChartBoys').getContext('2d');
+  new Chart(ctx12, { type: 'doughnut', data: ukTraffickingDataBoys, options: chartOptions });
+
+  const ctx13 = document.getElementById('ukTraffickingChartEngland').getContext('2d');
+    new Chart(ctx13, { type: 'doughnut', data: ukTraffickingDataEngland, options: chartOptions });
+
+  const ctx14 = document.getElementById('ukTraffickingChartScotland').getContext('2d');
+    new Chart(ctx14, { type: 'doughnut', data: ukTraffickingDataScotland, options: chartOptions });
+
+  const ctx15 = document.getElementById('ukTraffickingChartWales').getContext('2d');
+  new Chart(ctx15, { type: 'doughnut', data: ukTraffickingDataWales, options: chartOptions });
+
+  const ctx16 = document.getElementById('ukTraffickingChartNorthernIreland').getContext('2d');
+  new Chart(ctx16, { type: 'doughnut', data: ukTraffickingDataNorthernIreland, options: chartOptions });
 </script>
 <script src="{% static 'js/script.js' %}"></script>
 {% endblock %}
