@@ -141,6 +141,10 @@ The wireframes for For the 50 were made using Balsamiq.
 - [Coolers](https://coolors.co/) for color generator used for pallette for the site.
 - [IHREC](https://www.ihrec.ie/app/uploads/2023/09/Trafficking-in-Human-Beings-in-Ireland-Digest_FA_web-Final.pdf) for slavery and human trafficking in Ireland
 - [blueblindfold](https://www.blueblindfold.ie/wp-content/uploads/2023/08/Human-Trafficking-Annual-Report-2022.pdf)
+- [viniciworks](https://vinciworks.com/coursedemo/?courseid=639&utm_medium=ppc&utm_source=adwords&utm_term=modern%20slavery%20compliance&utm_campaign=kd-prospecting-compliance-broadmatch_sql_bid-uk-20250114&hsa_src=g&hsa_kw=modern%20slavery%20compliance&hsa_mt=b&hsa_acc=5332379634&hsa_grp=181919108108&hsa_ad=729022104952&hsa_cam=22117054305&hsa_tgt=kwd-543899733257&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=Cj0KCQiA-aK8BhCDARIsAL_-H9mXfSCon5kcfu3ya90zCDs3BBJopcylN11ZMXzHw6Xvvs9EVj37ZNoaAlC9EALw_wcB) to research information used on this site.
+- [Anti-Slavery International](https://www.antislavery.org/) to research information used on this site.
+- [Hope for Justice](https://hopeforjustice.org/) for the basis of the 'For the 50' concept.
+- [gov.uk](https://www.gov.uk/government/statistics/modern-slavery-national-referral-mechanism-and-duty-to-notify-statistics-uk-end-of-year-summary-2022/modern-slavery-national-referral-mechanism-and-duty-to-notify-statistics-uk-end-of-year-summary-2022) for statistics based on reporting of Modern Slavery and Human Trafficking within the UK.
 
 Team:
 
