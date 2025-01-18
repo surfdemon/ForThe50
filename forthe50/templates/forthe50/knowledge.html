@@ -23,14 +23,14 @@
 </header>
 
 <!-- Knowledge Sections -->
-<section class="pt-4">
+<section class="pt-4 back1">
   <div class="container px-lg-5">
 
     <!-- Section: What Are Modern Slavery and Human Trafficking -->
-    <div class="row gx-5 bg-light p-4 rounded shadow-sm mb-4">
+    <div class="row gx-5 p-4 rounded shadow-sm mb-4 card1 ">
       <div class="col-lg-12">
-        <div class="px-3 py-2 rounded bg-secondary bg-opacity-50 text-white mb-3">
-          <h2 class="fw-bold text-center">What Are Modern Slavery and Human Trafficking?</h2>
+        <div class="px-3 py-2 rounded  bg-opacity-50 mb-3 sub-titel">
+          <h2 class="fw-bold">What Are Modern Slavery and Human Trafficking?</h2>
         </div>
         <p>
           Modern slavery involves individuals being exploited and unable to leave due to threats, coercion, or deception. 
@@ -50,10 +50,10 @@
     </div>
 
     <!-- Section: Recognizing the Signs -->
-    <div class="row gx-5 bg-light p-4 rounded shadow-sm mb-4">
+    <div class="row gx-5 p-4 rounded shadow-sm mb-4 card1">
       <div class="col-lg-12">
-        <div class="px-3 py-2 rounded bg-secondary bg-opacity-50 text-white mb-3">
-          <h2 class="fw-bold text-center">Recognizing the Signs of Modern Slavery</h2>
+        <div class="px-3 py-2 rounded  bg-opacity-50 sub-titel mb-3">
+          <h2 class="fw-bold">Recognizing the Signs of Modern Slavery</h2>
         </div>
         <p>Key indicators of modern slavery include:</p>
         <ul>
@@ -97,9 +97,9 @@
     </div>
 
     <!-- Section: How to Help -->
-    <div class="row gx-5 bg-light p-4 rounded shadow-sm">
+    <div class="row gx-5 p-4 rounded shadow-sm card1 mb-4">
       <div class="col-lg-12">
-        <div class="px-3 py-2 rounded bg-secondary bg-opacity-50 text-white mb-3">
+        <div class="px-3 py-2 rounded  bg-opacity-50 sub-titel mb-3">
           <h2 class="fw-bold text-center">How You Can Help</h2>
         </div>
         <div class="row">
@@ -115,7 +115,7 @@
           <div class="col-md-6">
             <h3>Donate</h3>
             <p>Support rescue missions, victim care, and advocacy programs by donating to:</p>
-            <ul>
+            <ul >
               <li><a href="https://hopeforjustice.org/donate/" target="_blank">Hope for Justice</a></li>
               <li><a href="https://www.salvationarmy.org.uk/donate" target="_blank">Salvation Army</a></li>
             </ul>
@@ -123,28 +123,30 @@
         </div>
       </div>
     </div>
-   
-    <section id="reporting">
-      <div class="row gx-5 bg-light p-4 rounded shadow-sm my-4">
-        <div class="col-lg-12">
-        <div class="px-3 py-2 rounded bg-secondary bg-opacity-50 text-white mb-3">
-        <h2 class="fw-bold text-center">How to Report Modern Slavery</h2>
+    <div class="row gx-5 p-4 rounded shadow-sm card1 mb-4">
+      <div class="col-lg-12">
+        <div class="px-3 py-2 rounded  bg-opacity-50 sub-titel mb-3">
+          <h2 class="fw-bold text-center">How to Report Modern Slavery</h2>
         </div>
-        <p>If you suspect modern slavery or human trafficking, report it through these trusted channels:</p>
-        <ul>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>If you suspect modern slavery or human trafficking, report it through these trusted channels:</h3>
+            <p>Join organizations to raise awareness, support survivors, or assist in campaigns:</p>
+            <ul>
             <li><strong>Modern Slavery Helpline:</strong> 0800 0121 700</li>
             <li><strong>Police (Emergencies):</strong> Call 999</li>
             <li><strong>Police (Non-Emergencies):</strong> Call 101</li>
             <li><strong>Crimestoppers (Anonymous):</strong> 0800 555 111</li>
         </ul>
-        <div>
+          </div>
+          <div>
             <p>Alternatively, please fill out our form</p>
             <a class="btn danger-btn text-uppercase shadow" href="{% url 'report' %}">Report Crime</a>
         </div>
         <p class="pt-3">Always prioritize your safety and avoid direct confrontation.</p>
         </div>
       </div>
-    </section>
+   </div>
   </div>
 </section>
 {% endblock content %}

@@ -42,7 +42,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     ".herokuapp.com",
-    "8000-surfdemon-forthe50-3fqcwz6bzkm.ws-eu117.gitpod.io",
+    "8080-surfdemon-forthe50-bjwxgqca8xw.ws-eu117.gitpod.io",
 ]
 
 
