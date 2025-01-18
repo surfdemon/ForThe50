@@ -55,7 +55,7 @@
                 </button>
         
                 <!-- Navbar Links -->
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == '/' %}active{% endif %} me-3" href="/">Home</a>
@@ -83,7 +83,9 @@
             </div>
         </nav>
     </header>
-    <div id="ytWidget"></div>
+    <div class="translator-widget container-fluid relative">
+        <div id="ytWidget"></div>
+    </div>
     {% endblock %}
 
     {% block content %}

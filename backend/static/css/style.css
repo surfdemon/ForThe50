@@ -22,6 +22,12 @@ h1 {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color: var(--dark-red);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .navbar {
@@ -96,11 +102,10 @@ img.footer-logo.pb-1 {
 /* ------------------ Report Page Styles ------------------ */
 .form-container {
   position: relative;
-  z-index: 2;
-  border-radius: 15px;
+  z-index: 20;
   padding: 50px;
   margin: 30px auto;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
 }
 
 .chain-img {
@@ -111,30 +116,6 @@ img.footer-logo.pb-1 {
   height: auto; 
   z-index: 1;
   opacity: 0.2; 
-}
-
-#reportContent {
-  position: relative; 
-  padding-top: 70px;
-}
-
-h1.page-header {
-  font-size: 4rem;
-  font-weight: 700;
-  color: #700000;
-  text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.537);
-  margin-bottom: 50px;
-  text-align: center;
-  position: relative;
-  z-index: 2;
-}
-
-.formHeader {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #700000;
-  margin-bottom: 30px;
-  text-align: center;
 }
 
 #reportForm .form-control {
@@ -151,34 +132,7 @@ h1.page-header {
   margin-bottom: 5px;
 }
 
-#reportForm button {
-  background-color: #7d0000;
-  border: none;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 12px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-#reportForm button:hover {
-  background-color: #9a1a1a;
-}
-
-h1.page-header {
-  font-size: 2.8rem;
-}
-
-.formHeader {
-  font-size: 2.3rem;
-}
-
 #reportForm .form-control {
-  font-size: 1rem;
-  padding: 12px;
-}
-
-#reportForm button {
   font-size: 1rem;
   padding: 12px;
 }
@@ -241,6 +195,8 @@ body.report-page .footer {
     color: var(--white);
     font-weight: 500;
     letter-spacing: 0.05rem;
+    padding: 0.6rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .danger-btn:hover {
@@ -254,12 +210,48 @@ body.report-page .footer {
     border: none;
     color: var(--red);
     letter-spacing: 0.05rem;
+    padding: 0.6rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .primary-btn:hover {
     background-color: var(--dark-red);
     border: none;
     color: var(--white);
+}
+
+.translator-widget {
+  padding: 2.2rem 0;
+}
+
+#ytWidget {
+  position: absolute;
+  right: -125px;
+  top: 90px;
+  width: 300px;
+  z-index: 1000;
+}
+
+/* ------------------ Home Page Styles ------------------ */
+.background-image1 {
+  background-image: url('/static/assets/Industrial-fence.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-image2 {
+  background-image: url('/static/assets/Every-human-has-rights.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.semi-opaque-grey {
+  background-color: rgba(128, 128, 128, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* ---- MEDIA QUERIES ---- */
@@ -278,24 +270,3 @@ body.report-page .footer {
     padding: 30px;
   }
 }
-
-/* ------------------ Home Page Styles ------------------ */
-.background-image1 {
-  background-image: url('/static/assets/Industrial-fence.jpg');
-  background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.background-image2 {
-  background-image: url('/static/assets/Every-human-has-rights.jpg');
-  background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.semi-opaque-grey {
-  background-color: rgba(128, 128, 128, 0.8); /* Less transparent grey */
-  border-radius: 10px; /* Rounded edges */
-  padding: 20px; /* Add spacing */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
