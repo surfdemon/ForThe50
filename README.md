@@ -44,6 +44,10 @@ The project feels complete, with every feature contributing to the user experien
 
 ### **Intro**   
 
+Welcome to "For the 50". It is estimated that there are 50 million men, women, and children trapped in modern slavery around the world today. That equates to 1 in 150 people. Awareness is increasing on the subject but more still needs to be done to help the afflicted, and our goal is to showcase the issues surrounding modern slavery, and provide a voice for the 50 million people. 
+
+How can we help? Raising awareness is a positive start but there is so much more. Giving people the necessary tools to identify instances of modern slavery, providing resources and relevant contact details are a minimum that is required. Our mission is to provide a platform for people to stand up against this vile and abhorrent act.
+
 ---
 
 ### **Goal**  
