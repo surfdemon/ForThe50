@@ -2,6 +2,29 @@
 
 ![for the 50 responsive landing page image]()
 
+## Table of Contents
+
+- [For the 50](#for-the-50)
+  - [Submission details](#code-to-protect-submission-details)
+    - [Deployment](#deployment)
+    - [Criteria](#criteria)
+  - [About the submission](#about-the-submission) 
+    - [Introduction](#introduction)
+    - [Goal](#goal)
+  - [Pages](#pages) 
+    - [Home page](#home-page)
+    - [About page](#about-page)
+    - [Contact page](#contact-page)
+    - [Staistics page](#statistics-page)
+  - [UX - User Experience](#ux---user-experience)    
+    - [Colour](#colour)
+    - [Wireframes](#wireframes)
+  - [Tech Stack](#tech-stack)
+  - [Future Developments](#future-development)
+  - [Credits](#credits)
+  - [Meet the team](#meet-the-team)
+  - [Acknowledgements](#acknowledgements)
+ 
 ## **Code to Protect: Submission Details**  
 
 ### **Deployment**   
@@ -42,7 +65,7 @@ The project feels complete, with every feature contributing to the user experien
 
 ## **About the Submission**  
 
-### **Intro**   
+### **Introduction**   
 
 Welcome to "For the 50". It is estimated that there are 50 million men, women, and children trapped in modern slavery around the world today. That equates to 1 in 150 people. Awareness is increasing on the subject but more still needs to be done to help the afflicted, and our goal is to showcase the issues surrounding modern slavery, and provide a voice for the 50 million people. 
 
@@ -96,6 +119,8 @@ Users who want to report suspected cases.
 ![statistics page screen capture]()
 
 ---
+
+## UX - User Experience
 
 #### Colour
 
@@ -156,7 +181,7 @@ The wireframes for For the 50 were made using Balsamiq.
 - [Hope for Justice](https://hopeforjustice.org/) for the basis of the 'For the 50' concept.
 - [gov.uk](https://www.gov.uk/government/statistics/modern-slavery-national-referral-mechanism-and-duty-to-notify-statistics-uk-end-of-year-summary-2022/modern-slavery-national-referral-mechanism-and-duty-to-notify-statistics-uk-end-of-year-summary-2022) for statistics based on reporting of Modern Slavery and Human Trafficking within the UK.
 
-Team:
+## Meet the Team
 
 | Member | Github profile | 
 | ---- | ---- |
