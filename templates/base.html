@@ -20,12 +20,12 @@
 
 
 <!-- Chatbot Widget -->
-<div id="chatbot-widget" style="position: fixed; bottom: 20px; right: 20px; width: 300px; z-index: 1000;">
-    <button id="chatbot-toggle" style="background-color: #007BFF; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;">Chat</button>
-    <div id="chatbot-container" style="display: none; background-color: white; border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-top: 10px;">
-        <div id="chatbot-messages" style="height: 200px; overflow-y: auto; margin-bottom: 10px; border: 1px solid #ccc; padding: 5px;"></div>
-        <input id="chatbot-input" type="text" placeholder="Write a message..." style="width: calc(100% - 20px); padding: 5px; border: 1px solid #ccc; margin-bottom: 10px;">
-        <button id="chatbot-send" style="background-color: #007BFF; color: white; border: none; padding: 5px 10px; border-radius: 5px; cursor: pointer;">Send</button>
+<div id="chatbot-widget">
+    <button id="chatbot-toggle" class="danger-btn btn text-uppercase shadow">Chat</button>
+    <div id="chatbot-container" class="rounded shadow p-3 mt-4">
+        <div id="chatbot-messages" class="rounded shadow-sm mb-4 p-2"></div>
+        <input id="chatbot-input" type="text" class="rounded shadow-sm mb-4 p-2" placeholder="Write a message...">
+        <button id="chatbot-send" class="primary-btn btn text-uppercase shadow">Send</button>
     </div>
 </div>
 

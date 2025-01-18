@@ -262,6 +262,54 @@ body.report-page .footer {
     color: var(--white);
 }
 
+/* Chatbot */
+#chatbot-container {
+  background: var(--white);
+  border: 1px solid var(--light-gray);
+  display: none;
+}
+
+#chatbot-messages {
+  border: 1px solid var(--light-gray);
+  height: 200px;
+  overflow-y: auto;
+}
+
+#chatbot-input {
+  border: 1px solid var(--light-gray);
+  width: calc(100% - 20px);
+}
+
+#chatbot-widget {
+  bottom: 20px;
+  position: fixed;
+  right: -180px;
+  width: 300px;
+  z-index: 1000;
+}
+
+/* ------------------ Home Page Styles ------------------ */
+.background-image1 {
+  background-image: url('/static/assets/Industrial-fence.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background-image2 {
+  background-image: url('/static/assets/Every-human-has-rights.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.semi-opaque-grey {
+  background-color: rgba(128, 128, 128, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* ---- MEDIA QUERIES ---- */
 
 @media (max-width: 923px) {
@@ -278,24 +326,3 @@ body.report-page .footer {
     padding: 30px;
   }
 }
-
-/* ------------------ Home Page Styles ------------------ */
-.background-image1 {
-  background-image: url('/static/assets/Industrial-fence.jpg');
-  background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.background-image2 {
-  background-image: url('/static/assets/Every-human-has-rights.jpg');
-  background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.semi-opaque-grey {
-  background-color: rgba(128, 128, 128, 0.8); /* Less transparent grey */
-  border-radius: 10px; /* Rounded edges */
-  padding: 20px; /* Add spacing */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
