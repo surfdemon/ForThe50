@@ -1,3 +1,14 @@
+:root {
+    --white: #ffffff;
+    --red: #da2128;
+    --dark-red: #b1181d;
+    --burgundy: #1d0202;
+    --light-gray: #d6d1d1;
+    --medium-gray: #747c92;
+    --dark-gray: #5e6572;
+    --black: #000000;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -6,11 +17,11 @@ html, body {
 
 .navbar {
     background-color: #d36464;
-    color: white;
+    color: var(--white);
 }
 
 .navbar .nav-link {
-    color: white;
+    color: var(--white);
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -27,8 +38,8 @@ html, body {
 
 
 .footer {
-    background-color: #1d0202;
-    color: white;
+    background-color: var(--burgundy);
+    color: var(--white);
     text-align: center;
     padding: 1rem;
     width: 100%;
@@ -36,7 +47,7 @@ html, body {
 }
 .logo-text {
     font-size: 1.5rem;
-    color: white;
+    color: var(--white);
     text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 .content {
@@ -54,4 +65,25 @@ html, body {
     background-color: rgb(173, 119, 119);
     padding:5px;border-top: 1px solid #c0d7f1; 
     text-align: right;
-} 
+}
+
+/* Buttons */
+.danger-btn {
+    background-color: var(--red);
+    color: var(--white);
+    letter-spacing: 0.05rem;
+}
+
+.danger-btn:hover {
+    background-color: var(--dark-red);
+}
+
+.primary-btn {
+    background-color: var(--black);
+    color: var(--red);
+    letter-spacing: 0.05rem;
+}
+
+.primary-btn:hover {
+    background-color: var(--dark-red);
+}
