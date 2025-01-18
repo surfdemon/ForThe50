@@ -242,17 +242,24 @@ body.report-page .footer {
 
 /* ------------------ Home Page Styles ------------------ */
 
-/* not working yet */
-.background-image {
+
+.background-image1 {
   background-image: url('/static/assets/Industrial-fence.jpg');
   background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* not working yet */
-.card {
-  border-radius: 5px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.background-image2 {
+  background-image: url('/static/assets/Every-human-has-rights.jpg');
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.semi-opaque-grey {
+  background-color: rgba(128, 128, 128, 0.8); /* Less transparent grey */
+  border-radius: 10px; /* Rounded edges */
+  padding: 20px; /* Add spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
