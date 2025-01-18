@@ -3,7 +3,7 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="container my-5">
+<div class="container my-3">
     <h1 class="display-4 text-center">Understanding Modern Slavery and Human Trafficking</h1>
     <p class="lead text-center">
         Modern slavery and human trafficking are grave violations of human rights. Millions are affected globally, including in the UK and Ireland. Learn how to recognize, report, and combat this crisis.
@@ -108,7 +108,11 @@
             <li><strong>Police (Non-Emergencies):</strong> Call 101</li>
             <li><strong>Crimestoppers (Anonymous):</strong> 0800 555 111</li>
         </ul>
-        <p>Always prioritize your safety and avoid direct confrontation.</p>
+        <div>
+            <p>Alternatively, please fill out our form</p>
+            <a class="btn danger-btn text-uppercase shadow" href="{% url 'report' %}">Report Crime</a>
+        </div>
+        <p class="pt-3">Always prioritize your safety and avoid direct confrontation.</p>
     </section>
 </div>
 

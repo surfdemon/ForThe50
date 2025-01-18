@@ -165,23 +165,22 @@ h1.page-header {
   background-color: #9a1a1a;
 }
 
-  h1.page-header {
-    font-size: 2.8rem;
-  }
+h1.page-header {
+  font-size: 2.8rem;
+}
 
-  .formHeader {
-    font-size: 2.3rem;
-  }
+.formHeader {
+  font-size: 2.3rem;
+}
 
-  #reportForm .form-control {
-    font-size: 1rem;
-    padding: 12px;
-  }
+#reportForm .form-control {
+  font-size: 1rem;
+  padding: 12px;
+}
 
-  #reportForm button {
-    font-size: 1rem;
-    padding: 12px;
-  }
+#reportForm button {
+  font-size: 1rem;
+  padding: 12px;
 }
 
 @media (max-width: 659px) {
@@ -210,7 +209,6 @@ h1.page-header {
   }
 }
 
-
 body.report-page {
   display: flex;
   flex-direction: column;
@@ -230,10 +228,10 @@ body.report-page .footer {
 #disabled {
   font-size: 11px;
   font-weight: bold ;
-
-    background-color: rgb(173, 119, 119);
-    padding:5px;border-top: 1px solid #c0d7f1; 
-    text-align: right;
+  background-color: rgb(173, 119, 119);
+  padding:5px;
+  border-top: 1px solid #c0d7f1; 
+  text-align: right;
 }
 
 /* Buttons */
@@ -279,3 +277,4 @@ body.report-page .footer {
   .form-container {
     padding: 30px;
   }
+}
