@@ -15,6 +15,7 @@ View the project board: [Github projects](https://github.com/users/surfdemon/pro
 In this section, we will briefly discuss how our team addressed the applicable criteria:  
 - **The project fits the theme of raising awareness of Modern Slavery and Human Trafficking.**
 
+The "For the 50" is a perfect fit for the Code to Protect theme. It includes features such as information on the impact of Modern Slvaery and Human Trafficking, charts giving a visual on the statistics, and contact and resource information. The added functioanlity to change the language of the site grants further accisbility to those who may need it the most.
 
 - **The project is well planned and executed (Using GitHub Projects).**
 
@@ -31,6 +32,11 @@ The README adheres to the template provided and is clear, concise, and informati
 - **The project has an overall sense of completeness.**
 
 The project feels complete, with every feature contributing to the user experience:
+
+- The home page sets out the impact Modern Slavery and Human Trafficking has on society and those affected.
+- The statistics page shows the extent of the problem and how increase awareness is having a positive impact.
+- The contact page provides and outlet for the user and links to further resources.
+- The website is available in multiple languages making it accessible to those who are potentially most affected.
 
 ---
 
@@ -122,7 +128,7 @@ The wireframes for For the 50 were made using Balsamiq.
 ## **Tech Stack**  
 - Frontend: HTML, CSS, JavaScript
 - Backend: Python
-- Frameworks: Django, React
+- Frameworks: Django
 - Version Control: Git & GitHub  
 - Deployment: Heroku
 - Bootstrap CDN - linked as per [Bootstrap docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
