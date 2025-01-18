@@ -13,7 +13,7 @@ View the project board: [Github projects](https://github.com/users/surfdemon/pro
 
 ### **Criteria**  
 In this section, we will briefly discuss how our team addressed the applicable criteria:  
-- **The project fits the theme of rasing awareness of Modern Slavery and Human Trafficking.**
+- **The project fits the theme of raising awareness of Modern Slavery and Human Trafficking.**
 
 
 - **The project is well planned and executed (Using GitHub Projects).**
@@ -118,6 +118,17 @@ The color palette was created through comparisons of similar websites of this na
 - [](https://www.blueblindfold.ie/wp-content/uploads/2023/08/Human-Trafficking-Annual-Report-2022.pdf)
 
 Team:
-- Heath Croasdale - https://github.com/heath1979
-- Viola Bergere - https://github.com/violaberg
+
+| Member | Github profile | 
+| ---- | ---- |
+| Viola Bergere | [violaberg](https://github.com/violaberg) |
+| Soroush Gholamreza | [SoroushGReza](https://github.com/SoroushGReza) |
+| Chrysanthus Chiagwah | [chrysanthusobinna](https://github.com/chrysanthusobinna) |
+| Rob Beach | [surfdemon](https://github.com/surfdemon) |
+| Finnbarr Ambrose | [FinnbarrAmbrose](https://github.com/FinnbarrAmbrose) |
+| Heath Croasdale | [heath1979](https://github.com/heath1979) |
+
+## Acknowledgements
+
+- As a team we would like the take the time to acknowledge the suffering of the estimated 50 million men, women, and children caught in the trap of Modern Slavery and Human Trafficking. This abhorrent act should have no place in the world and together we stand For the 50.
 
