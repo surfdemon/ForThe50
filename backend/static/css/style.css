@@ -36,10 +36,10 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 30px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -101,16 +101,15 @@ img.footer-logo.pb-1 {
   height: 20px;
 }
 
-.sub-titel{
-background-color: var(--black);
-color: var(--red);
+.sub-titel {
+  background-color: var(--black);
+  color: var(--red);
 }
 
 .card1 {
-  background-color:#6C757D80;
+  background-color: #6c757d80;
   border: 2px solid;
   border-color: #da2128;
-
 }
 
 .back1 {
@@ -216,16 +215,16 @@ body.report-page .footer {
   border-top: 1px solid #c0d7f1;
   text-align: right;
 }
-  
+
 /* ------------------ Button Styles ------------------ */
 .danger-btn {
-    background-color: var(--red);
-    border: none;
-    color: var(--white);
-    font-weight: 500;
-    letter-spacing: 0.05rem;
-    padding: 0.6rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  background-color: var(--red);
+  border: none;
+  color: var(--white);
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  padding: 0.6rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .danger-btn:hover {
@@ -235,12 +234,12 @@ body.report-page .footer {
 }
 
 .primary-btn {
-    background-color: var(--black);
-    border: none;
-    color: var(--red);
-    letter-spacing: 0.05rem;
-    padding: 0.6rem;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  background-color: var(--black);
+  border: none;
+  color: var(--red);
+  letter-spacing: 0.05rem;
+  padding: 0.6rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .primary-btn:hover {
@@ -248,7 +247,6 @@ body.report-page .footer {
   border: none;
   color: var(--white);
 }
-
 
 .inactive-btn {
   background-color: var(--black);
@@ -272,38 +270,38 @@ body.report-page .footer {
 
 #ytWidget {
   position: absolute;
-  right: -125px;
+  right: 10px;
   top: 90px;
-  width: 300px;
+  width: auto;
   z-index: 1000;
 }
-  
+
 /* ------------------ Home Page Styles ------------------ */
 .background-image1 {
-  background-image: url('/static/assets/Industrial-fence.jpg');
+  background-image: url("/static/assets/Industrial-fence.jpg");
   background-size: cover;
-    background-position: center 10%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 70vh;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
 }
 
 .background-image2 {
-  background-image: url('/static/assets/Every-human-has-rights.jpg');
+  background-image: url("/static/assets/Every-human-has-rights.jpg");
   background-size: cover;
-    background-position: center 0%;
-    background-repeat: no-repeat ;
-    background-attachment: fixed;
-    height: 70vh;
+  background-position: center 0%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
 }
 
 .background-image3 {
-  background-image: url('/static/assets/Blind-girl.jpg');
+  background-image: url("/static/assets/Blind-girl.jpg");
   background-size: cover;
-    background-position: center 40%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 70vh;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
 }
 
 .semi-opaque-grey {
@@ -312,42 +310,41 @@ body.report-page .footer {
   padding: 20px; /* Add spacing */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
 }
-  
+
 .back1 {
   background-color: #f8f9fa;
 }
 
 .story {
-  display: flex; 
+  display: flex;
   gap: 1rem;
   padding: 1rem;
   margin-bottom: 1rem;
 }
 
 .profile-image {
-  width: 200px; 
-  height: 200px; 
-  border-radius: 50%; 
-  object-fit: cover; 
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 .image-story {
-  width: 100%; 
+  width: 100%;
   height: 100%;
 }
 
 .external-link {
-  color: #007BFF;
+  color: #007bff;
   text-decoration: none;
 }
 
 .profile-image1 {
-  width: 100px; 
+  width: 100px;
   height: 100px;
-
 }
 
 .external-link:hover {
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .styled-table {
@@ -363,13 +360,13 @@ body.report-page .footer {
 .styled-table thead tr {
   font-size: larger;
   background-color: var(--black);
-color: var(--red);
+  color: var(--red);
   text-align: left;
 }
 
 .styled-table th,
 .styled-table td {
-    padding: 12px 15px;
+  padding: 12px 15px;
 }
 
 .styled-table tbody tr {
@@ -385,7 +382,7 @@ color: var(--red);
   border-bottom: 2px solid var(--black);
 }
 
-  /* ------------------ MEDIA QUERIES ------------------ */
+/* ------------------ MEDIA QUERIES ------------------ */
 @media (max-width: 923px) {
   h1.page-header {
     font-size: 3rem;
