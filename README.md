@@ -18,6 +18,7 @@
     - [Staistics page](#statistics-page)
   - [UX - User Experience](#ux---user-experience)    
     - [Colour](#colour)
+    - [Font](#font)
     - [Wireframes](#wireframes)
   - [Tech Stack](#tech-stack)
   - [Future Developments](#future-development)
@@ -130,9 +131,15 @@ Users who want to report suspected cases.
 
 #### Colour
 
-![recipes page screen capture](docs/documentation/colour_pallette.png)
+![colour pallette](docs/documentation/colour_pallette.png)
 
 The color palette was created through comparisons of similar websites of this nature. The focus of the website is to highlight the atrocities of Modern Slavery and Human Trafficking and the colour pallete was used to create a clean and crisp structure that allows the user to easily digest available information without providing distraction.
+
+### Font
+
+![font](docs/documentation/font.png)
+
+We opted to use a merriweather font for the site. This font is considered to be accessible in regards that it is easy to read on all screens and particularly useful when a site is displaying a high level of information. Merriweather’s reliable style is great for a site that wants to emphasize trust. Where a credibile look is desired the merriweather font is essential.
 
 ### Wireframes
 
