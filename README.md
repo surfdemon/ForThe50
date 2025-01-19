@@ -18,6 +18,7 @@
     - [Staistics page](#statistics-page)
   - [UX - User Experience](#ux---user-experience)    
     - [Colour](#colour)
+    - [Font](#font)
     - [Wireframes](#wireframes)
   - [Tech Stack](#tech-stack)
   - [Future Developments](#future-development)
@@ -98,6 +99,12 @@ Users who want to report suspected cases.
 
 -**Benefits:**
 
+- Showcases Modern slavery and human trafficking: The site highlights the current problem of Modern Slavery and the impact it has on the individual and society as a whole.
+- Offers hope: with survivor stories including the user can be assured that there is aid and resources available for those affected and that the work being done so far by chraitable organisations is having an impact.
+- Provides insightful data statistics: through the use of visually appealing pie charts based on national statistic reporting from the UK and Ireland.
+- Empowerment: gives the user the tools too identify what may or may not be examples of Modern Slavery through the site itself or the use of a chatbot, and how to report such instances if needed.
+- Accessibility and inclusivity: the site is fully responsive and the language can be adjusted to cater for user requirements.
+
 ---
 
 ## Pages
@@ -124,9 +131,15 @@ Users who want to report suspected cases.
 
 #### Colour
 
-![recipes page screen capture](docs/documentation/colour_pallette.png)
+![colour pallette](docs/documentation/colour_pallette.png)
 
 The color palette was created through comparisons of similar websites of this nature. The focus of the website is to highlight the atrocities of Modern Slavery and Human Trafficking and the colour pallete was used to create a clean and crisp structure that allows the user to easily digest available information without providing distraction.
+
+### Font
+
+![font](docs/documentation/font.png)
+
+We opted to use a merriweather font for the site. This font is considered to be accessible in regards that it is easy to read on all screens and particularly useful when a site is displaying a high level of information. Merriweather’s reliable style is great for a site that wants to emphasize trust. Where a credibile look is desired the merriweather font is essential.
 
 ### Wireframes
 
@@ -169,11 +182,9 @@ The wireframes for For the 50 were made using Balsamiq.
 
 ## Future Development
 
-- Given that much of the work around raising awareness and supporting those affected is done by Charitable organisations a 'Donate' function could be added. This could also bring about some user satisfaction as they feel that they are contributing in the battle against Modern Slavery
 - A sign up facility for users ro register in order to recieve email updates and newsletters regarding the fight against Modern Slavery.
 - Real time statistic reporting showing the most relavent changes based on area and type.
 - Events page showing when fund raising events may be taking place and how users can get involved.
-- Survivor stories showcase. The work that these organisations do should not go unrecognised and we need to offer hope that reporting these incidenets does work and the survivors are given the aid neeeded to have a life after coming out of Modern Slavery.
 
 ---
 
