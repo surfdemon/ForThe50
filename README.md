@@ -98,6 +98,12 @@ Users who want to report suspected cases.
 
 -**Benefits:**
 
+- Showcases Modern slavery and human trafficking: The site highlights the current problem of Modern Slavery and the impact it has on the individual and society as a whole.
+- Offers hope: with survivor stories including the user can be assured that there is aid and resources available for those affected and that the work being done so far by chraitable organisations is having an impact.
+- Provides insightful data statistics: through the use of visually appealing pie charts based on national statistic reporting from the UK and Ireland.
+- Empowerment: gives the user the tools too identify what may or may not be examples of Modern Slavery through the site itself or the use of a chatbot, and how to report such instances if needed.
+- Accessibility and inclusivity: the site is fully responsive and the language can be adjusted to cater for user requirements.
+
 ---
 
 ## Pages
