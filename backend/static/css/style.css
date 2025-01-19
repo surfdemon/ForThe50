@@ -354,10 +354,11 @@ body.report-page .footer {
 #disabled {
   font-size: 11px;
   font-weight: bold;
-  background-color: rgb(173, 119, 119);
-  padding: 5px;
+  background-color: rgb(219, 194, 3);
+  padding: 3px;
   border-top: 1px solid #c0d7f1;
   text-align: right;
+  border-radius: 4px;
 }
 
 /* ------------------ Button Styles ------------------ */
