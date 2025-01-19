@@ -56,6 +56,14 @@ h3 {
   padding-bottom: 50px;
 }
 
+.link {
+  color: var(--dark-red);
+}
+
+.link:hover {
+  font-weight: 700;
+}
+
 /* ---------------- Navbar Styles ---------------- */
 .navbar {
   background-color: var(--black);
@@ -76,126 +84,6 @@ h3 {
 
 .navbar .nav-link.active {
   color: var(--yellow);
-}
-
-/* ------------------ Translator Styles ------------------ */
-.translator-widget {
-  padding: 2.2rem 0;
-}
-
-#ytWidget {
-  position: absolute;
-  right: 10px;
-  top: 90px;
-  width: auto;
-  z-index: 1000;
-}
-
-/* ------------------ Home Page Styles ------------------ */
-
-.background-image1 {
-  background-image: url("/static/assets/child.svg");
-  background-size: cover;
-  background-position: center 10%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-}
-
-.background-image2 {
-  background-image: url("/static/assets/Every-human-has-rights.jpg");
-  background-size: cover;
-  background-position: center 0%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 70vh;
-}
-
-.background-image3 {
-  background-image: url("/static/assets/Blind-girl.jpg");
-  background-size: cover;
-  background-position: center 40%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 70vh;
-}
-
-.semi-opaque-grey {
-  background-color: rgba(128, 128, 128, 0.8);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.back1 {
-  background-color: #f8f9fa;
-}
-
-.story {
-  display: flex;
-  gap: 1rem;
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.profile-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.image-story {
-  width: 100%;
-  height: 100%;
-}
-
-.external-link {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.profile-image1 {
-  width: 100px;
-  height: 100px;
-}
-
-.external-link:hover {
-  text-decoration: underline;
-}
-
-.styled-table {
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 0.9em;
-  font-family: sans-serif;
-  min-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  width: 100%;
-}
-
-.styled-table thead tr {
-  font-size: larger;
-  background-color: var(--black);
-  color: var(--red);
-  text-align: left;
-}
-
-.styled-table th,
-.styled-table td {
-  padding: 12px 15px;
-}
-
-.styled-table tbody tr {
-  border-bottom: 1px solid #dddddd;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
-.styled-table tbody tr:last-of-type {
-  background-color: var(--black);
-  border-bottom: 2px solid var(--black);
 }
 
 /* ---------------- Statistics Page Styles ---------------- */
@@ -425,7 +313,7 @@ body.report-page .footer {
 
 /* ------------------ Page Styles ------------------ */
 .background-image1 {
-  background-image: url("/static/assets/Industrial-fence.jpg");
+  background-image: url("/static/assets/child.svg");
   background-size: cover;
   background-position: center 10%;
   background-repeat: no-repeat;
@@ -462,7 +350,6 @@ body.report-page .footer {
   height: 60vh;
 }
 
-
 .background-image5 {
   background-image: url("/static/assets/gettyimages-163206271-612x612.jpg");
   background-size: cover;
@@ -473,28 +360,89 @@ body.report-page .footer {
   
 }
 
-.semi-opaque-grey {
-  background-color: rgba(128, 128, 128, 0.8); /* Less transparent grey */
-  border-radius: 10px; /* Rounded edges */
-  padding: 20px; /* Add spacing */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
-}
-
-.back1 {
-  background-color: #f8f9fa;
-}
-
 .red {
-  color: #da2128;
+  color: var(--red);
   background-color: #000000;
   border-radius: 5%;
   padding: 2px;
 }
 
+.semi-opaque-grey {
+  background-color: rgba(128, 128, 128, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .story {
   display: flex;
   gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.image-story {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-image1 {
+  width: 100px;
+  height: 100px;
+}
+
+.external-link:hover {
+  text-decoration: underline;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+.styled-table thead tr {
+  font-size: larger;
+  background-color: var(--black);
+  color: var(--red);
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  background-color: var(--black);
+  border-bottom: 2px solid var(--black);
+}
+
+/* Team Page */
+.team-social-links i {
+  color: var(--dark-red);
+  font-size: 1.8rem;
+}
+
 /* ---------------- Footer Styles ---------------- */
 
  .footer {
@@ -524,10 +472,10 @@ img.footer-logo.pb-1 {
   color: var(--red);
 }
 
-.card1 {
-  background-color: #6c757d80;
-  border: 2px solid;
-  border-color: #da2128;
+.card1,
+.form-container {
+  background-color: #e5e6e780;
+  box-shadow: 2px 2px 4px #625c5ca8;
 }
 
 .back1 {
@@ -586,16 +534,11 @@ img.footer-logo.pb-1 {
   }
 }
 
-
-
 .card-custom {
-  background-color: #6c757d80; 
-  border: 2px solid #dc3545; 
-  border-radius: 5px; 
+  background-color: #e5e6e780;
+  box-shadow: 2px 2px 4px #625c5ca8; 
   padding: 1.5rem; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
-
 
 .card-custom .card-title {
   font-size: 1.5rem;
