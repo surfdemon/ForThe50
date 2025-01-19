@@ -4,76 +4,82 @@
 {% block title %}About Us{% endblock%}
 
 {% block content %}
-<div class="container-fluid my-5">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-8">
-        <h1 class="text-center mb-4">About Us</h1>
-        <p class="lead text-center mb-5">
-          At ForThe50, we are dedicated to combating human trafficking and modern
-          slavery through awareness, education, and action.
-        </p>
-      </div>
-    </div>
-  
-    <!-- Mission and Vision Section -->
-    <div class="row gy-4 justify-content-center">
-      <div class="col-12 col-sm-10 col-md-8 col-lg-5">
-        <div class="card shadow rounded h-100">
-          <div class="card-body">
-            <h3 class="h4 card-title text-center">Our Mission</h3>
-            <p>
-              Our mission is to empower individuals and communities by providing
-              resources, tools, and support to fight against human trafficking and
-              modern slavery. We aim to create a world where everyone can live
-              free from exploitation.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-10 col-md-8 col-lg-5">
-        <div class="card shadow rounded h-100">
-          <div class="card-body">
-            <h3 class="h4 card-title text-center">Our Vision</h3>
-            <p>
-              We envision a society where human trafficking is eradicated,
-              survivors are supported, and justice is served. Through
-              collaboration with communities and organizations, we aim to achieve
-              lasting change.
-            </p>
-          </div>
+<header class="py-5 background-image5">
+  <div class="container px-5">
+    <div class="row gx-5 align-items-left justify-content-center">
+      <div class="col-lg-8 col-xl-7 col-xxl-8">
+        <div class="my-3 text-center text-xl-start semi-opaque-grey  rounded p-3">
+          <h1 class="display-5 fw-bolder main-title-color mb-2">
+            About Us
+          </h1>
+          <p class="lead fw-normal text-white-40 mb-4">
+            At ForThe50, we are dedicated to combating human trafficking and modern
+          slavery through awareness, education, and <strong class="red"> action. </strong>
+          </p>
         </div>
       </div>
     </div>
-  
-    <!-- Approach and Impact Section -->
-    <div class="row gy-4 justify-content-center mt-4">
-      <div class="col-12 col-sm-10 col-md-8 col-lg-5">
-        <div class="card shadow rounded h-100">
-          <div class="card-body">
-            <h3 class="h4 card-title text-center">Our Approach</h3>
-            <p>
-              Our approach includes educating the public about the realities of
+  </div>
+</header>
+
+<div class="col-lg-6 col-xxl-4 mb-5">
+
+</div>
+   <div class="row gy-4 justify-content-center">
+  <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+    <div class="card-custom">
+      <h3 class="card-title">Our Mission</h3>
+      <p>
+        Our mission is to empower individuals and communities by providing
+        resources, tools, and support to fight against human trafficking and
+        modern slavery. We aim to create a world where everyone can live
+        free from exploitation.
+      </p>
+    </div>
+    
+  </div>
+  <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+    <div class="card-custom">
+      <h3 class="card-title red">Our Vision</h3>
+      <p>
+        We envision a society where human trafficking is eradicated,
+        survivors are supported, and justice is served. Through
+        collaboration with communities and organizations, we aim to achieve
+        lasting change.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="col-lg-6 col-xxl-4 mb-5">
+
+</div>
+<div class="row gy-4 justify-content-center">
+  <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+    <div class="card-custom">
+      <h3 class="card-title">Our Approach</h3>
+      <p>
+        Our approach includes educating the public about the realities of
               trafficking, providing tools for reporting suspicious activities,
               and supporting victims through collaboration with local and
               international organizations.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-10 col-md-8 col-lg-5">
-        <div class="card shadow rounded h-100">
-          <div class="card-body">
-            <h3 class="h4 card-title text-center">Our Impact</h3>
-            <p>
-              Since our inception, we have reached thousands through awareness
+      </p>
+    </div>
+  </div>
+  <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+    <div class="card-custom">
+      <h3 class="card-title">Our Impact</h3>
+      <p>
+        Since our inception, we have reached thousands through awareness
               campaigns, helped identify trafficking cases, and connected
               survivors with the necessary support and resources to rebuild their
               lives.
-            </p>
-          </div>
-        </div>
-      </div>
+      </p>
     </div>
+  </div>
+</div>
+  
+    
   
     <!-- Call to Action -->
     <div class="row justify-content-center mt-5">
@@ -86,6 +92,10 @@
         <a href="{% url 'report' %}" class="btn primary-btn text-uppercase shadow">Report a Crime</a>
       </div>
     </div>
+  </div>
+  
+  <div class="col-lg-6 col-xxl-4 mb-5">
+
   </div>
   
 {% endblock %}
