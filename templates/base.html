@@ -61,7 +61,7 @@
                             <a class="nav-link {% if request.path == '/' %}active{% endif %} me-3" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == '/about/' %}active{% endif %} me-3" href="/about/">About</a>
+                            <a class="nav-link {% if request.path == '/about/' %}active{% endif %} me-3" href="/stories/">Stories</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == '/knowledge/' %}active{% endif %} me-3" href="/knowledge/">Knowledge</a>
@@ -83,7 +83,7 @@
             </div>
         </nav>
     </header>
-    <div class="translator-widget container-fluid relative">
+    <div class="translator-widget container-fluid position-absolute top-0">
         <div id="ytWidget"></div>
     </div>
     {% endblock %}
