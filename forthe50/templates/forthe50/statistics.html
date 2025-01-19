@@ -27,7 +27,7 @@
 <div class="row gx-5 p-4 rounded shadow-sm mb-4 card1 ">
   <div class="col-lg-12">
     <div class="px-3 py-2 rounded bg-opacity-50 mb-3 sub-titel">
-      <h2 class="fw-bold">Data of Ireland</h2>
+      <h2>class="fw-bold text-center>Data of Ireland</h2>
     </div>
     <p>The data presented in this report is drawn from the IHREC National Rapporteur on Human Trafficking's 2022
       Evaluation
@@ -55,7 +55,7 @@
   
 
     <!-- Row for the cards -->
-    <div class="row d-flex align-items-stretch">
+    <div class="row d-flex px-3 align-items-stretch">
       <!-- Card for Human Trafficking Types -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
         <div class="stat-card shadow rounded">
@@ -163,7 +163,7 @@
     </div>
 
     <!-- Row for the cards -->
-    <div class="row d-flex align-items-stretch">
+    <div class="row d-flex px-3 align-items-stretch">
       <!-- Card for Human Trafficking Types Females -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
         <div class="stat-card shadow rounded">
@@ -533,9 +533,6 @@
   const ctx16 = document.getElementById('ukTraffickingChartNorthernIreland').getContext('2d');
   new Chart(ctx16, { type: 'doughnut', data: ukTraffickingDataNorthernIreland, options: chartOptions });
 </script>
-<script>
-  const currentYear = new Date().getFullYear();
-  document.getElementById("current-year").innerText = currentYear;
-</script>
+
 <script src="{% static 'js/script.js' %}"></script>
 {% endblock %}
