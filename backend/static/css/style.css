@@ -493,7 +493,7 @@ body.report-page .footer {
 .story {
   display: flex;
   gap: 1rem;
-
+}
 /* ---------------- Footer Styles ---------------- */
 
  .footer {
@@ -608,11 +608,13 @@ img.footer-logo.pb-1 {
 }
 
 @media (max-width: 1200px) {
-  .btn {
-      font-size: 0.8rem; 
-      padding: 0.5rem 0.75rem;
-  }
+    .btn {
+        font-size: 0.8rem; 
+        padding: 0.5rem 0.75rem;
+    }
 
-.card-custom p {
-  margin-bottom: 1rem;
+  .card-custom p {
+    margin-bottom: 1rem;
+  }
 }
+
