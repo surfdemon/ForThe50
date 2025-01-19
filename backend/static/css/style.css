@@ -260,28 +260,28 @@ body.report-page .footer {
 .background-image1 {
   background-image: url('/static/assets/Industrial-fence.jpg');
   background-size: cover;
-    background-position: center;
+    background-position: center 10%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 50vh;
+    height: 70vh;
 }
 
 .background-image2 {
   background-image: url('/static/assets/Every-human-has-rights.jpg');
   background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: center 0%;
+    background-repeat: no-repeat ;
     background-attachment: fixed;
-    height: 50vh;
+    height: 70vh;
 }
 
 .background-image3 {
   background-image: url('/static/assets/Blind-girl.jpg');
   background-size: cover;
-    background-position: center;
+    background-position: center 40%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 50vh;
+    height: 70vh;
 }
 
 
