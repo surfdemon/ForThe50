@@ -35,9 +35,11 @@ h1 {
 .logo-text:hover {
   color: var(--red);
   transform: scale(1.1);
+}
 
 .logo-text img {
   height: 40px;
+}
 
 h1 {
     font-size: 3rem;
