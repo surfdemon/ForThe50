@@ -9,26 +9,26 @@
 <div class="container-fluid position-relative" id="reportContent">
   <!-- Background Image -->
   <img src="{% static 'assets/chain.svg' %}" alt="Background" class="chain-img" />
-  <h1 class="text-center mt-3 page-header">Be the Voice for the Voiceless</h1>
+  <h1 class="text-center">Be the Voice for the Voiceless</h1>
   <div class="row justify-content-center">
     <div class="col-12 col-md-10 col-lg-8">
-      <div class="form-container p-4 mt-4 mb-4">
+      <div class="form-container shadow rounded p-4 my-4">
         <form method="POST" id="reportForm">
-          <h3 class="text-center mt-2 formHeader">Report a Crime</h3>
+          <h2 class="text-center mt-2 formHeader">Report a Crime</h2>
           {% csrf_token %}
           <div class="mb-3">
             <label for="name" class="form-label">Name (optional)</label>
-            <input type="text" class="form-control" id="name" name="name" />
+            <input type="text" class="form-control shadow-sm" id="name" name="name" />
           </div>
           <div class="mb-3">
             <label for="email" class="form-label">Email (optional)</label>
-            <input type="email" class="form-control" id="email" name="email" />
+            <input type="email" class="form-control shadow-sm" id="email" name="email" />
           </div>
           <div class="mb-3">
             <label for="location" class="form-label">Location*</label>
             <input
               type="text"
-              class="form-control"
+              class="form-control shadow-sm"
               id="location"
               name="location"
               required
@@ -37,7 +37,7 @@
           <div class="mb-3">
             <label for="description" class="form-label">Description*</label>
             <textarea
-              class="form-control"
+              class="form-control shadow-sm"
               id="description"
               name="description"
               rows="3"
@@ -96,9 +96,11 @@
               <option value="Testing Authority">Testing Authority</option>
             </select>
           </div>
-          <button type="submit" class="btn btn-danger w-100 mt-3">
-            Submit Report
-          </button>
+          <div class="text-center">
+            <button type="submit" class="btn primary-btn text-uppercase shadow mt-3">
+              Submit Report
+            </button>
+          </div>
         </form>
       </div>
     </div>

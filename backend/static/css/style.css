@@ -39,6 +39,21 @@ h1 {
 
 .logo-text img {
   height: 40px;
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color: var(--dark-red);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .content {
@@ -90,6 +105,47 @@ h1 {
 img.footer-logo.pb-1 {
   height: 20px;
 }
+  
+/* ------------------ Home Page Styles ------------------ */
+.background-image1 {
+  background-image: url('/static/assets/Industrial-fence.jpg');
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.background-image2 {
+  background-image: url('/static/assets/Every-human-has-rights.jpg');
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.semi-opaque-grey {
+  background-color: rgba(128, 128, 128, 0.8); 
+  border-radius: 10px; 
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+
+.sub-titel{
+background-color: var(--black);
+color: var(--red);
+}
+
+.card1 {
+  background-color:#6C757D80;
+  border: 2px solid;
+  border-color: #da2128;
+
+}
+
+.back1 {
+  background-color: #f8f9fa;
+}
 
 /* ---------------- Statistics Page Styles ---------------- */
 .card {
@@ -100,11 +156,10 @@ img.footer-logo.pb-1 {
 /* ------------------ Report Page Styles ------------------ */
 .form-container {
   position: relative;
-  z-index: 2;
-  border-radius: 15px;
+  z-index: 20;
   padding: 50px;
   margin: 30px auto;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
 }
 
 .chain-img {
@@ -155,28 +210,6 @@ h1.page-header {
   margin-bottom: 5px;
 }
 
-#reportForm button {
-  background-color: #7d0000;
-  border: none;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 12px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-#reportForm button:hover {
-  background-color: #9a1a1a;
-}
-
-h1.page-header {
-  font-size: 2.8rem;
-}
-
-.formHeader {
-  font-size: 2.3rem;
-}
-
 #reportForm .form-control {
   font-size: 1rem;
   padding: 12px;
@@ -211,14 +244,16 @@ body.report-page .footer {
   border-top: 1px solid #c0d7f1;
   text-align: right;
 }
-
-/* Buttons */
+  
+/* ------------------ Button Styles ------------------ */
 .danger-btn {
-  background-color: var(--red);
-  border: none;
-  color: var(--white);
-  font-weight: 500;
-  letter-spacing: 0.05rem;
+    background-color: var(--red);
+    border: none;
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    padding: 0.6rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .danger-btn:hover {
@@ -228,10 +263,12 @@ body.report-page .footer {
 }
 
 .primary-btn {
-  background-color: var(--black);
-  border: none;
-  color: var(--red);
-  letter-spacing: 0.05rem;
+    background-color: var(--black);
+    border: none;
+    color: var(--red);
+    letter-spacing: 0.05rem;
+    padding: 0.6rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .primary-btn:hover {
@@ -240,31 +277,36 @@ body.report-page .footer {
   color: var(--white);
 }
 
-/* -------------------- Home Page Styles -------------------- */
 
-.background-image1 {
-  background-image: url("/static/assets/Industrial-fence.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.inactive-btn {
+  background-color: var(--black);
+  border: none;
+  color: var(--dark-red);
+  letter-spacing: 0.05rem;
+  padding: 0.6rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.background-image2 {
-  background-image: url("/static/assets/Every-human-has-rights.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.inactive-btn:hover {
+  background-color: var(--dark-red);
+  border: none;
+  color: var(--white);
 }
 
-.semi-opaque-grey {
-  background-color: rgba(128, 128, 128, 0.8);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+/* ------------------ Translator Styles ------------------ */
+.translator-widget {
+  padding: 2.2rem 0;
 }
 
-/* ---------------------- MEDIA QUERIES ---------------------- */
+#ytWidget {
+  position: absolute;
+  right: -125px;
+  top: 90px;
+  width: 300px;
+  z-index: 1000;
+}
 
+  /* ------------------ MEDIA QUERIES ------------------ */
 @media (max-width: 923px) {
   h1.page-header {
     font-size: 3rem;
