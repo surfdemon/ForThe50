@@ -78,50 +78,194 @@ h3 {
   color: var(--yellow);
 }
 
-/* ---------------- Footer Styles ---------------- */
-.footer {
-  background-color: var(--black);
-  text-align: center;
-  padding: 1rem;
-  width: 100%;
+/* ------------------ Translator Styles ------------------ */
+.translator-widget {
+  padding: 2.2rem 0;
+}
+
+#ytWidget {
+  position: absolute;
+  right: 10px;
+  top: 90px;
+  width: auto;
   z-index: 1000;
 }
 
-.footer a {
-  color: var(--yellow);
-  text-decoration: none;
+/* ------------------ Home Page Styles ------------------ */
+.background-image1 {
+  background-image: url("/static/assets/Industrial-fence.jpg");
+  background-size: cover;
+  background-position: center 10%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
 }
 
-.footer a:hover {
-  color: #c9b60d;
-  text-decoration: none;
+.background-image2 {
+  background-image: url("/static/assets/Every-human-has-rights.jpg");
+  background-size: cover;
+  background-position: center 0%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
 }
 
-img.footer-logo.pb-1 {
-  height: 20px;
+.background-image3 {
+  background-image: url("/static/assets/Blind-girl.jpg");
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
 }
 
-.sub-titel {
-  background-color: var(--black);
-  color: var(--red);
-}
-
-.card1 {
-  background-color: #6c757d80;
-  border: 2px solid;
-  border-color: #da2128;
+.semi-opaque-grey {
+  background-color: rgba(128, 128, 128, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .back1 {
   background-color: #f8f9fa;
 }
 
+.story {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.image-story {
+  width: 100%;
+  height: 100%;
+}
+
+.external-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.profile-image1 {
+  width: 100px;
+  height: 100px;
+}
+
+.external-link:hover {
+  text-decoration: underline;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+.styled-table thead tr {
+  font-size: larger;
+  background-color: var(--black);
+  color: var(--red);
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  background-color: var(--black);
+  border-bottom: 2px solid var(--black);
+}
+
 /* ---------------- Statistics Page Styles ---------------- */
-.card {
-  height: 500px;
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 480px;
   max-width: 400px;
   margin: 15px auto;
   padding: 20px;
+  box-sizing: border-box;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 300px;
+  width: 100%;
+  overflow: auto;
+}
+
+canvas {
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+
+/* ------------------ Contact Page Styles ------------------ */
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 15px auto;
+  box-sizing: border-box;
+  border: 1px solid #cccccc89; 
+}
+
+.card-header {
+  background-color: #f8f9fa; 
+  padding: 0.7rem;
+  width: 100%; 
+  box-sizing: border-box; 
+  text-align: center;
+}
+
+.card-header:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: 1px solid #cccccc89; 
+}
+
+.card-body {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card-body a {
+  overflow-wrap: break-word;
+  word-break: break-all; 
+  text-align: left; 
+  display: inline-block; 
+  margin-bottom: 0.5rem; 
 }
 
 /* ------------------ Report Page Styles ------------------ */
@@ -210,10 +354,11 @@ body.report-page .footer {
 #disabled {
   font-size: 11px;
   font-weight: bold;
-  background-color: rgb(173, 119, 119);
-  padding: 5px;
+  background-color: rgb(219, 194, 3);
+  padding: 3px;
   border-top: 1px solid #c0d7f1;
   text-align: right;
+  border-radius: 4px;
 }
 
 /* ------------------ Button Styles ------------------ */
@@ -262,6 +407,7 @@ body.report-page .footer {
   border: none;
   color: var(--white);
 }
+
 
 /* ------------------ Translator Styles ------------------ */
 .translator-widget {
@@ -347,68 +493,44 @@ body.report-page .footer {
 .story {
   display: flex;
   gap: 1rem;
+
+/* ---------------- Footer Styles ---------------- */
+
+ .footer {
+  background-color: var(--black);
+  text-align: center;
   padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.profile-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.image-story {
   width: 100%;
-  height: 100%;
+  z-index: 1000;
 }
 
-.external-link {
-  color: #007bff;
+.footer a {
+  color: var(--yellow);
   text-decoration: none;
 }
 
-.profile-image1 {
-  width: 100px;
-  height: 100px;
+.footer a:hover {
+  color: #c9b60d;
+  text-decoration: none;
 }
 
-.external-link:hover {
-  text-decoration: underline;
+img.footer-logo.pb-1 {
+  height: 20px;
 }
 
-.styled-table {
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 0.9em;
-  font-family: sans-serif;
-  min-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  width: 100%;
-}
-
-.styled-table thead tr {
-  font-size: larger;
+.sub-titel {
   background-color: var(--black);
   color: var(--red);
-  text-align: left;
 }
 
-.styled-table th,
-.styled-table td {
-  padding: 12px 15px;
+.card1 {
+  background-color: #6c757d80;
+  border: 2px solid;
+  border-color: #da2128;
 }
 
-.styled-table tbody tr {
-  border-bottom: 1px solid #dddddd;
-}
-
-.styled-table tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
-.styled-table tbody tr:last-of-type {
-  background-color: var(--black);
-  border-bottom: 2px solid var(--black);
+.back1 {
+  background-color: #f8f9fa;
 }
 
 /* ------------------ MEDIA QUERIES ------------------ */
@@ -464,6 +586,7 @@ body.report-page .footer {
 }
 
 
+
 .card-custom {
   background-color: #6c757d80; 
   border: 2px solid #dc3545; 
@@ -484,8 +607,12 @@ body.report-page .footer {
   
 }
 
+@media (max-width: 1200px) {
+  .btn {
+      font-size: 0.8rem; 
+      padding: 0.5rem 0.75rem;
+  }
 
 .card-custom p {
- 
   margin-bottom: 1rem;
 }
