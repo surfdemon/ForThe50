@@ -5,14 +5,14 @@
 
 {% block content %}
 <div class="container my-3">
-  <h1 class="text-center">Statistics on Human Trafficking and Slavery</h1>
+  <h1 class="text-center mt-5">Statistics on Human Trafficking and Slavery</h1>
   <div class="text-center my-3">
     <button class="btn primary-btn inactive-btn text-uppercase shadow mx-2" id="irelandButton">Show Ireland Data</button>
     <button class="btn primary-btn inactive-btn text-uppercase shadow mx-2" id="ukButton">Show UK Data</button>
   </div>
   <div id="irelandData" class="country-data">
     <h2 class="text-center pt-2">Data of Ireland</h2>
-      <div class="row">
+    <div class="row d-flex align-items-stretch">
         <div class="col">
           <p>The data presented in this report is drawn from the IHREC National Rapporteur on Human Trafficking's 2022
             Evaluation
@@ -33,10 +33,10 @@
       </div>
 
     <!-- Row for the cards -->
-    <div class="row">
+    <div class="row d-flex align-items-stretch">
       <!-- Card for Human Trafficking Types -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Human Trafficking Types</h3>
             <div class="chart-container">
@@ -48,7 +48,7 @@
 
       <!-- Card for Victims by Gender and Age -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Victims by Gender and Age</h3>
             <div class="chart-container">
@@ -60,7 +60,7 @@
 
       <!-- Card for Total Victims Identified -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Total Victims Identified in 2022</h3>
             <div class="chart-container">
@@ -72,7 +72,7 @@
 
       <!-- Card for Victim Age Group -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Victim Age Group</h3>
             <div class="chart-container">
@@ -84,7 +84,7 @@
 
       <!-- Card for Sexual Exploitation by Gender -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Total Victims of Sexual Exploitation by Gender 2018-2022</h3>
             <div class="chart-container">
@@ -96,7 +96,7 @@
 
       <!-- Card for Labour Exploitation by Gender -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Total Victims of Labour Exploitation by Gender 2018-2022</h3>
             <div class="chart-container">
@@ -108,7 +108,7 @@
 
       <!-- Card for Forced Criminality Exploitation by Gender -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Total Victims of Forced Criminality Exploitation by Gender 2018-2022</h3>
             <div class="chart-container">
@@ -120,7 +120,7 @@
 
       <!-- Card for Other Exploitation by Gender -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Total Victims of Other Exploitation by Gender 2018-2022</h3>
             <div class="chart-container">
@@ -134,17 +134,17 @@
 
   <div id="ukData" class="country-data">
     <h2 class="text-center pt-2">Data of United Kingdom</h2>
-    <div class="row">
+    <div class="row d-flex align-items-stretch">
       <div class="col">
         <p></p>
       </div>
     </div>
 
     <!-- Row for the cards -->
-    <div class="row">
+    <div class="row d-flex align-items-stretch">
       <!-- Card for Human Trafficking Types Females -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Human Trafficking Types in Females 2017</h3>
             <div class="chart-container">
@@ -156,7 +156,7 @@
 
       <!-- Card for Human Trafficking Types Males -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Human Trafficking Types in Males 2017</h3>
             <div class="chart-container">
@@ -168,7 +168,7 @@
 
       <!-- Card for Human Trafficking Types Girls -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Human Trafficking Types in Girls 2017</h3>
             <div class="chart-container">
@@ -180,7 +180,7 @@
 
       <!-- Card for Human Trafficking Types Boys -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Human Trafficking Types in Boys 2017</h3>
             <div class="chart-container">
@@ -192,7 +192,7 @@
 
       <!-- Card for Human Trafficking by Country - England -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Human Trafficking by Country (England) 2018</h3>
             <div class="chart-container">
@@ -204,7 +204,7 @@
 
       <!-- Card for Human Trafficking by Country - Scotland -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Human Trafficking by Country (Scotland) 2018</h3>
             <div class="chart-container">
@@ -216,7 +216,7 @@
 
       <!-- Card for Human Trafficking by Country - Wales -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Human Trafficking by Country (Wales) 2018</h3>
             <div class="chart-container">
@@ -228,7 +228,7 @@
 
       <!-- Card for Human Trafficking by Country - Northern Ireland -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
-        <div class="card shadow rounded">
+        <div class="stat-card shadow rounded">
           <div class="card-body text-center">
             <h3 class="h4 card-title text-center">Human Trafficking by Country (Northern Ireland) 2018</h3>
             <div class="chart-container">
@@ -445,20 +445,21 @@
 
   // Options for doughnut charts
   const chartOptions = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'bottom',
-      },
-      tooltip: {
-        callbacks: {
-          label: function (tooltipItem) {
-            return tooltipItem.label + ': ' + tooltipItem.raw;
-          }
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: {
+    legend: {
+      position: 'bottom',
+    },
+    tooltip: {
+      callbacks: {
+        label: function (tooltipItem) {
+          return tooltipItem.label + ': ' + tooltipItem.raw;
         }
       }
     }
-  };
+  },
+};
 
   // Render each chart
   const ctx1 = document.getElementById('traffickingChart').getContext('2d');
