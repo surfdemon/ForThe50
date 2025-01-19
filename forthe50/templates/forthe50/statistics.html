@@ -4,55 +4,50 @@
 {% block title %}Statistics{% endblock %}
 
 {% block content %}
-
 <header class="py-5 background-image4">
   <div class="container px-5 ">
     <div class="row gx-5 align-items-left justify-content-center">
       <div class="col-lg-8 col-xl-7 col-xxl-8">
         <div class="my-3 text-center text-xl-start semi-opaque-grey  rounded p-3">
-          <h1 class="display-5 fw-bolder main-title-color mb-2">Statistics on Human Trafficking and Slavery</h1>
+          <h1 class="display-5 fw-bolder text-center main-title-color mb-2">Statistics on Human Trafficking and Slavery</h1>
           <div class="text-center my-3">
             <button class="btn primary-btn inactive-btn text-uppercase shadow mx-2" id="irelandButton">Show Ireland Data</button>
             <button class="btn primary-btn inactive-btn text-uppercase shadow mx-2" id="ukButton">Show UK Data</button>
           </div>
-          
         </div>
       </div>
-
     </div>
   </div>
 </header>
-<section class="pt-4 back1">
-  <div class="container px-lg-5">
-<div class="row gx-5 p-4 rounded shadow-sm mb-4 card1 ">
-  <div class="col-lg-12">
-    <div class="px-3 py-2 rounded bg-opacity-50 mb-3 sub-titel">
-      <h2>class="fw-bold text-center>Data of Ireland</h2>
-    </div>
-    <p>The data presented in this report is drawn from the IHREC National Rapporteur on Human Trafficking's 2022
-      Evaluation
-      Report. This independent evaluation highlights progress made by the Irish State in combating human trafficking,
-      identifies
-      gaps, and analyzes emerging trends such as technology-facilitated trafficking, increasing labor exploitation,
-      and the
-      impact of the war in Ukraine. The report reflects a holistic, human rights-oriented approach and incorporates
-      survivor
-      input. It also examines significant developments in Ireland, including the new anti-trafficking National Action
-      Plan and
-      the establishment of a victim-centered National Referral Mechanism. This work is made possible through
-      collaboration
-      with State agencies, survivor activists, and support organizations, with the aim of driving meaningful change to
-      prevent
-      trafficking, prosecute perpetrators, and protect survivors.</p>
-  </div>
-</div>
-  </div>
-</section>
-
-<div class="col-lg-6 col-xxl-4 mb-5">
-
-</div>
-  
+  <div id="irelandData" class="country-data">
+    <section class="pt-4 mx-3 px-3 back1">
+      <div class="row gx-5 p-4 rounded shadow-sm mb-4 card1">
+        <div class="col-lg-12">
+          <div class="px-3 bg-opacity-50 mb-3">
+            <h2 class="fw-bold text-center rounded py-2 sub-titel">Data of Ireland</h2>
+            <div class="row d-flex align-items-stretch">
+                <div class="col">
+                  <p>The data presented in this report is drawn from the IHREC National Rapporteur on Human Trafficking's 2022
+                    Evaluation
+                    Report. This independent evaluation highlights progress made by the Irish State in combating human trafficking,
+                    identifies
+                    gaps, and analyzes emerging trends such as technology-facilitated trafficking, increasing labor exploitation,
+                    and the
+                    impact of the war in Ukraine. The report reflects a holistic, human rights-oriented approach and incorporates
+                    survivor
+                    input. It also examines significant developments in Ireland, including the new anti-trafficking National Action
+                    Plan and
+                    the establishment of a victim-centered National Referral Mechanism. This work is made possible through
+                    collaboration
+                    with State agencies, survivor activists, and support organizations, with the aim of driving meaningful change to
+                    prevent
+                    trafficking, prosecute perpetrators, and protect survivors.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
 
     <!-- Row for the cards -->
     <div class="row d-flex px-3 align-items-stretch">
@@ -155,15 +150,27 @@
   </div>
 
   <div id="ukData" class="country-data">
-    <h2 class="text-center pt-2">Data of United Kingdom</h2>
-    <div class="row d-flex align-items-stretch">
-      <div class="col">
-        <p></p>
+    <section class="pt-4 mx-3 px-3 back1">
+      <div class="row gx-5 p-4 rounded shadow-sm mb-4 card1">
+        <div class="col-lg-12">
+          <div class="px-3 bg-opacity-50 mb-3">
+            <h2 class="fw-bold text-center rounded py-2 sub-titel">Data of United Kingdom</h2>
+            <div class="row d-flex align-items-stretch">
+                <div class="col">
+                  <p>In 2018, the United Kingdom’s National Referral Mechanism (NRM) received 6,993 referrals of potential victims of modern slavery,
+                    marking a significant 36% increase compared to the previous year. This rise reflects growing awareness of modern slavery, enhanced efforts to identify victims,
+                    and increased public and professional engagement with the issue. The majority of referrals involved labor exploitation,
+                    followed closely by cases of sexual exploitation and criminal exploitation, affecting both adults and minors.
+                    These statistics underscore the persistent challenge modern slavery poses in the UK and emphasize the need for continued action to protect victims and combat exploitation effectively.</p>
+                </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+      </section>
 
     <!-- Row for the cards -->
-    <div class="row d-flex px-3 align-items-stretch">
+    <div class="row d-flex align-items-stretch">
       <!-- Card for Human Trafficking Types Females -->
       <div class="col-12 col-md-6 col-lg-4 my-4">
         <div class="stat-card shadow rounded">
@@ -263,7 +270,6 @@
     </div>
 
   </div>
-</div>
 {% endblock %}
 
 {% block extra_js %}
@@ -534,5 +540,5 @@
   new Chart(ctx16, { type: 'doughnut', data: ukTraffickingDataNorthernIreland, options: chartOptions });
 </script>
 
-<script src="{% static 'js/script.js' %}"></script>
+<script src="{% static 'js/statistics.js' %}"></script>
 {% endblock %}
