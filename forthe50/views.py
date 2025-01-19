@@ -20,6 +20,10 @@ AUTHORITIES = {
 }
 
 
+def about(request):
+    return render(request, "forthe50/about.html")
+
+
 def contact(request):
     return render(request, "forthe50/contact.html")
 
@@ -35,8 +39,9 @@ def team(request):
 def statistics(request):
     return render(request, "forthe50/statistics.html")
 
+
 def knowledge(request):
-    return render(request, 'forthe50/knowledge.html')
+    return render(request, "forthe50/knowledge.html")
 
 def stories(request):
     return render(request, 'forthe50/stories.html')
