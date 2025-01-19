@@ -43,6 +43,9 @@ def statistics(request):
 def knowledge(request):
     return render(request, "forthe50/knowledge.html")
 
+def stories(request):
+    return render(request, 'forthe50/stories.html')
+
 
 # Report view
 class ReportView(View):

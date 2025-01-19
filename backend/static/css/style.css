@@ -35,10 +35,24 @@ h1 {
 .logo-text:hover {
   color: var(--red);
   transform: scale(1.1);
-}
 
 .logo-text img {
   height: 40px;
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  color: var(--dark-red);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .content {
@@ -91,6 +105,22 @@ img.footer-logo.pb-1 {
   height: 20px;
 }
 
+.sub-titel{
+background-color: var(--black);
+color: var(--red);
+}
+
+.card1 {
+  background-color:#6C757D80;
+  border: 2px solid;
+  border-color: #da2128;
+
+}
+
+.back1 {
+  background-color: #f8f9fa;
+}
+
 /* ---------------- Statistics Page Styles ---------------- */
 .card {
   height: 500px;
@@ -102,11 +132,10 @@ img.footer-logo.pb-1 {
 /* ------------------ Report Page Styles ------------------ */
 .form-container {
   position: relative;
-  z-index: 2;
-  border-radius: 15px;
+  z-index: 20;
   padding: 50px;
   margin: 30px auto;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
 }
 
 .chain-img {
@@ -157,28 +186,6 @@ h1.page-header {
   margin-bottom: 5px;
 }
 
-#reportForm button {
-  background-color: #7d0000;
-  border: none;
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 12px;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
-}
-
-#reportForm button:hover {
-  background-color: #9a1a1a;
-}
-
-h1.page-header {
-  font-size: 2.8rem;
-}
-
-.formHeader {
-  font-size: 2.3rem;
-}
-
 #reportForm .form-control {
   font-size: 1rem;
   padding: 12px;
@@ -213,14 +220,16 @@ body.report-page .footer {
   border-top: 1px solid #c0d7f1;
   text-align: right;
 }
-
-/* Buttons */
+  
+/* ------------------ Button Styles ------------------ */
 .danger-btn {
-  background-color: var(--red);
-  border: none;
-  color: var(--white);
-  font-weight: 500;
-  letter-spacing: 0.05rem;
+    background-color: var(--red);
+    border: none;
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    padding: 0.6rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .danger-btn:hover {
@@ -230,10 +239,12 @@ body.report-page .footer {
 }
 
 .primary-btn {
-  background-color: var(--black);
-  border: none;
-  color: var(--red);
-  letter-spacing: 0.05rem;
+    background-color: var(--black);
+    border: none;
+    color: var(--red);
+    letter-spacing: 0.05rem;
+    padding: 0.6rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .primary-btn:hover {
@@ -242,40 +253,152 @@ body.report-page .footer {
   color: var(--white);
 }
 
-/* -------------------- Home Page Styles -------------------- */
 
+.inactive-btn {
+  background-color: var(--black);
+  border: none;
+  color: var(--dark-red);
+  letter-spacing: 0.05rem;
+  padding: 0.6rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.inactive-btn:hover {
+  background-color: var(--dark-red);
+  border: none;
+  color: var(--white);
+}
+
+/* ------------------ Translator Styles ------------------ */
+.translator-widget {
+  padding: 2.2rem 0;
+}
+
+#ytWidget {
+  position: absolute;
+  right: -125px;
+  top: 90px;
+  width: 300px;
+  z-index: 1000;
+}
+  
+/* ------------------ Home Page Styles ------------------ */
 .background-image1 {
-  background-image: url("/static/assets/Industrial-fence.jpg");
+  background-image: url('/static/assets/Industrial-fence.jpg');
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-position: center 10%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
 }
 
 .background-image2 {
-  background-image: url("/static/assets/Every-human-has-rights.jpg");
+  background-image: url('/static/assets/Every-human-has-rights.jpg');
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-position: center 0%;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+.background-image3 {
+  background-image: url('/static/assets/Blind-girl.jpg');
+  background-size: cover;
+    background-position: center 40%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
 }
 
 .semi-opaque-grey {
-  background-color: rgba(128, 128, 128, 0.8);
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(128, 128, 128, 0.8); /* Less transparent grey */
+  border-radius: 10px; /* Rounded edges */
+  padding: 20px; /* Add spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+}
+  
+.back1 {
+  background-color: #f8f9fa;
 }
 
-/* ---------------------- MEDIA QUERIES ---------------------- */
+.story {
+  display: flex; 
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
 
+.profile-image {
+  width: 200px; 
+  height: 200px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+.image-story {
+  width: 100%; 
+  height: 100%;
+}
+
+.external-link {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.profile-image1 {
+  width: 100px; 
+  height: 100px;
+
+}
+
+.external-link:hover {
+  text-decoration: underline; 
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+}
+
+.styled-table thead tr {
+  font-size: larger;
+  background-color: var(--black);
+color: var(--red);
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  background-color: var(--black);
+  border-bottom: 2px solid var(--black);
+}
+
+  /* ------------------ MEDIA QUERIES ------------------ */
 @media (max-width: 923px) {
   h1.page-header {
     font-size: 3rem;
   }
-
   .formHeader {
     font-size: 2.4rem;
   }
 }
+
 @media (max-width: 768px) {
   .form-container {
     padding: 30px;
@@ -286,7 +409,6 @@ body.report-page .footer {
   h1.page-header {
     font-size: 2.5rem;
   }
-
   .formHeader {
     font-size: 2rem;
   }

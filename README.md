@@ -163,6 +163,7 @@ The wireframes for For the 50 were made using Balsamiq.
 - Bootstrap CDN - linked as per [Bootstrap docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [Font Awesome CDN](https://cdnjs.com/libraries/font-awesome)
 - [Google Fonts](https://fonts.google.com)
+- [Chatbot] (https://www.chatsimple.ai/aichatbot)
 
 ---
 
