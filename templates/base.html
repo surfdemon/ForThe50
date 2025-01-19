@@ -61,10 +61,13 @@
                             <a class="nav-link {% if request.path == '/' %}active{% endif %} me-3" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == '/about/' %}active{% endif %} me-3" href="/stories/">Stories</a>
+                            <a class="nav-link {% if request.path == '/about/' %}active{% endif %} me-3" href="{% url 'about' %}">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {% if request.path == '/knowledge/' %}active{% endif %} me-3" href="/knowledge/">Knowledge</a>
+                            <a class="nav-link {% if request.path == '/stories/' %}active{% endif %} me-3" href="{% url 'stories' %}">Stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/knowledge/' %}active{% endif %} me-3" href="{% url 'knowledge' %}">Knowledge</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link {% if request.path == '/statistics/' %}active{% endif %} me-3"
