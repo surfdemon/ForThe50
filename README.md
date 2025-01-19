@@ -14,12 +14,17 @@
   - [Pages](#pages) 
     - [Home page](#home-page)
     - [About page](#about-page)
+    - [Stories page](#stories-page)
+    - [Knowledge page](#knowledge-page)
+    - [Statistics page](#statistics-page)
     - [Contact page](#contact-page)
-    - [Staistics page](#statistics-page)
+    - [Meet the Team page](#meet-the-team-page)
   - [UX - User Experience](#ux---user-experience)    
     - [Colour](#colour)
     - [Font](#font)
     - [Wireframes](#wireframes)
+  - [Features](#features)  
+    - [Known Bugs](#known-bugs)
   - [Tech Stack](#tech-stack)
   - [Future Developments](#future-development)
   - [Credits](#credits)
@@ -117,13 +122,29 @@ Users who want to report suspected cases.
 
 ![about page screen capture]()
 
-### Contact Page
+### Stories Page
 
-![contact page screen capture]()
+![stories page screen capture]()
+
+### Knowledge Page
+
+![knowledge page screen capture]()
 
 ### Statistics Page
 
 ![statistics page screen capture]()
+
+### Contact Page
+
+![contact page screen capture]()
+
+### Report Crime Page
+
+![report crime screen capture]()
+
+### Meet the Team Page
+
+![meet the team screen capture]()
 
 ---
 
@@ -167,6 +188,22 @@ The wireframes for For the 50 were made using Balsamiq.
 </details>
 
 ---
+
+## Features
+Below is a table of available features with yesting results advised.
+
+| Page | Feature | Screenshot | Pass/Fail? |
+| --- | ----- | ----- | ------ |
+| All | Navigation menu | ![Screenshot of nav menu](docs/documentation/nav_menu.png) | Pass |
+| All | Meet the team link in footer | ![Screenshot of footer link](docs/documentation/footer_link.png) | Pass |
+| All | Charbot | ![Screenshot of chatbot](docs/documentation/chatbot.png) | Pass |
+| All | Report a crime button | ![Screenshot of Report a crime button](docs/documentation/report_button.png) | Pass |
+| All | Language Toggle | ![Screenshot of language toggle](docs/documentation/language_toggle.png) | Pass | 
+
+### Known Bugs
+
+- When changing the language to French the content covering the hero image is forced beyond the image
+
 ## **Tech Stack**  
 - Frontend: HTML, CSS, JavaScript
 - Backend: Python
@@ -176,7 +213,7 @@ The wireframes for For the 50 were made using Balsamiq.
 - Bootstrap CDN - linked as per [Bootstrap docs](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - [Font Awesome CDN](https://cdnjs.com/libraries/font-awesome)
 - [Google Fonts](https://fonts.google.com)
-- [Chatbot] (https://www.chatsimple.ai/aichatbot)
+- [Chatbot](https://www.chatsimple.ai/aichatbot)
 
 ---
 
