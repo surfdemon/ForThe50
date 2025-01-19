@@ -1,6 +1,3 @@
-const currentYear = new Date().getFullYear();
-document.getElementById("current-year").innerText = currentYear;
-
 // Ireland and UK Buttons
 document.addEventListener("DOMContentLoaded", () => {
   const irelandData = document.getElementById("irelandData");
