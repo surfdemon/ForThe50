@@ -169,11 +169,9 @@ The wireframes for For the 50 were made using Balsamiq.
 
 ## Future Development
 
-- Given that much of the work around raising awareness and supporting those affected is done by Charitable organisations a 'Donate' function could be added. This could also bring about some user satisfaction as they feel that they are contributing in the battle against Modern Slavery
 - A sign up facility for users ro register in order to recieve email updates and newsletters regarding the fight against Modern Slavery.
 - Real time statistic reporting showing the most relavent changes based on area and type.
 - Events page showing when fund raising events may be taking place and how users can get involved.
-- Survivor stories showcase. The work that these organisations do should not go unrecognised and we need to offer hope that reporting these incidenets does work and the survivors are given the aid neeeded to have a life after coming out of Modern Slavery.
 
 ---
 
