@@ -13,4 +13,3 @@ staticfiles/
 venv/
 db.sqlite3
 .env
-TESTING.md
