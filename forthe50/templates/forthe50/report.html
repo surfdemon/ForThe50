@@ -113,8 +113,9 @@
   <h2 class="text-success">Report sent successfully</h2>
   <h4>Thank you for taking action!</h4>
 </div>
+{% endblock %}
 
-
+{% block extra_js %}
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("reportForm");
