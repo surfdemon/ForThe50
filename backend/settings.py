@@ -35,14 +35,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     "*.gitpod.io",
     "localhost",
     "127.0.0.1",
     ".herokuapp.com",
-    "8080-surfdemon-forthe50-bjwxgqca8xw.ws-eu117.gitpod.io",
+    "8000-surfdemon-forthe50-roiuuysub6w.ws-eu117.gitpod.io",
 ]
 
 

@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<div class="container-fluid position-relative" id="reportContent">
+<div class="container-fluid position-relative page-container">
   <!-- Background Image -->
   <img src="{% static 'assets/chain.svg' %}" alt="Background" class="chain-img" />
   <h1 class="text-center">Be the Voice for the Voiceless</h1>
@@ -118,7 +118,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("reportForm");
-    const reportContent = document.getElementById("reportContent");
+    const reportContent = document.querySelector(".form-container");
     const successMessage = document.getElementById("successMessage");
 
     if (form) {
