@@ -212,4 +212,7 @@ The wireframes for For the 50 were made using Balsamiq.
 ## Acknowledgements
 
 - As a team we would like the take the time to acknowledge the suffering of the estimated 50 million men, women, and children caught in the trap of Modern Slavery and Human Trafficking. This abhorrent act should have no place in the world and together we stand For the 50.
+- [403 page image](https://www.vecteezy.com/photo/13262509-traffic-sign-of-stop-icon-on-yellow-background)
+- [404 page image](href="https://www.vecteezy.com/vector-art/31975020-page-not-found-404-404-error-page-with-origami-paper-art-and-craft-concept-link-to-empty-non-existent-page-view-under-workers-repairs-website-under-construction-industrial-sign-vector-eps10)
+- [500 page image](https://www.vecteezy.com/photo/7432123-error-word-on-yellow-brick-wall)
 
