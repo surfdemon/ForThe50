@@ -5,15 +5,15 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container d-flex flex-column justify-content-center align-items-center vh-100">
   <div class="row">
     <div class="col-md-12 col-lg-10 col-xl-8 text-center mx-auto mb-2">
-      <h1 class="text-center pt-2">Oops! Page Not Found.</h1>
-      <img src="#" class="w-75 my-3 rounded-3 shadow"
-        alt="" aria-label="#">
-      <p class="text-center px-3">The page you're looking for doesn't exist. Let's get you
+      <h1 class="text-center pt-2">Oops! Page Not Found</h1>
+      <img src="{% static 'assets/404.jpg' %}" class="img-fluid w-100 my-3 rounded shadow"
+        alt="Not found error image" aria-label="#">
+      <p class="text-center p-3">The page you're looking for doesn't exist. Let's get you
         back to safety!</p>
-      <a href="{% url 'index' %}" class="button btn" aria-label="Brings back to home page">Back Home</a>
+      <a href="{% url 'index' %}" class="primary-btn shadow btn" aria-label="Brings back to home page">Back Home</a>
     </div>
   </div>
 </div>
