@@ -510,5 +510,9 @@
   const ctx16 = document.getElementById('ukTraffickingChartNorthernIreland').getContext('2d');
   new Chart(ctx16, { type: 'doughnut', data: ukTraffickingDataNorthernIreland, options: chartOptions });
 </script>
+<script>
+  const currentYear = new Date().getFullYear();
+  document.getElementById("current-year").innerText = currentYear;
+</script>
 <script src="{% static 'js/script.js' %}"></script>
 {% endblock %}
