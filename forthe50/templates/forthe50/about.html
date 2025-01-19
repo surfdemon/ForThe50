@@ -4,81 +4,88 @@
 {% block title %}About Us{% endblock%}
 
 {% block content %}
-<div class="container my-5">
-    <h1 class="text-center mb-4">About Us</h1>
-    <p class="lead text-center mb-5">
-        At ForThe50, we are dedicated to combating human trafficking and modern
-        slavery through awareness, education, and action.
-    </p>
-
+<div class="container-fluid my-5">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8">
+        <h1 class="text-center mb-4">About Us</h1>
+        <p class="lead text-center mb-5">
+          At ForThe50, we are dedicated to combating human trafficking and modern
+          slavery through awareness, education, and action.
+        </p>
+      </div>
+    </div>
+  
     <!-- Mission and Vision Section -->
-    <div class="row gy-4 mt-5 justify-content-center">
-        <div class="col-12 col-md-6 col-lg-5">
-            <div class="card shadow rounded h-100">
-                <div class="card-body">
-                    <h3 class="h4 card-title text-center">Our Mission</h3>
-                    <p>
-                        Our mission is to empower individuals and communities by providing
-                        resources, tools, and support to fight against human trafficking and
-                        modern slavery. We aim to create a world where everyone can live
-                        free from exploitation.
-                    </p>
-                </div>
-            </div>
+    <div class="row gy-4 justify-content-center">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+        <div class="card shadow rounded h-100">
+          <div class="card-body">
+            <h3 class="h4 card-title text-center">Our Mission</h3>
+            <p>
+              Our mission is to empower individuals and communities by providing
+              resources, tools, and support to fight against human trafficking and
+              modern slavery. We aim to create a world where everyone can live
+              free from exploitation.
+            </p>
+          </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-5">
-            <div class="card shadow rounded h-100">
-                <div class="card-body">
-                    <h3 class="h4 card-title text-center">Our Vision</h3>
-                    <p>
-                        We envision a society where human trafficking is eradicated,
-                        survivors are supported, and justice is served. Through
-                        collaboration with communities and organizations, we aim to achieve
-                        lasting change.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+        <div class="card shadow rounded h-100">
+          <div class="card-body">
+            <h3 class="h4 card-title text-center">Our Vision</h3>
+            <p>
+              We envision a society where human trafficking is eradicated,
+              survivors are supported, and justice is served. Through
+              collaboration with communities and organizations, we aim to achieve
+              lasting change.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-
+  
     <!-- Approach and Impact Section -->
-    <div class="row gy-4 mt-5 justify-content-center">
-        <div class="col-12 col-md-6 col-lg-5">
-            <div class="card shadow rounded h-100">
-                <div class="card-body">
-                    <h3 class="h4 card-title text-center">Our Approach</h3>
-                    <p>
-                        Our approach includes educating the public about the realities of
-                        trafficking, providing tools for reporting suspicious activities,
-                        and supporting victims through collaboration with local and
-                        international organizations.
-                    </p>
-                </div>
-            </div>
+    <div class="row gy-4 justify-content-center mt-4">
+      <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+        <div class="card shadow rounded h-100">
+          <div class="card-body">
+            <h3 class="h4 card-title text-center">Our Approach</h3>
+            <p>
+              Our approach includes educating the public about the realities of
+              trafficking, providing tools for reporting suspicious activities,
+              and supporting victims through collaboration with local and
+              international organizations.
+            </p>
+          </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-5">
-            <div class="card shadow rounded h-100">
-                <div class="card-body">
-                    <h3 class="h4 card-title text-center">Our Impact</h3>
-                    <p>
-                        Since our inception, we have reached thousands through awareness
-                        campaigns, helped identify trafficking cases, and connected
-                        survivors with the necessary support and resources to rebuild their
-                        lives.
-                    </p>
-                </div>
-            </div>
+      </div>
+      <div class="col-12 col-sm-10 col-md-8 col-lg-5">
+        <div class="card shadow rounded h-100">
+          <div class="card-body">
+            <h3 class="h4 card-title text-center">Our Impact</h3>
+            <p>
+              Since our inception, we have reached thousands through awareness
+              campaigns, helped identify trafficking cases, and connected
+              survivors with the necessary support and resources to rebuild their
+              lives.
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-
+  
     <!-- Call to Action -->
-    <div class="text-center mt-5">
+    <div class="row justify-content-center mt-5">
+      <div class="col-12 col-md-8 text-center">
         <p class="lead mb-4">
-            Join us in the fight against human trafficking. Together, we can make a
-            difference.
+          Join us in the fight against human trafficking. Together, we can make a
+          difference.
         </p>
         <a href="{% url 'contact' %}" class="btn btn-primary shadow me-3">Contact Resources</a>
         <a href="{% url 'report' %}" class="btn btn-danger shadow">Report a Crime</a>
+      </div>
     </div>
-</div>
+  </div>
+  
 {% endblock %}

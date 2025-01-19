@@ -95,6 +95,8 @@ img.footer-logo.pb-1 {
 .card {
   height: 500px;
   max-width: 400px;
+  margin: 15px auto;
+  padding: 20px;
 }
 
 /* ------------------ Report Page Styles ------------------ */
@@ -303,5 +305,16 @@ body.report-page .footer {
 @media (max-width: 526px) {
   h1.page-header {
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  .row {
+    margin: 0;
   }
 }
