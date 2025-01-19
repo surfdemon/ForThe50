@@ -12,7 +12,7 @@
   <h1 class="text-center">Be the Voice for the Voiceless</h1>
   <div class="row justify-content-center">
     <div class="col-12 col-md-10 col-lg-8">
-      <div class="form-container shadow rounded p-4 my-4">
+      <div class="form-container rounded p-4 my-4">
         <form method="POST" id="reportForm">
           <h2 class="text-center mt-2 formHeader">Report a Crime</h2>
           {% csrf_token %}
@@ -113,8 +113,9 @@
   <h2 class="text-success">Report sent successfully</h2>
   <h4>Thank you for taking action!</h4>
 </div>
+{% endblock %}
 
-
+{% block extra_js %}
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("reportForm");
