@@ -4,9 +4,9 @@
   --yellow: #ffeb3b;
   --red: #E41D24;
   --dark-red: #b1181d;
-  --burgundy: #1d0202;
+  --burgundy: #700000;
   --light-gray: #cacaca;
-  --medium-gray: #7c808d;
+  --medium-gray: #cccccc89;
   --dark-gray: #5e6572;
   --black: #000000;
 }
@@ -126,7 +126,7 @@ canvas {
   text-align: center;
   margin: 15px auto;
   box-sizing: border-box;
-  border: 1px solid #cccccc89; 
+  border: 1px solid var(--medium-gray); 
 }
 
 .card-header {
@@ -140,7 +140,7 @@ canvas {
 .card-header:first-child {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  border-bottom: 1px solid #cccccc89; 
+  border-bottom: 1px solid var(--medium-gray); 
 }
 
 .card-body {
@@ -187,7 +187,7 @@ canvas {
 h1.page-header {
   font-size: 4rem;
   font-weight: 700;
-  color: #700000;
+  color: var(--burgundy);
   text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.537);
   margin-bottom: 50px;
   text-align: center;
@@ -198,7 +198,7 @@ h1.page-header {
 .formHeader {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #700000;
+  color: var(--burgundy);
   margin-bottom: 30px;
   text-align: center;
 }
@@ -213,7 +213,7 @@ h1.page-header {
 #reportForm .form-label {
   font-size: 0.8rem;
   font-weight: 500;
-  color: #1d0202;
+  color: var(--burgundy);
   margin-bottom: 5px;
 }
 
@@ -245,12 +245,9 @@ body.report-page .footer {
 /* -- Authorities disabled span -- */
 #disabled {
   font-size: 11px;
-  font-weight: bold;
   background-color: rgb(219, 194, 3);
   padding: 3px;
-  border-top: 1px solid #c0d7f1;
   text-align: right;
-  border-radius: 4px;
 }
 
 /* ------------------ Button Styles ------------------ */
