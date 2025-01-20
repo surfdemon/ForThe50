@@ -24,7 +24,7 @@
     - [Font](#font)
     - [Wireframes](#wireframes)
   - [Features](#features)  
-    - [Known Bugs](#known-bugs)
+  = [Testing]  
   - [Tech Stack](#tech-stack)
   - [Future Developments](#future-development)
   - [Credits](#credits)
@@ -190,7 +190,7 @@ The wireframes for For the 50 were made using Balsamiq.
 ---
 
 ## Features
-Below is a table of available features with yesting results advised.
+Below is a table of available features with testing results advised.
 
 | Page | Feature | Screenshot | Pass/Fail? |
 | --- | ----- | ----- | ------ |
@@ -199,10 +199,17 @@ Below is a table of available features with yesting results advised.
 | All | Charbot | ![Screenshot of chatbot](docs/documentation/chatbot.png) | Pass |
 | All | Report a crime button | ![Screenshot of Report a crime button](docs/documentation/report_button.png) | Pass |
 | All | Language Toggle | ![Screenshot of language toggle](docs/documentation/language_toggle.png) | Pass | 
+| About | Contact Resources button | ![Screenshot of contact resources button](docs/documentation/contact_button.png) | Pass |
+| About | Report a crime button | ![Screenshot of report a crime button](docs/documentation/report_button.png) | Pass |
+| Knowledge | Resource links | ![Screenshot of resource links](docs/documentation/resource_links.png) | Pass | 
+| Knowledge | Report Crime button | ![Screenshot of report crime button](docs/documentation/knowledge_report_crime_button.png) | Pass |
+| Statistics | Show data by country buttons | ![Screenshot of data buttons](docs/documentation/data_buttons.png) | Pass |
 
-### Known Bugs
+---
 
-- When changing the language to French the content covering the hero image is forced beyond the image
+## Testing
+
+- for all testing please refer to the [TEST.md](TEST.md) file
 
 ## **Tech Stack**  
 - Frontend: HTML, CSS, JavaScript
