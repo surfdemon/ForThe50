@@ -1,8 +1,17 @@
+# For the 50
+
+## Table of Contents
+
+- [For the 50](#for-the-50)
+  - [Validators and Lighthouse](#validators-and-lighthouse)
+  - [Manual Testing](#manual-testing)
+    - [Navigation](#navigation-testing)
+
 ## Testing
 
 Behavior-driven development (BDD), manual testing, and webpage testing were employed to ensure the website functions correctly and adheres to quality standards. Each page was thoroughly evaluated using various tools to verify its performance, accessibility, and compliance with web standards.
 
----
+## Validators and Lighthouse
 
 ### Home Page
 
@@ -16,7 +25,7 @@ Behavior-driven development (BDD), manual testing, and webpage testing were empl
   - **Best Practices**: 78 - "Adherence to best practices is commendable, with minor areas for improvement."  
   - **SEO**: 91 - "Strong SEO implementation enhances search engine visibility."
 
-  ![Home Page Lighthouse Result](documentation/light-house-home-page.png)
+  ![Home Page Lighthouse Result](docs/testing//light-house-home-page.png)
 
 ---
 
@@ -32,7 +41,7 @@ Behavior-driven development (BDD), manual testing, and webpage testing were empl
   - **Best Practices**: 74 - "Good adherence to best practices with scope for refinement."  
   - **SEO**: 91 - "Strong SEO strategies contribute to excellent search visibility."
 
-  ![About Page Lighthouse Result](documentation/light-house-about-page.png)
+  ![About Page Lighthouse Result](docs/testing//light-house-about-page.png)
 
 ---
 
@@ -48,7 +57,7 @@ Behavior-driven development (BDD), manual testing, and webpage testing were empl
   - **Best Practices**: 78 - "The page adheres to recommended practices, enhancing its reliability."  
   - **SEO**: 91 - "Effective SEO implementation boosts discoverability."
 
-  ![Stories Page Lighthouse Result](documentation/light-house-stories-page.png)
+  ![Stories Page Lighthouse Result](docs/testing//light-house-stories-page.png)
 
 ---
 
@@ -64,7 +73,7 @@ Behavior-driven development (BDD), manual testing, and webpage testing were empl
   - **Best Practices**: 74 - "A solid foundation of best practices with opportunities for further refinement."  
   - **SEO**: 91 - "Strong SEO techniques improve the page's visibility."
 
-  ![Knowledge Page Lighthouse Result](documentation/light-house-knowledge-page.png)
+  ![Knowledge Page Lighthouse Result](docs/testing//light-house-knowledge-page.png)
 
 ---
 
@@ -80,7 +89,7 @@ Behavior-driven development (BDD), manual testing, and webpage testing were empl
   - **Best Practices**: 78 - "The page adheres to best practices, ensuring reliability and security."  
   - **SEO**: 91 - "Effective SEO enhances search engine ranking."
 
-  ![Statistics Page Lighthouse Result](documentation/light-house-statistics-page.png)
+  ![Statistics Page Lighthouse Result](docs/testing//light-house-statistics-page.png)
 
 ---
 
@@ -96,7 +105,7 @@ Behavior-driven development (BDD), manual testing, and webpage testing were empl
   - **Best Practices**: 78 - "The page adheres to best practices with minor areas for improvement."  
   - **SEO**: 82 - "Good SEO strategies enhance discoverability."
 
-  ![Contact Page Lighthouse Result](documentation/light-house-contact-page.png)
+  ![Contact Page Lighthouse Result](docs/testing/light-house-contact-page.png)
 
 ---
 
@@ -112,7 +121,7 @@ Behavior-driven development (BDD), manual testing, and webpage testing were empl
   - **Best Practices**: 74 - "Adherence to best practices contributes to reliability."  
   - **SEO**: 91 - "Strong SEO implementation supports better visibility."
 
-  ![Report Page Lighthouse Result](documentation/light-house-report-page.png)
+  ![Report Page Lighthouse Result](docs/testing/light-house-report-page.png)
 
 ---
 
@@ -128,4 +137,23 @@ Behavior-driven development (BDD), manual testing, and webpage testing were empl
   - **Best Practices**: 74 - "The page follows best practices with minor areas for enhancement."  
   - **SEO**: 82 - "Effective SEO practices enhance search visibility."
 
-  ![Meet the Team Page Lighthouse Result](documentation/light-house-meet-team-page.png)
+  ![Meet the Team Page Lighthouse Result](docs/testing/light-house-meet-team-page.png)
+
+## Manual Testing
+
+| FILE     | VALIDATOR SCREENSHOT                                                                                    | RESULT            |
+| -------- | ------------------------------------------------------------------------------------------------------- | ----------------- |
+| ***ForThe50*** |
+| views.py    | <details><summary>Views</summary><img src="#"></details> | <mark>PASS</mark> |
+| urls.py     | <details><summary>Urls</summary><img src="#"></details> | <mark>PASS</mark> |
+| settings.py | <details><summary>Settings</summary><img src="#"></details> | <mark>few errors but these were't be split for better functionality</mark> |
+| ***ForThe50*** |
+| views.py   | <details><summary>Models</summary><img src="#"></details> | <mark>PASS</mark> |
+|  |  |  |
+
+### **Navigation Testing**
+
+| Element                | Action      | Expected Result                                         | Pass/Fail         |
+| ---------------------- | ----------- | ------------------------------------------------------- | ----------------- |
+| Logo                   | Click       | Redirect to Home page                                   | <mark>PASS</mark> |
+| Footer Socials         | Click       | Redirect in a new tab to all respective media platforms | <mark>PASS</mark> |

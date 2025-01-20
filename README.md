@@ -24,7 +24,7 @@
     - [Font](#font)
     - [Wireframes](#wireframes)
   - [Features](#features)  
-  = [Testing]  
+  - [Testing](#testing)  
   - [Tech Stack](#tech-stack)
   - [Future Developments](#future-development)
   - [Credits](#credits)
@@ -34,7 +34,7 @@
 ## **Code to Protect: Submission Details**  
 
 ### **Deployment**   
-View live site here : [For the 50](https://forthe50-67eaa7388853.herokuapp.com/)  
+View live site here : [ForThe50](https://forthe50-67eaa7388853.herokuapp.com/)  
 
 View the project board: [Github projects](https://github.com/users/surfdemon/projects/13)
 
@@ -116,35 +116,35 @@ Users who want to report suspected cases.
 
 ### Home Page
 
-![home page screen capture]()
+![home page screen capture](docs/documentation/home_page.png)
 
 ### About Page
 
-![about page screen capture]()
+![about page screen capture](docs/documentation/about_page.png)
 
 ### Stories Page
 
-![stories page screen capture]()
+![stories page screen capture](docs/documentation/stories_page.png)
 
 ### Knowledge Page
 
-![knowledge page screen capture]()
+![knowledge page screen capture](docs/documentation/knowledge_page.png)
 
 ### Statistics Page
 
-![statistics page screen capture]()
+![statistics page screen capture](docs/documentation/statistics_page.png)
 
 ### Contact Page
 
-![contact page screen capture]()
+![contact page screen capture](docs/documentation/contact_page.png)
 
 ### Report Crime Page
 
-![report crime screen capture]()
+![report crime screen capture](docs/documentation/report_crime_page.png)
 
 ### Meet the Team Page
 
-![meet the team screen capture]()
+![meet the team screen capture](docs/documentation/meet_the_team_page.png)
 
 ---
 
