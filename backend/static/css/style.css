@@ -313,14 +313,14 @@ body.report-page .footer {
 }
 
 /* ------------------ Page Styles ------------------ */
+
 .background-image1 {
   background-image: url("/static/assets/child.svg");
   background-size: cover;
   background-position: center 10%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 60vh;
-  
+  height: 100vh; 
 }
 
 .background-image2 {
@@ -329,7 +329,7 @@ body.report-page .footer {
   background-position: center 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 60vh;
+  height: 70vh;
  
 }
 
@@ -339,7 +339,7 @@ body.report-page .footer {
   background-position: center 40%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 60vh;
+  height: 70vh;
 }
 
 .background-image4 {
@@ -348,7 +348,7 @@ body.report-page .footer {
   background-position: center 10%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 60vh;
+  height: 70vh;
 }
 
 .background-image5 {
@@ -357,7 +357,7 @@ body.report-page .footer {
   background-position: center 30%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 60vh;
+  height: 70vh;
   
 }
 
@@ -405,12 +405,13 @@ body.report-page .footer {
 
 .styled-table {
   border-collapse: collapse;
-  margin: 25px 0;
+  margin: 25px auto;
   font-size: 0.9em;
   font-family: sans-serif;
-  min-width: 400px;
+  width: 100%; 
+  max-width: 80%;
+  min-width: 250px; 
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  width: 100%;
 }
 
 .styled-table thead tr {
