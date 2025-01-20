@@ -129,3 +129,22 @@ Behavior-driven development (BDD), manual testing, and webpage testing were empl
   - **SEO**: 82 - "Effective SEO practices enhance search visibility."
 
   ![Meet the Team Page Lighthouse Result](documentation/light-house-meet-team-page.png)
+
+# Manual Testing
+
+| FILE     | VALIDATOR SCREENSHOT                                                                                    | RESULT            |
+| -------- | ------------------------------------------------------------------------------------------------------- | ----------------- |
+| ***ForThe50*** |
+| views.py    | <details><summary>Views</summary><img src="#"></details> | <mark>PASS</mark> |
+| urls.py     | <details><summary>Urls</summary><img src="#"></details> | <mark>PASS</mark> |
+| settings.py | <details><summary>Settings</summary><img src="#"></details> | <mark>few errors but these were't be split for better functionality</mark> |
+| ***ForThe50*** |
+| views.py   | <details><summary>Models</summary><img src="#"></details> | <mark>PASS</mark> |
+|  |  |  |
+
+### **Navigation Testing**
+
+| Element                | Action      | Expected Result                                         | Pass/Fail         |
+| ---------------------- | ----------- | ------------------------------------------------------- | ----------------- |
+| Logo                   | Click       | Redirect to Home page                                   | <mark>PASS</mark> |
+| Footer Socials         | Click       | Redirect in a new tab to all respective media platforms | <mark>PASS</mark> |
