@@ -8,7 +8,9 @@ from .serializers import ReportSerializer
 # Authorithy email addresses and test email
 AUTHORITIES = {
     "United Kingdom": {
-        "Modern Slavery & Exploitation Helpline": "info@modernslaveryhelpline.org",
+        "Modern Slavery & Exploitation Helpline": (
+            "info@modernslaveryhelpline.org"
+        ),
         "Crimestoppers": "contactus@crimestoppers-uk.org",
         "Testing Authority": settings.TEST_EMAIL,
     },
@@ -43,6 +45,7 @@ def statistics(request):
 def knowledge(request):
     return render(request, "forthe50/knowledge.html")
 
+
 def stories(request):
     return render(request, 'forthe50/stories.html')
 
@@ -62,7 +65,8 @@ class ReportView(View):
             )
             if not recipient_email:
                 return JsonResponse(
-                    {"error": "Invalid authority for the chosen country."}, status=400
+                    {"error": "Invalid authority for the chosen country."},
+                    status=400
                 )
 
             # Send email
@@ -77,8 +81,13 @@ class ReportView(View):
             )
 
             try:
-                send_mail(subject, message, settings.EMAIL_HOST_USER, [recipient_email])
-                return JsonResponse({"message": "Report submitted successfully."})
+                send_mail(
+                    subject, message, settings.EMAIL_HOST_USER,
+                    [recipient_email]
+                )
+                return JsonResponse(
+                    {"message": "Report submitted successfully."}
+                )
             except Exception as e:
                 return JsonResponse({"error": str(e)}, status=500)
         return JsonResponse(serializer.errors, status=400)

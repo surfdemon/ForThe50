@@ -3,11 +3,22 @@
 ## Table of Contents
 
 - [For the 50](#for-the-50)
+  - [What is Testing](#what-is-testing)
   - [Validators and Lighthouse](#validators-and-lighthouse)
+  - [Home Page](#home-page)
+  - [About Page](#about-page)
+  - [Stories Page](#stories-page)
+  - [Knowledge Page](#knowledge-page)
+  - [Statistics Page](#statistics-page)
+  - [Contact Page](#contact-page)
+  - [Report Page](#report-page)
+  - [Meet the Team Page](#meet-the-team-page)
   - [Manual Testing](#manual-testing)
-    - [Navigation](#navigation-testing)
+    - [Python](#python)
+    - [JavaScript](#javascript)
+    - [Navigation](#navigation)
 
-## Testing
+## What is Testing
 
 Behavior-driven development (BDD), manual testing, and webpage testing were employed to ensure the website functions correctly and adheres to quality standards. Each page was thoroughly evaluated using various tools to verify its performance, accessibility, and compliance with web standards.
 
@@ -141,17 +152,35 @@ Behavior-driven development (BDD), manual testing, and webpage testing were empl
 
 ## Manual Testing
 
+### Python
+
+All Python was validated using (CI Python Linter)[https://pep8ci.herokuapp.com/]
+
 | FILE     | VALIDATOR SCREENSHOT                                                                                    | RESULT            |
 | -------- | ------------------------------------------------------------------------------------------------------- | ----------------- |
+| ***Backend*** |
+| views.py    | <details><summary>Views</summary><img src="docs/testing/backend-views.png"></details> | <mark>PASS</mark> |
+| urls.py     | <details><summary>Urls</summary><img src="docs/testing/backend-urls.png"></details> | <mark>PASS</mark> |
+| urls.py     | <details><summary>Wsgi</summary><img src="docs/testing/backend-wsgi.png"></details> | <mark>PASS</mark> |
+| settings.py | <details><summary>Settings</summary><img src="docs/testing/backend-settings.png"></details> | <mark>few errors but these were't be split for better functionality</mark> |
 | ***ForThe50*** |
-| views.py    | <details><summary>Views</summary><img src="#"></details> | <mark>PASS</mark> |
-| urls.py     | <details><summary>Urls</summary><img src="#"></details> | <mark>PASS</mark> |
-| settings.py | <details><summary>Settings</summary><img src="#"></details> | <mark>few errors but these were't be split for better functionality</mark> |
-| ***ForThe50*** |
-| views.py   | <details><summary>Models</summary><img src="#"></details> | <mark>PASS</mark> |
+| views.py   | <details><summary>Views</summary><img src="docs/testing/forthe50-views.png"></details> | <mark>PASS</mark> |
+| urls.py    | <details><summary>Urls</summary><img src="docs/testing/forthe50-urls.png"></details> | <mark>PASS</mark> |
+| apps.py     | <details><summary>Apps</summary><img src="docs/testing/forthe50-apps.png"></details> | <mark>PASS</mark> |
+| serializers.py     | <details><summary>Serializers</summary><img src="docs/testing/forthe50-serializers.png"></details> | <mark>PASS</mark> |
 |  |  |  |
 
-### **Navigation Testing**
+### JavaScript
+
+All JavaScript was validated using (JS Hint)[https://jshint.com/]
+
+|   PAGE                                     |  VALIDATOR SCREENSHOT                                     |   RESULT    |
+|--------------------------------------------|-----------------------------------------------------------|-------------|
+| script.js              |<details><summary>script.js</summary><img src="docs/testing/script-js.png"></details>| <mark>PASS</mark> |
+| statistics.js          |<details><summary>statistics.js</summary><img src="docs/testing/statistics-js.png"></details>| <mark>PASS</mark> |
+|  |  |  |
+
+### **Navigation**
 
 | Element                | Action      | Expected Result                                         | Pass/Fail         |
 | ---------------------- | ----------- | ------------------------------------------------------- | ----------------- |

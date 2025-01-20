@@ -31,8 +31,10 @@ class ReportSerializer(serializers.Serializer):
     # Required fields
     location = serializers.CharField(required=True)
     description = serializers.CharField(required=True)
-    date_and_time = serializers.DateTimeField(required=True, format="%Y-%m-%dT%H:%M")
+    date_and_time = serializers.DateTimeField(
+                    required=True, format="%Y-%m-%dT%H:%M")
     category = serializers.CharField(required=True)
 
     country = serializers.ChoiceField(choices=COUNTRY_CHOICES, required=True)
-    authority = serializers.ChoiceField(choices=AUTHORITY_CHOICES, required=True)
+    authority = serializers.ChoiceField(
+                choices=AUTHORITY_CHOICES, required=True)
