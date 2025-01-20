@@ -1,8 +1,17 @@
+# For the 50
+
+## Table of Contents
+
+- [For the 50](#for-the-50)
+  - [Validators and Lighthouse](#validators-and-lighthouse)
+  - [Manual Testing](#manual-testing)
+    - [Navigation](#navigation-testing)
+
 ## Testing
 
 Behavior-driven development (BDD), manual testing, and webpage testing were employed to ensure the website functions correctly and adheres to quality standards. Each page was thoroughly evaluated using various tools to verify its performance, accessibility, and compliance with web standards.
 
----
+## Validators and Lighthouse
 
 ### Home Page
 
@@ -130,7 +139,7 @@ Behavior-driven development (BDD), manual testing, and webpage testing were empl
 
   ![Meet the Team Page Lighthouse Result](docs/testing/light-house-meet-team-page.png)
 
-# Manual Testing
+## Manual Testing
 
 | FILE     | VALIDATOR SCREENSHOT                                                                                    | RESULT            |
 | -------- | ------------------------------------------------------------------------------------------------------- | ----------------- |
