@@ -1,6 +1,6 @@
 # For the 50 
 
-![for the 50 responsive landing page image]()
+![for the 50 responsive landing page image](docs/documentation/responsive_image.png)
 
 ## Table of Contents
 
@@ -190,7 +190,7 @@ The wireframes for For the 50 were made using Balsamiq.
 ---
 
 ## Features
-Below is a table of available features with testing results advised.
+Below is a table of available features with testing results advised. Please note that the buttons on the Contact page to direct for aid from local authorities are not currently active given that the website is a event project.
 
 | Page | Feature | Screenshot | Pass/Fail? |
 | --- | ----- | ----- | ------ |
@@ -204,6 +204,9 @@ Below is a table of available features with testing results advised.
 | Knowledge | Resource links | ![Screenshot of resource links](docs/documentation/resource_links.png) | Pass | 
 | Knowledge | Report Crime button | ![Screenshot of report crime button](docs/documentation/knowledge_report_crime_button.png) | Pass |
 | Statistics | Show data by country buttons | ![Screenshot of data buttons](docs/documentation/data_buttons.png) | Pass |
+| Contact | Buttons to access aid from local authorities | ![Screenshot of contact buttons](docs/documentation/contact_buttons.png) | Fail |
+| Contact | Email links | ![Screenshot of email links](docs/documentation/email_links.png) | Pass |
+| Report | Submit report button | ![Screenshot of submit report button](docs/documentation/submit_report_button.png) | Pass |
 
 ---
 
