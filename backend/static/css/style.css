@@ -319,18 +319,16 @@ body.report-page .footer {
 .background-image1 {
   background-image: url("/static/assets/child.svg");
   background-size: cover;
-  background-position: center 10%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   height: auto; 
 }
 
 .background-image2 {
   background-image: url("/static/assets/2.svg");
   background-size: cover;
-  background-position: center 0%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   height: auto;
  
 }
@@ -338,37 +336,33 @@ body.report-page .footer {
 .background-image3 {
   background-image: url("/static/assets/Blind-girl.jpg");
   background-size: cover;
-  background-position: center 40%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   height: auto;
 }
 
 .background-image4 {
   background-image: url("/static/assets/4.svg");
   background-size: cover;
-  background-position: center 10%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 70vh;
+  height: auto;
 }
 
 .background-image5 {
   background-image: url("/static/assets/1.svg");
   background-size: cover;
-  background-position: center 30%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 70vh;
+  height: auto;
 }
 
 .background-image6 {
   background-image: url("/static/assets/5.svg");
   background-size: cover;
-  background-position: center 10%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 70vh;
+  height: auto;
 }
 
 .red {
