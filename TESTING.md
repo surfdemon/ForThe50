@@ -16,7 +16,12 @@
   - [Manual Testing](#manual-testing)
     - [Python](#python)
     - [JavaScript](#javascript)
-    - [Navigation](#navigation)
+    - [Navbar and footer](#navbar-and-footer)
+    - [Contact Page](#contact-page-1)
+    - [About Page](#about-page-1)
+    - [Knowledge Page](#knowledge-page-1)
+    - [Report Page](#report-page-1)
+    - [Meet the Team Page](#meet-the-team-page-1)
 
 ## What is Testing
 
@@ -180,23 +185,49 @@ All JavaScript was validated using (JS Hint)[https://jshint.com/]
 | statistics.js          |<details><summary>statistics.js</summary><img src="docs/testing/statistics-js.png"></details>| <mark>PASS</mark> |
 |  |  |  |
 
-### **Navigation**
+### **Navbar and footer**
 
 | Element                | Action      | Expected Result                                         | Pass/Fail         |
 | ---------------------- | ----------- | ------------------------------------------------------- | ----------------- |
 | Logo                   | Click       | Redirect to Home page                                   | <mark>PASS</mark> |
 | Footer link to Meet the team        | Click       | Redirect to Meet the Team page | <mark>PASS</mark> |
 | Navigation menu | Click | Redirect to expected page | <mark>PASS<mark> |
-| Report a Crime button (header) | Click | Redirect to Report a Crime page | <mark>PASS<mark> |
+| Report a Crime button | Click | Redirect to Report a Crime page | <mark>PASS<mark> |
+|  |  |  |
+
+### **Contact Page**
+| Element                | Action      | Expected Result                                         | Pass/Fail         |
+| ---------------------- | ----------- | ------------------------------------------------------- | ----------------- |
 | Contact Resources button | Click | Redirect to Contact page | <mark>PASS<mark> |
-| Report a Crime button (about page) | Click | Redirect to report page | <mark>PASS<mark> |
-| Resource links (Knowledge page) | Click | Redirect to requested site in new window | <mark>PASS<mark> |
-| Report Crime button (knowledge page) | Click | Redirect to report page | <mark>PASS<mark> |
-| Hotline buttons (contact page) | Click | Connect to phone interface | <mark>FAIL<mark> |
-| Text button (contact page) | Click | Open text message editor | <mark>FAIL<mark> |
+| Hotline buttons | Click | Connect to phone interface | <mark>FAIL<mark> |
+| Text button | Click | Open text message editor | <mark>FAIL<mark> |
 | Submit Tip Online button | Click | Redirect to Report page | <mark>PASS<mark> |
 | Find Local Resources button | Click | Redirect to resources in new window | <mark>FAIL<mark> |
 | Request Victim Assistance button | Click | Redirect to assistance and support information in new window | <mark>FAIL<mark> |
-| Email links (contact page) | Click | Opens a blank email with the required email address in place | <mark>PASS<mark> |
+| Email links | Click | Opens a blank email with the required email address in place | <mark>PASS<mark> |
+|  |  |  |
+
+### **About Page**
+| Element                | Action      | Expected Result                                         | Pass/Fail         |
+| ---------------------- | ----------- | ------------------------------------------------------- | ----------------- |
+| Report a Crime button | Click | Redirect to report page | <mark>PASS<mark> |
+|  |  |  |
+
+### **Knowledge Page**
+| Element                | Action      | Expected Result                                         | Pass/Fail         |
+| ---------------------- | ----------- | ------------------------------------------------------- | ----------------- |
+| Resource links | Click | Redirect to requested site in new window | <mark>PASS<mark> |
+| Report Crime button | Click | Redirect to report page | <mark>PASS<mark> |
+|  |  |  |
+
+### **Report Page**
+| Element                | Action      | Expected Result                                         | Pass/Fail         |
+| ---------------------- | ----------- | ------------------------------------------------------- | ----------------- |
 | Submit Report button | Click | Submits entered details from the form and give user feedback | <mark>PASS<mark> |
+|  |  |  |
+
+### **Meet the Team Page**
+| Element                | Action      | Expected Result                                         | Pass/Fail         |
+| ---------------------- | ----------- | ------------------------------------------------------- | ----------------- |
 | Social links | Click | Redirect to requested site in new window | <mark>PASS<mark> |
+|  |  |  |
