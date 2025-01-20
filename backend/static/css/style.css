@@ -317,7 +317,7 @@ body.report-page .footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60%;
+  height: 75%;
 }
 
 .background-image2 {
@@ -325,7 +325,7 @@ body.report-page .footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60%;
+  height: 75%;
  
 }
 
@@ -334,23 +334,23 @@ body.report-page .footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60%;
+  height: 75%;
 }
 
 .background-image4 {
-  background-image: url("/static/assets/4.svg");
+  background-image: url("/static/assets/statistics.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60%;
+  height: 75%;
 }
 
 .background-image5 {
-  background-image: url("/static/assets/1.svg");
+  background-image: url("/static/assets/about.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60%;
+  height: 75%;
 }
 
 .background-image6 {
@@ -358,7 +358,7 @@ body.report-page .footer {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 60%;
+  height: 75%;
 }
 
 .background-image7 {
@@ -367,7 +367,7 @@ body.report-page .footer {
   background-position: center 60%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 60%;
+  height: 75%;
 }
 
 .red {
