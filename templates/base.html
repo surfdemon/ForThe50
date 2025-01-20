@@ -12,7 +12,7 @@
         content="human trafficking, modern slavery, anti-trafficking resources, exploitation prevention, community empowerment, ForThe50, human rights advocacy, support for survivors, ending slavery">
     {% endblock %}
 
-    <!---------------------------------------  Favicons  ---------------->
+    <!-- Favicons -->
     <!-- Standard favicon -->
     <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon/favicon.ico' %}">
     <!-- PNG favicon for specific resolutions -->
@@ -39,17 +39,17 @@
         rel="stylesheet">
 
     <title>{% block title %}title{% endblock %}</title>
+    <script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script>
 </head>
 
 
-<!-- AI Chatbot -->
-<chat-bot platform_id="ffed3142-929f-4626-b6cf-d0cf0de4e21c" user_id="59257c7e-7227-4b4c-bb18-ba659d9d7418" chatbot_id="dfaa60de-4aba-4287-96a7-9496677cdc56">
-    <a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral"></a>
-</chat-bot>
-<script src="https://cdn.chatsimple.ai/chat-bot-loader.js" defer></script>
 
 <body class="{% block body_class %}{% endblock %}">
-    {% block header %}
+    <!-- AI Chatbot -->
+    <chat-bot platform_id="ffed3142-929f-4626-b6cf-d0cf0de4e21c" user_id="59257c7e-7227-4b4c-bb18-ba659d9d7418" chatbot_id="dfaa60de-4aba-4287-96a7-9496677cdc56">
+        <a href="https://www.chatsimple.ai/?utm_source=widget&utm_medium=referral"></a>
+    </chat-bot>
+   {% block header %}
     <header>
         <nav class="navbar navbar-expand-lg shadow p-3">
             <div class="container-fluid">
@@ -106,7 +106,7 @@
 
     {% block footer %}
     <footer class="footer flex flex-col items-center">
-        <p class="my-0">&copy; <span id="current-year"></span> ForThe<img src="{% static 'assets/forthe50-logo-red.png' %}" alt="Logo" class="footer-logo pb-1"> | All rights reserved<br><a class="pt-2" href="{% url 'meet_team' %}">Meet the Team</a></p>
+        <p class="my-0">&copy;<span id="current-year"></span> ForThe<img src="{% static 'assets/forthe50-logo-red.png' %}" alt="Logo" class="footer-logo pb-1"> | All rights reserved<br><a class="pt-2" href="{% url 'meet_team' %}">Meet the Team</a></p>
     </footer>
     {% endblock %}
 
@@ -118,7 +118,7 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{% static 'js/script.js' %}"></script>
-    <script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=en&widgetTheme=light&autoMode=false" type="text/javascript"></script>
+    <script src="https://translate.yandex.net/website-widget/v1/widget.js?widgetId=ytWidget&pageLang=en&widgetTheme=light&autoMode=false"></script>
     <script>
     const currentYear = new Date().getFullYear();
     document.getElementById("current-year").innerText = currentYear;
