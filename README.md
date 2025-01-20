@@ -24,7 +24,7 @@
     - [Font](#font)
     - [Wireframes](#wireframes)
   - [Features](#features)  
-  = [Testing]  
+  - [Testing](#testing)  
   - [Tech Stack](#tech-stack)
   - [Future Developments](#future-development)
   - [Credits](#credits)
@@ -34,7 +34,7 @@
 ## **Code to Protect: Submission Details**  
 
 ### **Deployment**   
-View live site here : [For the 50](https://forthe50-67eaa7388853.herokuapp.com/)  
+View live site here : [ForThe50](https://forthe50-67eaa7388853.herokuapp.com/)  
 
 View the project board: [Github projects](https://github.com/users/surfdemon/projects/13)
 
