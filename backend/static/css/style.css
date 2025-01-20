@@ -320,7 +320,7 @@ body.report-page .footer {
   background-position: center 10%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh; 
+  height: auto; 
 }
 
 .background-image2 {
@@ -329,7 +329,7 @@ body.report-page .footer {
   background-position: center 0%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 70vh;
+  height: auto;
  
 }
 
@@ -339,7 +339,7 @@ body.report-page .footer {
   background-position: center 40%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 70vh;
+  height: auto;
 }
 
 .background-image4 {
@@ -435,7 +435,7 @@ body.report-page .footer {
 }
 
 .styled-table tbody tr:last-of-type {
-  background-color: var(--black);
+  /*background-color: var(--black);*/
   border-bottom: 2px solid var(--black);
 }
 
