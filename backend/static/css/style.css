@@ -2,7 +2,7 @@
 :root {
   --white: #ffffff;
   --yellow: #ffeb3b;
-  --red: #da2128;
+  --red: #E41D24;
   --dark-red: #b1181d;
   --burgundy: #1d0202;
   --light-gray: #cacaca;
@@ -365,10 +365,19 @@ body.report-page .footer {
   height: auto;
 }
 
+.background-image7 {
+  background-image: url("/static/assets/6.svg");
+  background-size: cover;
+  background-position: center 60%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
+}
+
 .red {
-  color: var(--red);
-  background-color: #000000;
-  border-radius: 5%;
+  color: rgb(113, 0, 0);
+  background-color: #d4d4d49e;
+  border-radius: 2px;
   padding: 2px;
 }
 
@@ -474,9 +483,23 @@ img.footer-logo.pb-1 {
 }
 
 .sub-titel {
-  background-color: var(--black);
+  background-color: black;
   color: var(--red);
+  text-align: center;
+  padding: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  min-height: 40px;
 }
+
+.sub-titel h2 {
+  margin: 0; /* Ta bort eventuell extra marginal från h2 */
+}
+
+
+
 
 .card1,
 .form-container {
