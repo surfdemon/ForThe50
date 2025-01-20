@@ -1,4 +1,4 @@
-# For the 50 
+# For the <img src="backend/static/assets/logo-red.png" alt="Logo" width="30">
 
 ![for the 50 responsive landing page image](docs/documentation/responsive_image.png)
 
