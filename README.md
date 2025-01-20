@@ -24,7 +24,7 @@
     - [Font](#font)
     - [Wireframes](#wireframes)
   - [Features](#features)  
-    - [Known Bugs](#known-bugs)
+  = [Testing]  
   - [Tech Stack](#tech-stack)
   - [Future Developments](#future-development)
   - [Credits](#credits)
@@ -200,9 +200,11 @@ Below is a table of available features with yesting results advised.
 | All | Report a crime button | ![Screenshot of Report a crime button](docs/documentation/report_button.png) | Pass |
 | All | Language Toggle | ![Screenshot of language toggle](docs/documentation/language_toggle.png) | Pass | 
 
-### Known Bugs
+---
 
-- When changing the language to French the content covering the hero image is forced beyond the image
+## Testing
+
+- for all testing please refer to the [TEST.md](TEST.md) file
 
 ## **Tech Stack**  
 - Frontend: HTML, CSS, JavaScript
