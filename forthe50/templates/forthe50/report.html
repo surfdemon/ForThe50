@@ -6,10 +6,22 @@
 
 {% block content %}
 
+<header class="py-5 background-image6">
+  <div class="container px-5">
+    <div class="row gx-5 align-items-left justify-content-center">
+      <div class="col-lg-8 col-xl-7 col-xxl-8">
+        <div class="my-3 text-center text-xl-start semi-opaque-grey rounded p-3">
+          <h1 class="display-5 fw-bolder text-center main-title-color mb-2">Break the Chain</h1>
+          <p class="lead fw-normal text-white-40 mb-4 text-center">
+            Be the Voice for the Voiceless. Take action by reporting any suspicious activities related to human trafficking or modern slavery. Your voice can <strong class="red">make a difference</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
 <div class="container-fluid position-relative page-container">
-  <!-- Background Image -->
-  <img src="{% static 'assets/chain.svg' %}" alt="Background" class="chain-img" />
-  <h1 class="text-center">Be the Voice for the Voiceless</h1>
   <div class="row justify-content-center">
     <div class="col-12 col-md-10 col-lg-8">
       <div class="form-container rounded p-4 my-4">
@@ -105,6 +117,8 @@
       </div>
     </div>
   </div>
+  <!-- Chain Image -->
+  <img src="{% static 'assets/chain.svg' %}" alt="Background" class="chain-img" />
 </div>
 
 <!-- Success Message -->
