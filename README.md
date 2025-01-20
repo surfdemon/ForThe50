@@ -209,7 +209,7 @@ Below is a table of available features with testing results advised.
 
 ## Testing
 
-- for all testing please refer to the [TEST.md](TEST.md) file
+- for all testing please refer to the [TESTING.md](TESTING.md) file
 
 ## **Tech Stack**  
 - Frontend: HTML, CSS, JavaScript
