@@ -6,7 +6,7 @@
 
 {% block content %}
 
-<header class="py-5 background-image6">
+<header id="reportPageHeader" class="py-5 background-image6">
   <div class="container d-flex align-items-center justify-content-center" style="height: 100%;">
     <div class="row gx-5 align-items-left justify-content-center">
       <div class="col-lg-8 col-xl-7 col-xxl-8">
@@ -79,15 +79,7 @@
             </select>
           </div>
           <div class="mb-3">
-            <label for="country" class="form-label">Country*</label>
-            <select class="form-select" id="country" name="country" required>
-              <option value="" disabled selected>- Select Country -</option>
-              <option value="United Kingdom">United Kingdom</option>
-              <option value="Ireland">Ireland</option>
-            </select>
-          </div>
-          <div class="mb-3">
-            <label for="authority" class="form-label">Authority* <span class="shadow fw-bold rounded" id="disabled">Only Testing Authority Enabled During the Hackathon</span></label>
+            <label for="authority" class="form-label">Authority*</label>
             <select
               class="form-select"
               id="authority"
@@ -95,23 +87,27 @@
               required
             >
               <option value="" disabled selected>- Select Authority -</option>
-              <option value="Modern Slavery & Exploitation Helpline" disabled>
-                Modern Slavery & Exploitation Helpline
+              <option value="Modern Slavery & Exploitation Helpline">
+                UK - Modern Slavery Helpline
               </option>
-              <option value="Crimestoppers" disabled>Crimestoppers</option>
-              <option value="An Garda Síochána (HTICU)" disabled>
-                An Garda Síochána (HTICU)
+              <option value="Crimestoppers">
+                UK - Crimestoppers
               </option>
-              <option value="Department of Justice and Equality (AHTU)" disabled>
-                Department of Justice and Equality (AHTU)
+              <option value="An Garda Síochána (HTICU)">
+                Ireland - Garda (HTICU)
               </option>
-              <option value="Testing Authority">Testing Authority</option>
+              <option value="Department of Justice and Equality (AHTU)">
+                Ireland - Dept. of Justice (AHTU)
+              </option>              
             </select>
           </div>
+          <div class="alert alert-warning text-center mb-2" role="alert">
+            <strong>Important:</strong> Submit only genuine reports. Emails are sent directly to government authorities.
+          </div>          
           <div class="text-center">
             <button type="submit" class="btn primary-btn text-uppercase shadow mt-3">
               Submit Report
-            </button>
+            </button>           
           </div>
         </form>
       </div>
@@ -131,41 +127,44 @@
 
 {% block extra_js %}
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("reportForm");
-    const reportContent = document.querySelector(".form-container");
-    const successMessage = document.getElementById("successMessage");
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("reportForm");
+  const reportContent = document.querySelector(".form-container");
+  const successMessage = document.getElementById("successMessage");
+  const chainImg = document.querySelector(".chain-img");
+  const header = document.getElementById("reportPageHeader");
 
-    if (form) {
-      form.addEventListener("submit", async function (e) {
-        e.preventDefault();
+  if (form) {
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
 
-        const formData = new FormData(form);
-        const csrfToken = document.querySelector(
-          "[name=csrfmiddlewaretoken]"
-        ).value;
+      const formData = new FormData(form);
+      const csrfToken = document.querySelector("[name=csrfmiddlewaretoken]").value;
 
-        try {
-          const response = await fetch(form.action, {
-            method: "POST",
-            body: formData,
-            headers: {
-              "X-CSRFToken": csrfToken,
-            },
-          });
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            "X-CSRFToken": csrfToken,
+          },
+        });
 
-          if (response.ok) {
-            // Hide form and show success message
-            reportContent.classList.add("d-none");
-            successMessage.classList.remove("d-none");
-          } else {
-            console.error("Error submitting the report:", response.statusText);
-          }
-        } catch (error) {
-          console.error("Unexpected error:", error);
+        if (response.ok) {
+          // Hide form, header and chain image and show success message
+          reportContent.classList.add("d-none");
+          successMessage.classList.remove("d-none");
+          if (chainImg) chainImg.classList.add("hidden-chain-header");
+          if (header) header.classList.add("hidden-chain-header");
+        } else {
+          console.error("Error submitting the report:", response.statusText);
         }
-      });
-    }
-  });
+      } catch (error) {
+        console.error("Unexpected error:", error);
+      }
+    });
+  }
+});
+
 </script>
 {% endblock %}
